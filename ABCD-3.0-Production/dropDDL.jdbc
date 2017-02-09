@@ -1,0 +1,226 @@
+ALTER TABLE abcdn.dperson DROP CONSTRAINT FK_dperson_library
+ALTER TABLE abcdn.dperson DROP CONSTRAINT FK_dperson_photo
+ALTER TABLE abcdn.dperson DROP CONSTRAINT FK_dperson_sex
+ALTER TABLE abcdn.dnomenclator DROP CONSTRAINT FK_dnomenclator_library
+ALTER TABLE abcdn.dnomenclator DROP CONSTRAINT FK_dnomenclator_internationalization
+ALTER TABLE abcdn.dnomenclator DROP CONSTRAINT FK_dnomenclator_discriminator
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_kindofmaterial
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_provider
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_acquisitiontype
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_situation
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_objectstate
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_recommendation
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_library
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_acquisitioncointype
+ALTER TABLE abcdn.dloanobject DROP CONSTRAINT FK_dloanobject_room
+ALTER TABLE abcdn.duser DROP CONSTRAINT FK_duser_domain
+ALTER TABLE abcdn.duser DROP CONSTRAINT FK_duser_person
+ALTER TABLE abcdn.duser DROP CONSTRAINT FK_duser_library
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_loanusertype
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_person
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_speciality
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_state
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_faculty
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_modality
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_registeredatroom
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_registerby
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_roomlibrarian
+ALTER TABLE abcdn.dloanuser DROP CONSTRAINT FK_dloanuser_department
+ALTER TABLE abcdn.dpenalty DROP CONSTRAINT FK_dpenalty_state
+ALTER TABLE abcdn.dpenalty DROP CONSTRAINT FK_dpenalty_librarian
+ALTER TABLE abcdn.dpenalty DROP CONSTRAINT FK_dpenalty_loanuser
+ALTER TABLE abcdn.dpenalty DROP CONSTRAINT FK_dpenalty_penaltytype
+ALTER TABLE abcdn.dpenalty DROP CONSTRAINT FK_dpenalty_coinType
+ALTER TABLE abcdn.dpenalty DROP CONSTRAINT FK_dpenalty_loanobject
+ALTER TABLE abcdn.dpenalty DROP CONSTRAINT FK_dpenalty_library
+ALTER TABLE abcdn.dreservation DROP CONSTRAINT FK_dreservation_objecttype
+ALTER TABLE abcdn.dreservation DROP CONSTRAINT FK_dreservation_loanuser
+ALTER TABLE abcdn.dreservation DROP CONSTRAINT FK_dreservation_state
+ALTER TABLE abcdn.dreservation DROP CONSTRAINT FK_dreservation_reservationtype
+ALTER TABLE abcdn.dreservation DROP CONSTRAINT FK_dreservation_reasoncancel
+ALTER TABLE abcdn.dtransactions DROP CONSTRAINT FK_dtransactions_parenttransaction
+ALTER TABLE abcdn.dtransactions DROP CONSTRAINT FK_dtransactions_loantype
+ALTER TABLE abcdn.dtransactions DROP CONSTRAINT FK_dtransactions_librarian
+ALTER TABLE abcdn.dtransactions DROP CONSTRAINT FK_dtransactions_loanstate
+ALTER TABLE abcdn.dtransactions DROP CONSTRAINT FK_dtransactions_loanuser
+ALTER TABLE abcdn.dtransactions DROP CONSTRAINT FK_dtransactions_loanobject
+ALTER TABLE abcdn.dtransactions DROP CONSTRAINT FK_dtransactions_reservation
+ALTER TABLE abcdn.dcalendar DROP CONSTRAINT FK_dcalendar_library
+ALTER TABLE abcdn.dcalendar DROP CONSTRAINT FK_dcalendar_daytype
+ALTER TABLE abcdn.dcirculationrule DROP CONSTRAINT FK_dcirculationrule_usertype
+ALTER TABLE abcdn.dcirculationrule DROP CONSTRAINT FK_dcirculationrule_objecttype
+ALTER TABLE abcdn.dcirculationrule DROP CONSTRAINT FK_dcirculationrule_library
+ALTER TABLE abcdn.dcirculationrule DROP CONSTRAINT FK_dcirculationrule_state
+ALTER TABLE abcdn.dcoin DROP CONSTRAINT FK_dcoin_cointype
+ALTER TABLE abcdn.dcoin DROP CONSTRAINT FK_dcoin_library
+ALTER TABLE abcdn.dfineequation DROP CONSTRAINT FK_dfineequation_library
+ALTER TABLE abcdn.dformationcourse DROP CONSTRAINT FK_dformationcourse_professor
+ALTER TABLE abcdn.dformationcourse DROP CONSTRAINT FK_dformationcourse_library
+ALTER TABLE abcdn.dformationcourse DROP CONSTRAINT FK_dformationcourse_room
+ALTER TABLE abcdn.dformationcourse DROP CONSTRAINT FK_dformationcourse_coursetype
+ALTER TABLE abcdn.dprovider DROP CONSTRAINT FK_dprovider_representative
+ALTER TABLE abcdn.dprovider DROP CONSTRAINT FK_dprovider_state
+ALTER TABLE abcdn.dprovider DROP CONSTRAINT FK_dprovider_library
+ALTER TABLE abcdn.dprovider DROP CONSTRAINT FK_dprovider_country
+ALTER TABLE abcdn.dprovider DROP CONSTRAINT FK_dprovider_person
+ALTER TABLE abcdn.droom DROP CONSTRAINT FK_droom_library
+ALTER TABLE abcdn.dschedule DROP CONSTRAINT FK_dschedule_dayofweek
+ALTER TABLE abcdn.dschedule DROP CONSTRAINT FK_dschedule_library
+ALTER TABLE abcdn.dworker DROP CONSTRAINT FK_dworker_person
+ALTER TABLE abcdn.dworker DROP CONSTRAINT FK_dworker_workertype
+ALTER TABLE abcdn.dworker DROP CONSTRAINT FK_dworker_workeractivity
+ALTER TABLE abcdn.dworker DROP CONSTRAINT FK_dworker_library
+ALTER TABLE abcdn.denrollment DROP CONSTRAINT FK_denrollment_addressedto
+ALTER TABLE abcdn.denrollment DROP CONSTRAINT FK_denrollment_formationcourse
+ALTER TABLE abcdn.denrollment DROP CONSTRAINT FK_denrollment_firstubication
+ALTER TABLE abcdn.denrollment DROP CONSTRAINT FK_denrollment_thirdubication
+ALTER TABLE abcdn.denrollment DROP CONSTRAINT FK_denrollment_programm
+ALTER TABLE abcdn.denrollment DROP CONSTRAINT FK_denrollment_secondubication
+ALTER TABLE abcdn.dpermission DROP CONSTRAINT FK_dpermission_module
+ALTER TABLE abcdn.dpermission DROP CONSTRAINT FK_dpermission_internationalization
+ALTER TABLE abcdn.dprofile DROP CONSTRAINT FK_dprofile_library
+ALTER TABLE abcdn.daccessrecord DROP CONSTRAINT FK_daccessrecord_person
+ALTER TABLE abcdn.daccessrecord DROP CONSTRAINT FK_daccessrecord_authenticateduser
+ALTER TABLE abcdn.daccessrecord DROP CONSTRAINT FK_daccessrecord_library
+ALTER TABLE abcdn.daccessrecord DROP CONSTRAINT FK_daccessrecord_room
+ALTER TABLE abcdn.dldap DROP CONSTRAINT FK_dldap_library
+ALTER TABLE abcdn.ddesiderata DROP CONSTRAINT FK_ddesiderata_cointype
+ALTER TABLE abcdn.ddesiderata DROP CONSTRAINT FK_ddesiderata_usertype
+ALTER TABLE abcdn.ddesiderata DROP CONSTRAINT FK_ddesiderata_desideratastate
+ALTER TABLE abcdn.ddesiderata DROP CONSTRAINT FK_ddesiderata_library
+ALTER TABLE abcdn.ddesiderata DROP CONSTRAINT FK_ddesiderata_creator
+ALTER TABLE abcdn.ddesiderata DROP CONSTRAINT FK_ddesiderata_purchaserequest
+ALTER TABLE abcdn.dpurchaserequest DROP CONSTRAINT FK_dpurchaserequest_approvedby
+ALTER TABLE abcdn.dpurchaserequest DROP CONSTRAINT FK_dpurchaserequest_creator
+ALTER TABLE abcdn.dpurchaserequest DROP CONSTRAINT FK_dpurchaserequest_rejectionreason
+ALTER TABLE abcdn.dpurchaserequest DROP CONSTRAINT FK_dpurchaserequest_area
+ALTER TABLE abcdn.dpurchaserequest DROP CONSTRAINT FK_dpurchaserequest_purchaseorder
+ALTER TABLE abcdn.dpurchaserequest DROP CONSTRAINT FK_dpurchaserequest_state
+ALTER TABLE abcdn.dpurchaserequest DROP CONSTRAINT FK_dpurchaserequest_acceptancereason
+ALTER TABLE abcdn.dsuggestion DROP CONSTRAINT FK_dsuggestion_acceptancemotive
+ALTER TABLE abcdn.dsuggestion DROP CONSTRAINT FK_dsuggestion_duser
+ALTER TABLE abcdn.dsuggestion DROP CONSTRAINT FK_dsuggestion_library
+ALTER TABLE abcdn.dsuggestion DROP CONSTRAINT FK_dsuggestion_desiderata
+ALTER TABLE abcdn.dsuggestion DROP CONSTRAINT FK_dsuggestion_state
+ALTER TABLE abcdn.dsuggestion DROP CONSTRAINT FK_dsuggestion_rejectionmotive
+ALTER TABLE abcdn.dpurchaseorder DROP CONSTRAINT FK_dpurchaseorder_library
+ALTER TABLE abcdn.dpurchaseorder DROP CONSTRAINT FK_dpurchaseorder_rejectionreason
+ALTER TABLE abcdn.dpurchaseorder DROP CONSTRAINT FK_dpurchaseorder_provider
+ALTER TABLE abcdn.dpurchaseorder DROP CONSTRAINT FK_dpurchaseorder_acceptancereason
+ALTER TABLE abcdn.dpurchaseorder DROP CONSTRAINT FK_dpurchaseorder_approvedby
+ALTER TABLE abcdn.dpurchaseorder DROP CONSTRAINT FK_dpurchaseorder_state
+ALTER TABLE abcdn.dpurchaseorder DROP CONSTRAINT FK_dpurchaseorder_cointype
+ALTER TABLE abcdn.dpurchaseorder DROP CONSTRAINT FK_dpurchaseorder_creator
+ALTER TABLE abcdn.dopacaction DROP CONSTRAINT FK_dopacaction_library
+ALTER TABLE abcdn.dopacaction DROP CONSTRAINT FK_dopacaction_duser
+ALTER TABLE abcdn.dcomment DROP CONSTRAINT FK_dcomment_opacaction
+ALTER TABLE abcdn.drecommendation DROP CONSTRAINT FK_drecommendation_opacaction
+ALTER TABLE abcdn.drecommendation DROP CONSTRAINT FK_drecommendation_userid
+ALTER TABLE abcdn.dselectionlist DROP CONSTRAINT FK_dselectionlist_opacaction
+ALTER TABLE abcdn.dselectionlist DROP CONSTRAINT FK_dselectionlist_category
+ALTER TABLE abcdn.dselectionlist DROP CONSTRAINT FK_dselectionlist_orderedby
+ALTER TABLE abcdn.dtag DROP CONSTRAINT FK_dtag_opacaction
+ALTER TABLE abcdn.drating DROP CONSTRAINT FK_drating_opacaction
+ALTER TABLE abcdn.drecordrating DROP CONSTRAINT FK_drecordrating_library
+ALTER TABLE abcdn.dopaclibrarydatasources DROP CONSTRAINT FK_dopaclibrarydatasources_library
+ALTER TABLE abcdn.duserprofile DROP CONSTRAINT FK_duserprofile_profile
+ALTER TABLE abcdn.duserprofile DROP CONSTRAINT FK_duserprofile_duser
+ALTER TABLE abcdn.dreservationloanobject DROP CONSTRAINT FK_dreservationloanobject_loanobject
+ALTER TABLE abcdn.dreservationloanobject DROP CONSTRAINT FK_dreservationloanobject_reservation
+ALTER TABLE abcdn.dprovidertype DROP CONSTRAINT FK_dprovidertype_provider
+ALTER TABLE abcdn.dprovidertype DROP CONSTRAINT FK_dprovidertype_providertype
+ALTER TABLE abcdn.dworkerroom DROP CONSTRAINT FK_dworkerroom_room
+ALTER TABLE abcdn.dworkerroom DROP CONSTRAINT FK_dworkerroom_worker
+ALTER TABLE abcdn.dprofilepermission DROP CONSTRAINT FK_dprofilepermission_profile
+ALTER TABLE abcdn.dprofilepermission DROP CONSTRAINT FK_dprofilepermission_permission
+ALTER TABLE abcdn.dsellistsellistisis DROP CONSTRAINT FK_dsellistsellistisis_selectionlistisis
+ALTER TABLE abcdn.dsellistsellistisis DROP CONSTRAINT FK_dsellistsellistisis_selectionlist
+ALTER TABLE abcdn.dreportindicator DROP CONSTRAINT FK_dreportindicator_report
+ALTER TABLE abcdn.dreportindicator DROP CONSTRAINT FK_dreportindicator_indicator
+DROP TABLE abcdn.internationalization CASCADE
+DROP TABLE abcdn.dperson CASCADE
+DROP TABLE abcdn.dnomenclator CASCADE
+DROP TABLE abcdn.dloanobject CASCADE
+DROP TABLE abcdn.dstatistic CASCADE
+DROP TABLE abcdn.dpicture CASCADE
+DROP TABLE abcdn.duser CASCADE
+DROP TABLE abcdn.dloanuser CASCADE
+DROP TABLE abcdn.dpenalty CASCADE
+DROP TABLE abcdn.dreservation CASCADE
+DROP TABLE abcdn.dtransactions CASCADE
+DROP TABLE abcdn.dcalendar CASCADE
+DROP TABLE abcdn.dcirculationrule CASCADE
+DROP TABLE abcdn.dcoin CASCADE
+DROP TABLE abcdn.dfineequation CASCADE
+DROP TABLE abcdn.dformationcourse CASCADE
+DROP TABLE abcdn.dlibrary CASCADE
+DROP TABLE abcdn.dprovider CASCADE
+DROP TABLE abcdn.droom CASCADE
+DROP TABLE abcdn.dschedule CASCADE
+DROP TABLE abcdn.dworker CASCADE
+DROP TABLE abcdn.denrollment CASCADE
+DROP TABLE abcdn.dpermission CASCADE
+DROP TABLE abcdn.dprofile CASCADE
+DROP TABLE abcdn.daccessrecord CASCADE
+DROP TABLE abcdn.dldap CASCADE
+DROP TABLE abcdn.ddesiderata CASCADE
+DROP TABLE abcdn.dpurchaserequest CASCADE
+DROP TABLE abcdn.dsuggestion CASCADE
+DROP TABLE abcdn.dpurchaseorder CASCADE
+DROP TABLE abcdn.dopacaction CASCADE
+DROP TABLE abcdn.dcomment CASCADE
+DROP TABLE abcdn.drecommendation CASCADE
+DROP TABLE abcdn.dselectionlist CASCADE
+DROP TABLE abcdn.dselectionlistisis CASCADE
+DROP TABLE abcdn.dtag CASCADE
+DROP TABLE abcdn.drating CASCADE
+DROP TABLE abcdn.drecordrating CASCADE
+DROP TABLE abcdn.dopaclibrarydatasources CASCADE
+DROP TABLE abcdn.dindicator CASCADE
+DROP TABLE abcdn.dreport CASCADE
+DROP TABLE abcdn.dvariablestatistic CASCADE
+DROP TABLE abcdn.dreportgroup CASCADE
+DROP TABLE abcdn.duserprofile CASCADE
+DROP TABLE abcdn.dreservationloanobject CASCADE
+DROP TABLE abcdn.dprovidertype CASCADE
+DROP TABLE abcdn.dworkerroom CASCADE
+DROP TABLE abcdn.dprofilepermission CASCADE
+DROP TABLE abcdn.dsellistsellistisis CASCADE
+DROP TABLE abcdn.dreportindicator CASCADE
+DROP SEQUENCE abcdn.sq_dreservation
+DROP SEQUENCE abcdn.sq_internationalization
+DROP SEQUENCE abcdn.sq_dstatistics
+DROP SEQUENCE abcdn.sq_dpenalty
+DROP SEQUENCE abcdn.sq_droom
+DROP SEQUENCE abcdn.sq_dreport
+DROP SEQUENCE abcdn.sq_dreportgroup
+DROP SEQUENCE abcdn.sq_dpurchaseorder
+DROP SEQUENCE abcdn.sq_dselectionlistisis
+DROP SEQUENCE abcdn.sq_dcalendar
+DROP SEQUENCE abcdn.sq_dsuggestion
+DROP SEQUENCE abcdn.sq_dloanobject
+DROP SEQUENCE abcdn.sq_dpurchaserequest
+DROP SEQUENCE abcdn.sq_dcoin
+DROP SEQUENCE abcdn.sq_dopacaction
+DROP SEQUENCE abcdn.sq_dpicture
+DROP SEQUENCE abcdn.sq_dloanuser
+DROP SEQUENCE abcdn.sq_dformationcourse
+DROP SEQUENCE abcdn.sq_drecordrating
+DROP SEQUENCE abcdn.sq_dprovider
+DROP SEQUENCE abcdn.sq_dworker
+DROP SEQUENCE abcdn.sq_daccessrecord
+DROP SEQUENCE abcdn.sq_duser
+DROP SEQUENCE abcdn.sq_dindicator
+DROP SEQUENCE abcdn.sq_dfineequation
+DROP SEQUENCE abcdn.sq_dnomenclator
+DROP SEQUENCE abcdn.sq_dlibrary
+DROP SEQUENCE abcdn.sq_dtransactions
+DROP SEQUENCE abcdn.sq_dprofile
+DROP SEQUENCE abcdn.sq_dvariablestatistic
+DROP SEQUENCE abcdn.sq_dschedule
+DROP SEQUENCE abcdn.sq_dperson
+DROP SEQUENCE abcdn.sq_dcirculationrule
+DROP SEQUENCE abcdn.sq_denrollment
+DROP SEQUENCE abcdn.sq_dopaclibrarydatasource
+DROP SEQUENCE abcdn.sq_ddesiderata
+DROP SEQUENCE abcdn.sq_dldap

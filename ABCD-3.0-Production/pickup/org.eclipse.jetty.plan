@@ -1,0 +1,19 @@
+<plan name="org.eclipse.jetty" version="1.0.0" scoped="false" atomic="false"
+                xmlns="http://www.eclipse.org/virgo/schema/plan"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="
+					http://www.eclipse.org/virgo/schema/plan 
+					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
+
+	<artifact type="bundle" name="org.eclipse.jetty.continuation" version="8.1.14.v20131031"/>
+	<artifact type="bundle" name="org.eclipse.jetty.http" version="8.1.14.v20131031"/>
+	<artifact type="bundle" name="org.eclipse.jetty.io" version="8.1.14.v20131031"/>
+	<artifact type="bundle" name="org.eclipse.jetty.security" version="8.1.14.v20131031"/>
+	<artifact type="bundle" name="org.eclipse.jetty.server" version="8.1.14.v20131031"/>
+	<artifact type="bundle" name="org.eclipse.jetty.servlet" version="8.1.14.v20131031"/>
+	<artifact type="bundle" name="org.eclipse.jetty.util" version="8.1.14.v20131031"/>
+	
+	
+	<artifact type="bundle" name="org.eclipse.equinox.http.jetty" version="3.0.200.v20131021-1843"/>
+	<artifact type="bundle" name="org.eclipse.equinox.http.servlet" version="1.1.500.v20140318-1755"/>
+</plan>

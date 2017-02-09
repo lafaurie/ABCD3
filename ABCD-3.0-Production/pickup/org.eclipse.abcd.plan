@@ -1,0 +1,78 @@
+
+<plan name="org.eclipse.abcd" version="1.0.0" scoped="false" atomic="false"
+                xmlns="http://www.eclipse.org/virgo/schema/plan"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.eclipse.org/virgo/schema/plan http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
+    
+    <!--Configuration artifact-->                
+    <artifact type="configuration" name="db.configuration" version="0"/>
+    <artifact type="configuration" name="jisis.configuration" version="0"/>
+    <artifact type="configuration" name="cron.configuration" version="0"/>
+    <artifact type="configuration" name="security.configuration" version="0"/>
+    <artifact type="configuration" name="email.config" version="0"/>
+
+    <!--Rap bundles-->  
+    <artifact type="bundle" name="org.eclipse.rap.rwt.osgi" version="3.0.0.20150520-1707"/>
+    
+    <!--JDBC drivers-->
+    <artifact type="bundle" name="com.springsource.com.mchange.v2.c3p0" version="0.9.1.2"/>
+    <artifact type="bundle" name="org.postgresql" version="9.1.901.jdbc4_1"/>
+    <!--End jdbc drivers-->
+    
+    <artifact type="bundle" name="cu.uci.abos.mchange.fragment" version="1.0.0"/>
+    
+    <!--ABCD core bundles-->
+    <artifact type="bundle" name="cu.uci.abos.jisis.conection" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.dataprovider.jisis" version="2.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.statistic.jisis" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abos.reports" version="2.0.0"/>
+    <artifact type="bundle" name="cu.uci.abos.report.pdf" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abos.report.xls" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abos.core" version="2.0.0"/>
+        
+    
+    <artifact type="bundle" name="cu.uci.abcd.cron.scheduler" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.datasource" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.dao.jpa" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.dao" version="1.0.0"/>
+    
+    <artifact type="bundle" name="cu.uci.abcd.management.security" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abos.platform" version="2.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.opac" version="2.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.opac.ui" version="1.0.0"/>
+    
+    <artifact type="bundle" name="cu.uci.abcd.administration.nomenclators" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.administration.nomenclators.ui" version="1.0.0"/>
+
+    <artifact type="bundle" name="cu.uci.abcd.circulation" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.circulation.ui" version="1.0.0"/>
+    
+    <artifact type="bundle" name="cu.uci.abcd.statistic" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.statistic.ui" version="1.0.0"/>
+    
+    <artifact type="bundle" name="cu.uci.abcd.administration.library" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.administration.library.ui" version="1.0.0"/>
+    
+    <artifact type="bundle" name="cu.uci.abcd.management.security.ui" version="1.0.0"/>
+ 
+    <!--Cron Task-->
+    <artifact type="bundle" name="cu.uci.abcd.cron.disableloanuser" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.cron.penalty" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.cron.transaction" version="1.0.0"/>
+    
+    <!--Widgets using Cataloguing-->
+    <artifact type="bundle" name="cu.uci.abos.widget.advanced.query" version="2.0.0"/>
+    <artifact type="bundle" name="cu.uci.abos.widget.repeatable.field" version="2.0.0"/>
+    <artifact type="bundle" name="cu.uci.abos.widget.template.component" version="2.0.0"/>
+    <artifact type="bundle" name="cu.uci.abos.widget.show.content" version="1.0.0"/>
+        
+     
+    <artifact type="bundle" name="cu.uci.abcd.cataloguing.impl" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.cataloguing.ui" version="1.0.0"/>
+   
+     
+    <artifact type="bundle" name="cu.uci.abcd.acquisition" version="1.0.0"/>
+    <artifact type="bundle" name="cu.uci.abcd.acquisition.ui" version="1.0.0"/>
+  
+    
+</plan>

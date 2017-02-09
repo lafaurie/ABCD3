@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Menu [
+<!ELEMENT Menu (Modulo+)>
+<!ELEMENT Modulo (Categoria+)>
+<!ELEMENT Categoria ANY >
+<!ATTLIST Modulo moduleNameEs CDATA #REQUIRED>
+<!ATTLIST Modulo moduleNameEn CDATA #REQUIRED>
+<!ATTLIST Modulo id ID #REQUIRED>
+<!ATTLIST Modulo order CDATA #REQUIRED>
+<!ATTLIST Categoria categoryEs CDATA #REQUIRED>
+<!ATTLIST Categoria categoryEn CDATA #REQUIRED>
+<!ATTLIST Categoria id ID #REQUIRED>
+<!ATTLIST Categoria categoryOrder ID #REQUIRED>
+]>
+
+<Menu>
+	<Modulo moduleNameEn="Cataloguing" moduleNameEs="Catalogación" id="m1" order="1">
+		<Categoria categoryEn="Register" categoryEs="Registrar" id="rcatalogacion" categoryOrder="1">
+			<RegisterBibliographicRecord id="registerBibliographicRecordID" />
+		</Categoria>
+		<Categoria categoryEs="Consultar" categoryEn="Consult" id="ccatalogacion" categoryOrder="2">
+			<ConsultarAutoridades id="advanceQueryID" />
+			<ConsultarCatalogo id="catalogQueryID" />
+			<AuthoritiesQuery id="authoritiesQueryID" />
+		</Categoria>
+	</Modulo>
+
+	 <Modulo moduleNameEn="Adquisition" moduleNameEs="Adquisición" id="m2" order="2">
+		<Categoria categoryEn="Register" categoryEs="Registrar" id="radquisicion" categoryOrder="1">
+			<RegistrarOrdenCompra id="addPurchaseOrderID" />
+			<RegistrarDesiderata id = "addDesiderataID"/>
+			<RegistrarSolicitudCompra id = "addPurchaseRequestID"/>
+			<RegistroAdquisicion id="addLogAcquisitionID" />
+		</Categoria>
+		<Categoria categoryEn="Consult" categoryEs="Consultar" id="cadquisicion" categoryOrder="2">
+			<AprobarRechazarSugerencia id="AprobarRechazarSugerenciaID" />
+			<AprobarRechazarOrdenDeCompra id="AprobarRechazarOrdenDeCompraID" />
+			<ConsultarSugerencia id="consultSuggestionID" />
+			<ConsultarPedidos id="consultDesiderataID" />
+			<ConsultarOrdenCompra id="consultPurchaseOrderID" />
+			<ConsultarSolicitudCompra id="consultPurchaseRequestID" />
+			<ConsultarRegistroAdquisicion id="consultLogAcquisitionID" />
+		</Categoria>
+		<Categoria categoryEn="Update" categoryEs="Actualizar" id="uadquisicion" categoryOrder="3">
+			<ActualizarAdquisicion id="ActualizarAdquisicionID" />
+		</Categoria>
+		<Categoria categoryEn="View" categoryEs="Ver" id="vadquisicion" categoryOrder="4">
+			<VerRegistroDeAdquisicion id="VerRegistroDeAdquisicionID" />
+		</Categoria>
+	</Modulo>
+        
+        <Modulo moduleNameEn="Circulation" moduleNameEs="Circulación" id="m3" order="3">
+		<Categoria categoryEn="Register" categoryEs="Registrar" id="rcirculacion" categoryOrder="1">
+			<RegisterLoan id="addLoanID" />
+			<RegisterRenew id="addRenewID" />
+			<RegisterReturn id="addReturnID" />
+			<RegisterPenalty id="addPenaltyID" />
+			<RegisterLoanUser id="addLoanUserID" />
+		</Categoria>
+		<Categoria categoryEn="Consult" categoryEs="Consultar" id="ccirculacion" categoryOrder="2">
+			<ReservationQuery id="consultReservationID" />
+			<TransactionQuery id="consultTransactionID" />
+			<LoanUserQuery id="consultLoanUserID" />
+			<LoanObjectQuery id="consultLoanObjectID" />
+			<PenaltyQuery id="consultPenaltyID" />
+		</Categoria>
+	</Modulo>
+	<Modulo moduleNameEn="Administration" moduleNameEs="Administración" id="m4" order="4">
+		<Categoria categoryEn="DataBase" categoryEs="Base Datos" id="aadministracionBD" categoryOrder="1">
+			<AdministrarBaseDato id="AdministrarBaseDatoID" />
+			<AdministrarFDT id="AdministrarFDTID" />
+			<AdministrarFMT id="AdministrarFMTID" />
+			<AdministrarFST id="AdministrarFSTID" />
+			<AdministrarPFT id="AdministrarPFTID" />
+			<AdministrarListaSeleccion id="AdministrarListaSeleccionID" />
+			<AdministrarFormatoConversion id="AdministrarFormatoConversionID" />
+			<AdministrarBusquedaAvanzada id="AdministrarBusquedaAvanzadaID" />
+			<AdministrarTerminosNoSignificativos id="AdministrarTerminosNoSignificativosID" />
+			<AdministrarServidores id="AdministrarServidoresID" />
+			<ImportarExportarRegistro id="ImportarExportarRegistroID" />
+		</Categoria>
+		<Categoria categoryEn="Nomenclator" categoryEs="Nomenclador" id="adminnom" categoryOrder="2">
+			<ManageNomenclator id="manageNomenclatorID" />
+		</Categoria>
+		 <Categoria categoryEn="Library" categoryEs="Biblioteca" 
+			id="aadministracionBiblioteca" categoryOrder="3">
+			<AdministrarBiblioteca id="manageLibraryID" />
+			<AdministrarProveedores id="manageProviderID" />
+			<AdministrarMonedas id="manageCoinID" />
+		</Categoria>
+		<Categoria categoryEn="ISIS" categoryEs="ISIS" id="isisModule" categoryOrder="4">
+			<IsisAdminContributor id="adminIsisID" />
+		</Categoria>
+	</Modulo>
+
+	<Modulo moduleNameEn="Library" moduleNameEs="Biblioteca" id="m5" order="5">
+		<Categoria categoryEn="Register" categoryEs="Registrar" id="registerBiblioteca" categoryOrder="1">
+			<RegistrarTrabajadoresBiblioteca id="addWorkerID" />
+			<RegistrarCursoFormacion id="addFormationCourseID" />
+                        <RegistrarSala id="addRoomID" />
+		</Categoria>
+		<Categoria categoryEn="Consult" categoryEs="Consultar" id="consultBiblioteca" categoryOrder="2">
+			<ConsultarTrabajadoresBiblioteca id="consultWorkerID" />
+			<ConsultarCursoFormacion id="consultFormationCourseID" />
+                        <ConsultarSala id="consultRoomID" />
+		</Categoria>
+		<Categoria categoryEn="Configure" categoryEs="Configurar" id="configureBiblioteca" categoryOrder="3">
+			<ConfigurarCalendario id="configureCalendarID" />
+			<ConfigurarHorarioLaboral id="configureSheduleID" />
+			<ConfigurarEcuacionMulta id="configureFineEquationID" />
+			<AdministrarReglaCirculacion id="configureCirculationRuleID" />
+		</Categoria>
+               
+	</Modulo>
+
+	<Modulo moduleNameEn="Security" moduleNameEs="Seguridad" id="m6" order="6">
+		<Categoria categoryEn="Register" categoryEs="Registrar" id="rseguridad" categoryOrder="1">
+			<RegistrarPersona id="addPersonID" />
+			<RegistrarUsuario id="addUserID" />
+			<RegistrarPerfilUsuario id="addProfileID" />
+			<RegistrarControlAcceso id="addAccessControlID" />
+		</Categoria>
+		<Categoria categoryEn="Consult" categoryEs="Consultar" id="cseguridad" categoryOrder="2">
+			<ConsultarPersona id="consultPersonID" />
+			<ConsultarUsuario id="consultUserID" />
+			<ConsultarPerfilUsuario id="consultProfileID" />
+			<ConsultarControlAcceso id="consultAccessControlID" />
+		</Categoria>
+                <Categoria categoryEn="Configure" categoryEs="Configurar" id="cconfigure" categoryOrder="3">
+			<ConfigurarLdap id="configureLdapID" />
+		</Categoria>
+	</Modulo>
+	
+	<Modulo moduleNameEn="Statistic" moduleNameEs="Estadística" id="m7" order="7">
+        <Categoria categoryEn="Manage" categoryEs="Administrar" id="administrarTV" categoryOrder="1">
+             <ManageIndicator id="manageIndicatorID" />
+             <ManageReport id="manageReportID" />
+          </Categoria>
+         <Categoria categoryEn="Generate" categoryEs="Generar" id="generateTV" categoryOrder="2">
+             <GenerateReport id="generateReportID" />
+        </Categoria>
+	</Modulo>
+
+</Menu>
