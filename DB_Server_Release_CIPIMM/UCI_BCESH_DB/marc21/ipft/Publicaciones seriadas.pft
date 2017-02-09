@@ -1,0 +1,10 @@
+x11 (v100^a v100^b v100^c v100^d v100^q)/
+x20 v245^a x1 if p(v245^b) then '=' x1 v245^b fi x1 '/' x1 v245^c'.' x1 '-' x1 v250^a x1 '/' x1 v250^b '.' x1 '-' x1 v362^a x1 '.' x1 '-' x1 v260^a x1 ':' x1 v260^b ',' x1 v260^c '.'/
+x17 v300^a x1 ':' x1 v300^b x1 ';' x1 v300^c x1 '+' x1 v300^e '.' x1 '-' x1 v490^a x1 ';' x1 v490^v/
+#
+#
+x17 v310^a/
+x17 v310^b/
+x17 if p(v546^a) then v546^a/ fi 
+x17 v22^a v22^y v22^l/
+x17 v110^a ',' x1 v110^b

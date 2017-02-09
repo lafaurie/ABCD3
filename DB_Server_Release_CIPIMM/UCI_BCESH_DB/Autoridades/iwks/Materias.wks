@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet name="Materias">
+
+    <field tag="1" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE CONTROL DEL REGISTRO" displaycontrol="NW">
+
+        <defaultvalue>
+<![CDATA[GCN]]>
+        </defaultvalue>
+        <validatepft>
+<![CDATA[mandatory]]>
+        </validatepft>
+
+    </field>
+    <field tag="3" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="IDENTIFICADOR DEL NÚMERO DE CONTROL" displaycontrol="">
+
+    </field>
+    <field tag="5" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ESTADO DEL REGISTRO" displaycontrol="">
+
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="6" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="TIPO DE REGISTRO" displaycontrol="">
+
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="8" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ELEMENTOS DE LONGITUD FIJA" displaycontrol="">
+
+        <subfield code="$*" repeatable="false" subfieldtype="alphanumeric" description="*" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$-" repeatable="false" subfieldtype="alphanumeric" description="-" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ " repeatable="false" subfieldtype="alphanumeric" description="7 " displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$9" repeatable="false" subfieldtype="alphanumeric" description="9" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$8" repeatable="false" subfieldtype="alphanumeric" description="8" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="9" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ESQUEMA DE CODIFICACIÓN DE CARACTERES" displaycontrol="">
+
+        <subfield code="$#" repeatable="false" subfieldtype="alphanumeric" description="#" displaycontrol="">
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="10" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="VÍNCULO DE LA SERIE AL REGISTRO BIBLIOGRÁFICO" displaycontrol="">
+
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e" displaycontrol="">
+
+        </subfield>
+        <subfield code="$f" repeatable="false" subfieldtype="alphanumeric" description="f" displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g" displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h" displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i" displaycontrol="">
+
+        </subfield>
+        <subfield code="$j" repeatable="false" subfieldtype="alphanumeric" description="j" displaycontrol="">
+
+        </subfield>
+        <subfield code="$k" repeatable="false" subfieldtype="alphanumeric" description="k" displaycontrol="">
+
+        </subfield>
+        <subfield code="$l" repeatable="false" subfieldtype="alphanumeric" description="l" displaycontrol="">
+
+        </subfield>
+        <subfield code="$m" repeatable="false" subfieldtype="alphanumeric" description="m" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n" displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o" displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p" displaycontrol="">
+
+        </subfield>
+        <subfield code="$q" repeatable="false" subfieldtype="alphanumeric" description="q" displaycontrol="">
+
+        </subfield>
+        <subfield code="$r" repeatable="false" subfieldtype="alphanumeric" description="r" displaycontrol="">
+
+        </subfield>
+        <subfield code="$s" repeatable="false" subfieldtype="alphanumeric" description="s" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t" displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u" displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v" displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="40" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="FUENTE DE CATALOGACIÓN" displaycontrol="">
+
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e" displaycontrol="">
+
+        </subfield>
+        <subfield code="$f" repeatable="false" subfieldtype="alphanumeric" description="f" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$8" repeatable="false" subfieldtype="alphanumeric" description="8" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="750" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ENTRADA DE ENLACE DE ENCABEZAMIENTO ESTABLECIDO" displaycontrol="">
+
+        <subfield code="$ind1" repeatable="false" subfieldtype="alphanumeric" description="Indicator 1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ind2" repeatable="false" subfieldtype="alphanumeric" description="Indicator 2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$7" repeatable="false" subfieldtype="alphanumeric" description="7" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="751" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ENTRADA DE ENLACE DE ENCABEZAMIENTO ESTABLECIDO - NOMBRE GEOGRÁFICO" displaycontrol="">
+
+        <subfield code="$ind1" repeatable="false" subfieldtype="alphanumeric" description="Indicator 1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ind2" repeatable="false" subfieldtype="alphanumeric" description="Indicator 2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$7" repeatable="false" subfieldtype="alphanumeric" description="7" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="752" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ENTRADA DE ENLACE DE ENCABEZAMIENTO ESTABLECIDO - TÉRMINO GÉNERO / FORMA (R)" displaycontrol="">
+
+        <subfield code="$ind1" repeatable="false" subfieldtype="alphanumeric" description="Indicator 1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ind2" repeatable="false" subfieldtype="alphanumeric" description="Indicator 2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$7" repeatable="false" subfieldtype="alphanumeric" description="7" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="780" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ENTRADA DE ENLACE DE SUBDIVISIÓN - SUBDIVISIÓN GENERAL" displaycontrol="">
+
+        <subfield code="$ind1" repeatable="false" subfieldtype="alphanumeric" description="Indicator 1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ind2" repeatable="false" subfieldtype="alphanumeric" description="Indicator 2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$7" repeatable="false" subfieldtype="alphanumeric" description="7" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="781" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ENTRADA DE ENLACE DE SUBDIVISIÓN - SUBDIVISIÓN GEOGRÁFICA" displaycontrol="">
+
+        <subfield code="$ind1" repeatable="false" subfieldtype="alphanumeric" description="Indicator 1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ind2" repeatable="false" subfieldtype="alphanumeric" description="Indicator 2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$7" repeatable="false" subfieldtype="alphanumeric" description="7" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="782" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ENTRADA DE ENLACE DE SUBDIVISIÓN - SUBDIVISIÓN CRONOLÓGICA" displaycontrol="">
+
+        <subfield code="$ind1" repeatable="false" subfieldtype="alphanumeric" description="Indicator 1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ind2" repeatable="false" subfieldtype="alphanumeric" description="Indicator 2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$7" repeatable="false" subfieldtype="alphanumeric" description="7" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="785" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ENTRADA DE ENLACE DE SUBDIVISIÓN - SUBDIVISIÓN DE FORMA" displaycontrol="">
+
+        <subfield code="$ind1" repeatable="false" subfieldtype="alphanumeric" description="Indicator 1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ind2" repeatable="false" subfieldtype="alphanumeric" description="Indicator 2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$7" repeatable="false" subfieldtype="alphanumeric" description="7" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="788" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ENTRADA DE ENLACE COMPLEJO" displaycontrol="">
+
+        <subfield code="$ind1" repeatable="false" subfieldtype="alphanumeric" description="Indicator 1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$ind2" repeatable="false" subfieldtype="alphanumeric" description="Indicator 2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2" displaycontrol="">
+
+        </subfield>
+        <subfield code="$3" repeatable="false" subfieldtype="alphanumeric" description="3" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$7" repeatable="false" subfieldtype="alphanumeric" description="7" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="880" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REPRESENTACIÓN GRÁFICA ALTERNA" displaycontrol="">
+
+        <subfield code="$0" repeatable="false" subfieldtype="alphanumeric" description="0" displaycontrol="">
+
+        </subfield>
+        <subfield code="$5" repeatable="false" subfieldtype="alphanumeric" description="5" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$8" repeatable="false" subfieldtype="alphanumeric" description="8" displaycontrol="">
+
+        </subfield>
+
+    </field>
+
+</worksheet>

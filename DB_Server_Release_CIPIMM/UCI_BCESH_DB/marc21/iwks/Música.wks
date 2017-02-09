@@ -1,0 +1,2963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet name="Música">
+
+    <field tag="1" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE CONTROL" displaycontrol="NW">
+
+        <defaultvalue>
+<![CDATA[GCN]]>
+        </defaultvalue>
+        <validatepft>
+<![CDATA[mandatory]]>
+        </validatepft>
+
+    </field>
+    <field tag="3" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="IDENTIFICADOR DEL NÚMERO DE CONTROL" displaycontrol="">
+
+    </field>
+    <field tag="5" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="FECHA Y HORA DE LA ÚLTIMA TRANSACCIÓN" displaycontrol="NW">
+
+        <defaultvalue>
+<![CDATA[GLT]]>
+        </defaultvalue>
+        <validatepft>
+<![CDATA[mandatory]]>
+        </validatepft>
+
+    </field>
+    <field tag="7" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="CAMPO FIJO DE INFORMACIÓN GENERAL" displaycontrol="">
+
+    </field>
+    <field tag="8" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="CAMPO FIJO" displaycontrol="">
+
+        <validatepft>
+<![CDATA[mandatory]]>
+        </validatepft>
+        <picklist>
+<![CDATA[@Campo 8 Música]]>
+        </picklist>
+
+    </field>
+    <field tag="10" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE CONTROL DE LA LC" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Número de control LC " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="15" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE CONTROL DE LA BIBLIOGRAFÍA NACIONAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description=" a - Número de bibliografía nacional" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="17" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE LA PROPIEDAD INTELECTUAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  – Número de registro de derechos de autor " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b  – Agencia que asigna el número " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="20" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ISBN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Número Internacional Normalizado del libro " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b  - Nulo" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c  - Término de Disponibilidad" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z  - ISBN Cancelado/ Invalidado " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="22" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ISSN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Número Internacional Normalizado para Publicaciones Seriadas" displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y  - ISSN incorrecto " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z  - ISSN cancelado" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="24" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="OTRO NÚMERO DE CLASIFICACIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Código Internacional Normalizado para Grabaciones (ISRC);
+1-Código de producto universal (UPC);
+2-Número Internacional Normalizado para Música (ISMN);
+3-Número Internacional para Artículos (EAN);
+4-Identificador de la Seriada y de la Contribución (SICI);
+7-Especificación de la fuente indicada en el subcampo $2;
+8-Tipos de Números Normalizados o Códigos no especificados]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+0-No hay diferencia;
+1-Diferencia]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Número o código normalizado" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c  - Número o código normaliza – Términos de disponibilidad " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d  - Códigos adicionales después del número o código normalizado" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z  - Número o código normalizado cancelado/invalidado" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="28" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE PUBLICACIÓN (MÚSICA)" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Número de publicación;
+1-Número de matriz;
+2-Número de plancha;
+3-Otro número de músicam;
+4-Número de videoregistros;
+5-Otro número del editor]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Sin nota, sin asiento adicional;
+1-Nota, require asiento adicional;
+2-Nota, sin asiento adicional;
+3-No hay nota, se require asiento adicional]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Número del editor " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b  - Fuente " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="40" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="RECURSOS DE CATALOGACIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Agencia de catalogación original" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Idioma de catalogación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c -  Agencia que realiza la transcripción " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Agencia que realiza la modificación Convenciones de la descripción " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Convenciones de la descripción " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="41" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="CÓDIGO DEL IDIOMA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-El ítem no es traducción/no incluye traducción;
+1-El ítem es o incluye una traducción]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Lista de códigos MARC;
+7-Fuente identificada en el subcampo $2]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Código de idioma para texto/pista de sonido o título separado" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Código de idioma del texto cantado o hablado " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Código de idioma acompañado de otro tipo de material que no sea libreto" displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Código de idioma de la versión original y/o traducciones intermedias del " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="43" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="CÓDIGO DE ÁREA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Código de área geográfica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Código local GAC " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="50" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="CLASIFICACIÓN DE LA LC" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+0-El ítem se encuentra en LC;
+1-Item no se encuentra en LC (no pertenece)]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Asignado por LC;
+4-Asignado por una agencia diferente a LC]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Número clasificador " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Número del ítem " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="60" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="CLASIFICACIÓN DE LA  NLM " displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+0-El ítem se encuentra en NLM;
+1-El ítem no se encuentra en NLM]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Asignada por NLM;
+4-Asignada por otra agencia diferente a NLM]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Número clasificador" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b  - Número de ítem " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="66" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="CONJUNTO DE CARACTERES APLICADOS" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description=" Segundo indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Conjunto primario G0 " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Conjunto primario G1" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c  - Conjunto alternativo G0 o G1" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="72" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="CÓDIGO DE CATEGORÍA TEMÁTICA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="e - Fuente " displaycontrol="">
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Código de categoría temática " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Código de subdivisión de la categoría temática" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="80" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="CLASIFICACIÓN DECIMAL UNIVERSAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2 - Identificador de edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Número de la Clasificación Decimal Universal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Número del ítem" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Subdivisiones comunes auxiliares " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="82" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="CLASIFICACIÓN DECIMAL DEWEY" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador – Tipo de edición " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Ed. ompleta;
+1-Ed. abreviada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="2 - Número de la edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Número de clasificación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Número del ítem " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="84" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="OTRO NÚMERO DE CLASIFICACIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Número clasificador " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Número del ítem" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="86" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE CLASIFICACIÓN PARA DOCUMENTOS GUBERNAMENTALES" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador – Fuente del número " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Fuente especificada en el subcampo $2;
+0-Tomado del “Superintendent of Documents Classification System;
+1-Tomado del “Government of Canada Publications: Outline of Classification”]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description=" Segundo indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Número de clasificación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número de clasificación cancelado/invalido" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="100" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ASIENTO PRINCIPAL - NOMBRE PERSONAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de elemento de entrada del nombre personal " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre de pila;
+1-Apellido;
+2-Nombre de familia]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre personal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Numeración" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Títulos u otras palabras asociadas al nombre " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fechas asociadas con el nombre" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Término relacionador " displaycontrol="">
+
+        </subfield>
+        <subfield code="$q" repeatable="false" subfieldtype="alphanumeric" description="q - Forma más completa del nombre " displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u - Afiliación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Código del relacionador " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="110" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ASIENTO PRINCIPAL - NOMBRE CORPORATIVO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de elemento de entrada del nombre corporativo " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre en orden invertido;
+1-Nombre de jurisdicción;
+2-Nombre en orden directo]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description=" Segundo indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4- Código del relacionador " displaycontrol="">
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a -Nombre corporativo o de jurisdicción como elemento de entrada" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Unidad subordinada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Lugar de la reunión " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fecha de la reunión o de la firma de un tratado " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Término relacionador " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Número de la parte/sección/reunión" displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u - serie, utilizAfiliación " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="111" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ASIENTO PRINCIPAL - NOMBRE DE LA REUNIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de elemento de entrada del nombre de reunión " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre en orden invertido;
+1-Nombre de jurisdicción;
+2-Nombre en orden directo]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre de reunión o de jurisdicción como elemento de entrada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Lugar de la reunión " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fecha de la reunión" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Fecha de la reunión Unidad subordinada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Número de la parte/sección de una obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u - Afiliación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Una afiliación o domicilCódigo del relacionador" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="210" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="TÍTULO ABREVIADO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Asiento secundario de título " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Sin asiento secundario;
+1-Con asiento secundario]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tipo " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Título clave abreviado;
+0-Otro título abreviado]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Título abreviado " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b  - Información calificadora " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="222" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="TÍTULO DE CLAVE" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9-Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Título clave " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Información calificadora " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="240" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="TÍTULO UNIFORME" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Título uniforme impreso o desplegado " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-No impreso o desplegado;
+1-Impreso o desplegado]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9-Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Título uniforme " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fecha de la firma de un tratado " displaycontrol="">
+
+        </subfield>
+        <subfield code="$f" repeatable="false" subfieldtype="alphanumeric" description="f - Fecha de una obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g  - Información miscelánea " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h  - Medio físico" displaycontrol="">
+
+        </subfield>
+        <subfield code="$k" repeatable="false" subfieldtype="alphanumeric" description="k  - Subasiento de forma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$l" repeatable="false" subfieldtype="alphanumeric" description="l  - Subasiento de form- Idioma de una obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$m" repeatable="false" subfieldtype="alphanumeric" description="m - Medio de ejecución musical" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n  - Número de la parte o sección " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o  - Mención de arreglo musical" displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p - Nombre de la parte o sección " displaycontrol="">
+
+        </subfield>
+        <subfield code="$r" repeatable="false" subfieldtype="alphanumeric" description="r - Clave musical " displaycontrol="">
+
+        </subfield>
+        <subfield code="$s" repeatable="false" subfieldtype="alphanumeric" description="s -  Versión " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="242" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="TÍTULO ADICIONADO POR AGENCIA CATALOGRÁFICA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Asiento secundario de título " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Sin asiento secundario;
+1-Con asiento secundario]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9-Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b -Parte restante del título" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Mención de responsabilidad, etc. " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h -  Medio físico " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Medio físico (NR) - Número de la parte o sección" displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p - Nombre de la parte o sección " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y  - Código de idioma del título traducido " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="245" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="TÍTULO PROPIAMENTE DICHO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Asiento secundario de título " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Sin asiento secundario;
+1-Con asiento secundario]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9-Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Título " displaycontrol="">
+
+            <validatepft>
+<![CDATA[mandatory]]>
+            </validatepft>
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Parte restante del título" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Mención de responsabilidad, etc. " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Medio físico " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n- Número de la parte/sección de la obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p -  Número de la parte/sección de la obra " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="246" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="VARIACIÓN DE TÍTULO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de asiento secundario/nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Con nota, sin asiento secundariom;
+1-Con nota, con asiento secundario;
+2-Sin nota, sin asiento secundario;
+3-Sin nota, con asiento secundario]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tipo de título " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se especifica el tipo;
+0-Porción del título;
+1-Título paralelo;
+2-Título distintivo;
+3-Otro título;
+4-Título de la cubierta;
+5-Título de la portada adicional;
+6-Título de partida;
+7-Titulillo;
+8-Título del lomo]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Título propiamente dicho/forma breve del título" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Parte restante del título" displaycontrol="">
+
+        </subfield>
+        <subfield code="$f" repeatable="false" subfieldtype="alphanumeric" description="f - Fecha o designación secuencial " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información miscelánea " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Medio físico " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i -  Texto a desplegar" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n  - Número de la parte/sección de la obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p  - Nombre de la parte/sección de la obra " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="250" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="MENCIÓN DE EDICIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Mención de edición" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Resto de la mención de edición" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="260" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="PIE DE IMPRENTA (PUBLICACIÓN Y DISTRIBUCIÓN)" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Mención de edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b  - Resto de la mención de edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Fecha de publicación, distribución, etc." displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="300" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="DESCRIPCIÓN FÍSICA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Extensión" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b  - Otros detalles físicos " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c -  Dimensiones " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e  - Material acompañante " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="310" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="FRECUENCIA ACTUAL DE LA PUBLICACIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador  - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Frecuencia actual de la publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b  - Fecha de la frecuencia actual de la publicación " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="362" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="FECHA DE LA PUBLICACIÓN Y/O DESIGNACIÓN SECUENCIAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Formato de la fecha " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Con formato preestablecido;
+1-Nota sin formato]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Fechas de publicación y/o designación secuencial " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z-  - Origen de la información" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="440" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="MENCIÓN DE SERIE/ASIENTO SECUNDARIO TÍTULO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9-Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Titulo " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n  - Número de la parte/sección de una obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p  - Nombre de la parte/sección de una obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v - Designación numérica/secuencial del volumen " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x  - Número International Normalizado para Libros" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="490" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="MENCIÓN DE SERIE" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Especifica cuando se traza la serie " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Serie no trazada;
+1-Serie trazada en forma diferente]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a  - Mención de serie " displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v - Designación numérica/secuencial del volumen " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="500" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NOTA GENERAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nota general " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="505" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="CONTIENE (NOTA FORMATEADA DE CONTENIDO)" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Controlador de la constante de despliegue " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Contenido completo;
+1-Contenido incompleto;
+2-Contenido parcial;
+8-No se genera una constante de despliegue]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Nivel de designación de contenido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Básico;
+0-Completo]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nota de contenido con formato preestablecido " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información miscelánea " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="520" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="RESUMEN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Controlador de la constante de despliegue " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Sumario;
+0-Tema;
+1-Reseña;
+2-Alcance y contenido;
+3-Resumen;
+8-No se genera una constante de despliegue]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nota de sumario, etc." displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="521" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NOTA DE AUDIENCIA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Controlador de constante de despliegue " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Audiencia;
+0-Nivel de lectura;
+1-Nivel de interés por edad;
+2-Nivel de interés por curso;
+3-Características especiales de la audiencia;
+4-Nivel de motivación e interés;
+8-No se genera una constante de despliegue]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a- Nota de audiencia" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="533" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NOTA DE REPRODUCCIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundoindicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Tipo de reproducción" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Lugar de reproducción " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Institución responsable de la reproducción " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fecha de reproducción " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Descripción física de la reproducción" displaycontrol="">
+
+        </subfield>
+        <subfield code="$f" repeatable="false" subfieldtype="alphanumeric" description="f - Mención de serie de la reproducción " displaycontrol="">
+
+        </subfield>
+        <subfield code="$m" repeatable="false" subfieldtype="alphanumeric" description="f - Mención de serie de la reproducción m - Fecha de publicación y/o designación secuencial de las partes reproducidas " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota sobre la reproducción " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="534" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NOTA DE VERSIÓN ORIGINAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Encabezamiento principal del original " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Mención de edición del original" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Publicación, distribución, etc. del original" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Descripción física, etc. del original" displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p - Frase introductoria " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Mención de título del original " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="538" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NOTA DE DETALLES DEL SISTEMA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Encabezamiento principal del original" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="546" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NOTA DE IDIOMA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primero - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nota de idioma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Código de información o alfabeto" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="586" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NOTA DE PREMIO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primero - Controlador de constante de despliegue " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Premios;
+8-No se genera constante de despliegue]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nota de premios " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="600" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE MATERIA - NOMBRE PERSONAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description=" Primer indicador - Tipo de nombre personal " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre de pila;
+1-Apellido;
+3-Nombre de familia]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description=" Segundo indicador - Tesauro " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Lista de Encabezamientos de la Biblioteca del Congreso (LCSH);
+1-LC subject headings for children's literature;
+2-Medical Subject Headings;
+3-Archivo de autoridades de materia de la Biblioteca Nacional de Agricultura;
+4-Fuente no especificada;
+5-Lista de Encabezamientos de la Biblioteca Nacional de Canadá (NLC);
+6-Répertoire de vedettes-matière;
+7-Fuente especificada en el subcampo $2]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre personal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Numeración" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Títulos y otras palabras asociadas con el nombre " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fechas asociadas con el nombre " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Término de relación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$q" repeatable="false" subfieldtype="alphanumeric" description="q - Forma más completa del nombre" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t- Título de la obra" displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u  - Afiliación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v - Subdivisión de forma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Subdivisión general " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y - Subdivisión cronológica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Subdivisión geográfica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Código de relación " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="610" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE MATERIA - NOMBRE CORPORATIVO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de elemento de entrada para nombre corporativo " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre invertido;
+1-Nombre de la jurisdicción;
+2-Nombre en orden directo]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tesauro " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Lista de Encabezamientos de la Biblioteca del Congreso (LCSH);
+1-LC subject headings for children's literature;
+2-Medical Subject Headings;
+3-Archivo de autoridades de materia de la Biblioteca Nacional de Agricultura de los E.U.A. (NAL);
+4-Fuente no especificada;
+5-Lista de Encabezamientos de la Biblioteca Nacional de Canadá (NLC);
+6-Répertoire de vedettes-matière;
+7-Fuente especificada en el subcampo $2]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre corporativo o nombre de la jurisdicción como elemento de entrada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Unidad subordinada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e  - Término de relación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título de la obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u - Afiliación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v  - Subdivisión de forma" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x  - Subdivisión general " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y - Subdivisión cronológica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z  - Subdivisión geográfica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Código de relación " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="611" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE MATERIA - REUNIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de elemento de entrada para nombre de reunión " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre invertido;
+1-Nombre de la jurisdicción;
+2-Nombre en orden directo]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tesauro " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Lista de Encabezamientos de la Biblioteca del Congreso (LCSH);
+1-LC subject headings for children's literature;
+2-Medical Subject Headings;
+3-Archivo de autoridades de materia de la Biblioteca Nacional de Agricultura de los E.U.A. (NAL);
+4-Fuente no especificada;
+5-Lista de Encabezamientos de la Biblioteca Nacional de Canadá (NLC);
+6-Répertoire de vedettes-matière;
+7-Fuente especificada en el subcampo $2]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre de la reunión o nombre de la jurisdicción como elemento de entrada" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Lugar de la reunión " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fecha de la reunión" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Unidad subordinada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Número de la parte, sección o reunión" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título de la obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u - Afiliación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v - Subdivisión de forma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Subdivisión general " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y - Subdivisión cronológica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Subdivisión geográfica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Materiales específic- Código de relación " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="630" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE MATERIA - TÍTULO UNIFORME" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9-Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tesauro " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Lista de Encabezamientos de la Biblioteca del Congreso (LCSH);
+1-LC subject headings for children's literature”;
+2-Medical Subject Headings;
+3-Archivo de autoridades de materia de la Biblioteca Nacional de Agricultura;
+4-Fuente no especificada;
+5-Lista de Encabezamientos de la Biblioteca Nacional de Canadá (NLC);
+6-Répertoire de vedettes-matière;
+7-Fuente especificada en el subcampo $2]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Título uniforme " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Número de la parte musical " displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p - Nombre de la parte o sección de la obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v - Subdivisión de forma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Subdivisión general " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y - Subdivisión cronológica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Subdivisión geográfica " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="650" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE MATERIA - TÉRMINOS TEMÁTICOS" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Nivel del tema o materia " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+0-Nivel no especificado;
+1-Primario;
+2-Secundario]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tesauro El tesauro o archivo de autoridad" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Lista de Encabezamientos de la Biblioteca del Congreso (LCSH);
+1-LC subject headings for children's literature;
+2-Medical Subject Headings;
+3-Archivo de autoridades de materia de la Biblioteca Nacional de Agricultura de los E.U.A. (NAL);
+4-Fuente no especificada;
+5-Lista de Encabezamientos de la Biblioteca Nacional de Canadá (NLC);
+6-Répertoire de vedettes-matière;
+7-Fuente especificada en el subcampo $2]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Término temático o nombre geográfico como elemento de entrada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Término de relación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v - Subdivisión de forma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Subdivisión general " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y - Subdivisión cronológicaz - Subdivisión geográfica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Subdivisión geográfica " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="651" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE MATERIA - TÉRMINOS GEOGRÁFICOS" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo Indicador - Tesauro" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Lista de Encabezamientos de la Biblioteca del Congreso (LCSH);
+1-LC subject headings for children's literature;
+2-Medical Subject Headings;
+3-Archivo de autoridades de materia de la Biblioteca Nacional de Agricultura de los E.U.A. (NAL);
+4-Fuente no especificada;
+5-Lista de Encabezamientos de la Biblioteca Nacional de Canadá (NLC);
+6-Répertoire de vedettes-matière;
+7-Fuente especificada en el subcampo $2]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre geográfico " displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v - Subdivisión de forma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Subdivisión general " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y - Subdivisión cronológica" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Subdivisión geográfica " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="653" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE MATERIA - TÉRMINO NO CONTROLADO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Nivel del término de indización " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+0-Nivel no especificado;
+1-Primario;
+2-Secundario]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Término de indización no controlado " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="655" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE MATERIA - GÉNERO FORMA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de encabezamiento " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Básico;
+0-Facetado]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tesauro " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Lista de Encabezamientos de la Biblioteca del Congreso (LCSH);
+1-LC subject headings for children's literature;
+2-Medical Subject Headings;
+3-Archivo de autoridades de materia de la Biblioteca Nacional de Agricultura de los E.U.A. (NAL);
+4-Fuente no especificada;
+5-Lista de Encabezamientos de la Biblioteca Nacional de Canadá (NLC);
+6-Répertoire de vedettes-matière;
+7-Fuente especificada en el subcampo $2]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Datos o término principal de género/forma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v - Subdivisión de forma " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Subdivisión general " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y - Subdivisión cronológica " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Subdivisión geográfica " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="700" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE NOMBRE PERSONAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de elemento de entrada del nombre personal " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre de pila;
+1-Apellido;
+3-Nombre de familia]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tipo de asiento secundario " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+2-Asiento analítico]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Código de relación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre personal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Numeración " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Títulos u otras palabras asociadas con el nombre" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fechas asociadas con el nombre " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Término de relación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Número de la parte o sección de una obra " displaycontrol="">
+
+        </subfield>
+        <subfield code="$q" repeatable="false" subfieldtype="alphanumeric" description="q - Forma más completa del nombre " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título de una obra" displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u - Afiliación " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="710" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE NOMBRE CORPORATIVO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de elemento de entrada del nombre corporativo " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre en orden invertido;
+1-Nombre de jurisdicción;
+2-Nombre en orden directo]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description=" 2 - Nombre en orden directo Segundo indicador - Tipo de asiento secundario " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+2-Asiento analítico]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre corporativo o de jurisdicción como elemento de entrada" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Unidad subordinada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Término de relación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título de una obra" displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u - Afiliación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Código de relación" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="711" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE NOMBRE DE LA REUNIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de elemento de entrada para nombre de reunión. " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Nombre invertido;
+1-Nombre de jurisdicción;
+2-Nombre en orden directo]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tipo de asiento secundario " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+2-Asiento analítico]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre de la reunión o nombre de la jurisdicción como elemento de entrada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Lugar de la reunión" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Fecha de la reunión o firma del tratado" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Unidad subordinada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Número de la parte, sección o reunión " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título de la obra" displaycontrol="">
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="u - Afiliación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Código de relación " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="720" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE NOMBRE NO CONTROLADO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Tipo de nombre " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No especificado;
+1-Personal;
+2-Otro]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Nombre" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Término de relación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$4" repeatable="false" subfieldtype="alphanumeric" description="4 - Código de relación " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="730" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE TÍTULO NO UNIFORME" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9-Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tipo de asiento secundario " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se suministra información;
+2-Asiento analítico]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Título uniforme " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Número de la parte o sección de una obra" displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="p - Nombre de la parte o sección de una obra " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="740" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE TÍTULOS RELACIONADOS" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9-Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description=" egundo indicador - Tipo de asiento secundario " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+2-Asiento analítico]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Título relacionado o analítico no controlado " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="752" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE JERARQUÍA DE NOMBRE DE LUGAR" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+2-Asiento analítico]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - País" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Estado, provincia, territorio" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Condado, región, área de islas " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Ciudad" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="760" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE SERIE PRINCIPAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Serie principal;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título" displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="MARC 21. x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="762" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE ENTRADA DE SUBSERIE" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Complejo) Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Traducción de;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada$h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="765" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE ENTRADA ORIGINAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Traducción de;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros - ISBN" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="767" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO PARA ENTRADA DE TRADUCCIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Traducido como;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota" displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="$w - Número de control del registro (R) $x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros - ISBN" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="770" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE SUPLEMENTO ESPECIAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota  " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Tiene suplemento;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros - ISBN" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="772" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE PUBLICACIÓN PRINCIPAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description=" Segundo indicador - Control de visualización asociada  " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Suplemento de;
+0-Publicación principal;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física" displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota" displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros - ISBN" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="773" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE ÍTEM DE FUENTE" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-En;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada" displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título" displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros - ISBN " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="774" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE UNIDAD CONSTITUYENTE" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota" displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Unidad constituyente;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada" displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros - ISBN " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="775" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE OTRA EDICIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Otra edición disponible;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="e - Código de lengua" displaycontrol="">
+
+        </subfield>
+        <subfield code="$f" repeatable="false" subfieldtype="alphanumeric" description="f - Código de país " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada" displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física" displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$y" repeatable="false" subfieldtype="alphanumeric" description="y - CODEN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros - ISBN " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="776" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE SOPORTE FÍSICO ADICIONAL" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Disponible en otro formato;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros - ISBN" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="777" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE PUBLICADO POR" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Publicado con;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada" displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota" displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="780" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE TÍTULO ANTERIOR" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tipo de relación " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Continúa de;
+1-Continúa en parte de;
+2-Sustituye a;
+3-Sustituye en parte a;
+4-Fusión por la unión de... y....;
+5-Absorbió a;
+6-Absorbió en parte a;
+7-Separada de]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación" displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título " displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x -  Número Internacional Normalizado para Publicaciones Seriadas - ISSN" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z – Número Internacional Normalizado para Libros" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="785" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE TÍTULO POSTERIOR" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Tipo de relación " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Continuado por;
+1-Continuado en parte por;
+2-Sustituido por;
+4-Absorbido por;
+5-Absorbido en parte por;
+6-Dividida en... y...;
+7-Unido con;
+8-Cambiado de nuevo a;]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada" displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título" displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z – Número Internacional Normalizado para Libros" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="787" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO DE RELACIÓN NO ESPECIFICADA" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Control de nota " displaycontrol="">
+
+            <picklist>
+<![CDATA[0-Genera nota;
+1-No genera nota]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Control de visualización asociada " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Ítem relacionado;
+8-No genera visualización asociada]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Asiento principal " displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Edición " displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="d - Lugar, editorial y fecha de publicación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="g - Información relacionada " displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Descripción física " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Texto de visualización " displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="n - Nota " displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="o - Otro identificador del ítem " displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Título" displaycontrol="">
+
+        </subfield>
+        <subfield code="$w" repeatable="false" subfieldtype="alphanumeric" description="w - Número de control del registro " displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Número Internacional Normalizado para Publicaciones Seriadas - ISSN " displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Número Internacional Normalizado para Libros " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="830" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO SECUNDARIO DE SERIE TÍTULO" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador – No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - Caracteres no alfabetizados " displaycontrol="">
+
+            <picklist>
+<![CDATA[0/9 Número de caracteres iniciales presentes que se ignoran en la alfabetización]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a Título uniforme" displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="v El título de la portada de una obra. Designación numérica/secuencial del volumen " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="850" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="INSTITUCIÓN EN POSICIÓN DE LAS INCIDENCIAS" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description="Primer indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - No definido " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No definido]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Institución en posesión de las existencias " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="852" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="LOCALIZACIÓN" displaycontrol="">
+
+        <subfield code="$1" repeatable="false" subfieldtype="alphanumeric" description=" Primer indicador - Esquema de localización en la estantería " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+0-Clasificación de la Biblioteca del Congreso (LC);
+1-Clasificación Decimal de Dewey;
+2-Clasificación de la Biblioteca Nacional de Medicina (NLM);
+3-Clasificación del Superintendente de Documentos;
+4-Numero de control de colocación en la estantería;
+5-Título;
+6-Colocado en forma separada en la estantería;
+7-Fuente especificada en el subcampo $2;
+8-Otro esquema]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$2" repeatable="false" subfieldtype="alphanumeric" description="Segundo indicador - Orden de colocación en la estantería " displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No se provee información;
+0-Sin enumeración;
+1-Enumeración primaria;
+2-Enumeración alternativa]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="a - Localización" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="b - Sububicación o colección " displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="c - Localización en la estantería" displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="h - Parte de la clasificación " displaycontrol="">
+
+        </subfield>
+        <subfield code="$i" repeatable="false" subfieldtype="alphanumeric" description="i - Parte del ítem" displaycontrol="">
+
+        </subfield>
+        <subfield code="$j" repeatable="false" subfieldtype="alphanumeric" description="j - Número de control de colocación en la estantería" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="t - Número del ejemplar" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="x - Nota sin despliegue público" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="z - Nota pública " displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="866" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="EXISTENCIAS TEXTUALES - UNIDAD BIBLIOGRÁFICA BÁSICA" displaycontrol="">
+
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="V866^a" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="V866^x" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="V866^z" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="867" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="EXISTENCIAS TEXTUALES - MATERIAL SUPLEMENTARIO" displaycontrol="">
+
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="V867^a" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="V867^x" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="V867^z" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="868" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="EXISTENCIAS TEXTUALES - ÍNDICES" displaycontrol="">
+
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="V868^a" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="V868^x" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="V868^z" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="3005" repeatable="false" descriptors="false" fieldtype="alphabetic" description="ESTADO DEL REGISTRO" displaycontrol="">
+
+        <picklist>
+<![CDATA[a-Nivel de codificación incrementado;
+c-Corregido o revisado;
+d-Borrado;
+n-Nuevo;
+p-Incremento en el nivel de codificación de la prepublicación]]>
+        </picklist>
+
+    </field>
+    <field tag="3006" repeatable="false" descriptors="false" fieldtype="alphabetic" description="TIPO DE REGISTRO" displaycontrol="">
+
+        <defaultvalue>
+<![CDATA[Música]]>
+        </defaultvalue>
+        <validatepft>
+<![CDATA[mandatory]]>
+        </validatepft>
+        <picklist>
+<![CDATA[Música]]>
+        </picklist>
+
+    </field>
+    <field tag="3007" repeatable="false" descriptors="false" fieldtype="alphabetic" description="NIVEL BIBLIOGRÁFICO" displaycontrol="">
+
+        <picklist>
+<![CDATA[a-Parte componente monográfica;
+b-Parte componente seriada;
+c-Colección;
+d-Subunidad;
+i-Recurso integrante;
+m-Monografía/item;
+s-Publicación seriada]]>
+        </picklist>
+
+    </field>
+    <field tag="3008" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="CAMPO FIJO" displaycontrol="">
+
+    </field>
+    <field tag="3009" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="CÓDIGO DE CARACTERES DE ESQUEMA" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-MARC-8;
+a-UCS/Unicode]]>
+        </picklist>
+
+    </field>
+    <field tag="3017" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="NIVEL DE CODIFICACIÓN" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Nivel completo;
+1-Nivel completo, sin examinar el material;
+2-Nivel menos que completo, sin examinar el material;
+3-Nivel abreviado;
+4-Nivel núcleo (“Core”);
+5-Nivel parcial (preliminar);
+7-Nivel mínimo;
+8-Nivel de prepublicación;
+u-Desc;
+z-No aplicable]]>
+        </picklist>
+
+    </field>
+    <field tag="3018" repeatable="false" descriptors="false" fieldtype="alphabetic" description="FORMA DE CATALOGACIÓN DESCRIPTIVA" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No corresponde a ISBD;
+a-RCAA2;
+i-ISBD;
+u-Desconocida]]>
+        </picklist>
+
+    </field>
+    <field tag="3019" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="REQUERIMIENTOS DEL REGISTRO LIGADO" displaycontrol="">
+
+    </field>
+
+</worksheet>

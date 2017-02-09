@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdt recorddefinition="UserDefinedRecords">
+    <field tag="5" name="Fecha de ingreso del registro " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="6" name=" Subdivisión geográfica directa o indirecta   " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="7" name="Esquema de latinización " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="8" name="Idioma de la catalogación" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="9" name="Clase de registro" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="10" name=" Reglas de la catalogación descriptiva  " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="11" name="Sistema de encabezamientos de materia/tesauro  " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="12" name=" Tipo de serie  " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="13" name=" Serie numerada o no numerada " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="14" name=" Uso del encabezamiento - Asiento principal o secundario " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="15" name=" Uso del encabezamiento - Asiento secundario de materia  " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="16" name="Uso del encabezamiento - Asiento secundario de serie  " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="17" name=" Tipo de subdivisión temática " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="28" name="Tipo de agencia gubernamental   " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="32" name=" Nombre personal no diferenciado   " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="33" name="Nivel de formulación   " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="38" name="Registro modificado " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="39" name="Fuente de la catalogación " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+</fdt>

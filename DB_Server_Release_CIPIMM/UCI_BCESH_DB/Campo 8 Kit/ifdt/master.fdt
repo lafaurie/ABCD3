@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdt recorddefinition="UserDefinedRecords">
+    <field tag="5" name="Fecha de Ingreso" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="6" name="Fecha Tipo/Estado de la Publicación" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="7" name="Fecha 1" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="11" name="Fecha 2" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="15" name="Lugar de Publicación" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="18" name="Frecuencia" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="19" name="Regularidad" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="20" name="No Definido" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="21" name="Tipo de Recurso" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="22" name="Forma del Ítem Original" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="23" name="Forma del Material" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="24" name="Naturaleza de la Obra Complea" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="25" name="Naturaleza del Contenido" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="28" name="Publicación Gubernamental" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="29" name="Conferencia" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="30" name="No Definidos" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="33" name="Alfabeto de Escritura Original de Título" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="34" name="Convención del Asiento" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="35" name="Idioma" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="38" name="Registro Modificado" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="39" name="Fuente de Catalogación" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+</fdt>

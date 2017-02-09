@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdt recorddefinition="UserDefinedRecords">
+    <field tag="1" name="NUMERO DE CONTROL" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3" name="IDENTIFICADOR DEL NUMERO DE CONTROL " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="5" name="FECHA Y TIEMPO DE LA ULTIMA TRANSACCION" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="7" name="CAMPO FIJO DE DESCRIPCION FIJA--INFORMACION GENERAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields=""/>
+    <field tag="8" name=" ELEMENTOS DE LONGITUD FIJA -- INFORMACION GENERAL " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="10" name="NUMERO DE CONTROL DE LA BIBLIOTECA DEL CONGRESO " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12a"/>
+    <field tag="15" name=" NUMERO DE BIBLIOGRAFIA NACIONAL" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12a"/>
+    <field tag="17" name="NUMERO DE DEPOSITO LEGAL O DERECHOS DE AUTOR" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab"/>
+    <field tag="20" name="ISBN" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abcz"/>
+    <field tag="22" name="ISSN" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ayz"/>
+    <field tag="24" name=" OTRO IDENTIFICADOR NORMALIZADO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12acdz2"/>
+    <field tag="28" name="Publisher number (music)" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab"/>
+    <field tag="35" name="NUMERO DE CONTROL DEL SISTEMA" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="9az"/>
+    <field tag="37" name="RECURSO DE ADQUISICION" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcfgn"/>
+    <field tag="40" name="FUENTE DE CATALOGACIÓN " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12abcde"/>
+    <field tag="41" name="CÓDIGO DE IDIOMA" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12adgh"/>
+    <field tag="42" name="CÓDIGO DE AUTENTICACIÓN" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a"/>
+    <field tag="43" name=" CÓDIGO DE ÁREA GEOGRÁFICA" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12ab"/>
+    <field tag="45" name="PERIODO DE TIEMPO DEL CONTENIDO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="b"/>
+    <field tag="48" name=" NÚMERO DE INSTRUMENTOS MUSICALES CÓDIGO DE VOCES " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a"/>
+    <field tag="50" name=" SIGNATURA TOPOGRAFICA DE LA BIBLIOTECA DEL CONGRESO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab"/>
+    <field tag="60" name="NÚMERO DE CLASIFICACIÓN BIBLIOTECA NACIONAL DE MEDICINA (R) " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab"/>
+    <field tag="66" name="CONJUNTO DE CARACTERES APLICADO" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12abc"/>
+    <field tag="72" name="CÓDIGO DE CATEGORÍA TEMÁTICA" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ax2"/>
+    <field tag="80" name="NÚMERO DE CLASIFICACIÓN DECIMAL UNIVERSAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abx2"/>
+    <field tag="82" name="NÚMERO DE CLASIFICACIÓN DECIMAL DEWEY" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab2"/>
+    <field tag="84" name="OTRO NÚMERO DE CLASIFICACIÓN" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab2"/>
+    <field tag="86" name=" NÚMERO DE CLASIFICACIÓN DE DOCUMENTO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12az2"/>
+    <field tag="100" name="ASIENTO PRINCIPAL--NOMBRE PERSONAL" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12abcdequ4"/>
+    <field tag="110" name="ASIENTO PRINCIPAL--NOMBRE CORPORATIVO " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="124abcdenu"/>
+    <field tag="111" name="ASIENTO PRINCIPAL--NOMBRE DE REUNION" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12acdenu4"/>
+    <field tag="210" name=" TÍTULO ABREVIADO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab2"/>
+    <field tag="222" name="TÍTULO CLAVE" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab"/>
+    <field tag="240" name=" TÍTULO UNIFORME " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12adfghklmnoprs"/>
+    <field tag="242" name="TRADUCCIÓN DEL TÍTULO POR LA AGENCIA CATALOGADORA " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abchnpy"/>
+    <field tag="245" name="MENCIÓN DEL TÍTULO" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12abchnp"/>
+    <field tag="246" name=" VARIANTE DEL TÍTULO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abfghinp"/>
+    <field tag="250" name=" MENCIÓN DE EDICIÓN" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12ab"/>
+    <field tag="255" name="DATOS MATEMÁTICOS CARTOGRÁFICOS " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abcdefg68"/>
+    <field tag="260" name="PUBLICACIÓN, DISTRIBUCIÓN, ETC. (PIE DE IMPRENTA)" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12abcefg368"/>
+    <field tag="300" name=" DESCRIPCIÓN FÍSICA" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abce"/>
+    <field tag="306" name=" DURACIÓN " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="310" name=" FRECUENCIA ACTUAL DE LA PUBLICACIÓN " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12ab"/>
+    <field tag="340" name="MEDIO FÍSICO" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12abcde"/>
+    <field tag="342" name="DATOS DE REFERENCIA GEOESPACIAL" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12abcdefghijk"/>
+    <field tag="351" name=" ORGANIZACIÓN Y ARREGLO DE MATERIALES " type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="12abc368"/>
+    <field tag="362" name="FECHAS DE PUBLICACIÓN Y/O DESIGNACIÓN SECUENCIAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12az"/>
+    <field tag="440" name="MENCION DE SERIE /ASIENTO SECUNDARIO-- TITULO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12anpvx"/>
+    <field tag="490" name="MENCION DE SERIE" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12av"/>
+    <field tag="500" name="NOTA GENERAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="502" name="NOTA DE TESIS" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a68"/>
+    <field tag="504" name="NOTA DE BIBLIOGRAFÍA, ETC. " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab"/>
+    <field tag="505" name="NOTA DE CONTENIDO CON FORMATO PREESTABLECIDO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12agt"/>
+    <field tag="511" name=" NOTA DE PARTICIPANTE O INTÉRPRETE " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a"/>
+    <field tag="518" name="NOTA DE FECHA/HORA Y LUGAR DE UN ACONTECIMIENTO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a"/>
+    <field tag="520" name="NOTA DE RESUMEN, ETC. " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="521" name=" NOTA DE AUDIENCIA " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="533" name=" NOTA DE REPRODUCCIÓN " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abcdefmn"/>
+    <field tag="534" name="NOTA DE VERSIÓN ORIGINAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abcept"/>
+    <field tag="538" name="NOTA DE DETALLES DEL SISTEMA " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="546" name="NOTA DE IDIOMA " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ab"/>
+    <field tag="586" name="NOTA DE PREMIOS " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="590" name="NOTAS LOCALES " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a"/>
+    <field tag="600" name="ASIENTO SECUNDARIO DE MATERIA - NOMBRE PERSONAL " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abcdeqtuvxyz24"/>
+    <field tag="610" name="ASIENTO SECUNDARIO DE MATERIA - NOMBRE CORPORATIVO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abetuvxyz24"/>
+    <field tag="611" name=" ASIENTO SECUNDARIO DE MATERIA - NOMBRE DE LA REUNIÓN " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12acdentuvxyz24"/>
+    <field tag="630" name="ASIENTO SECUNDARIO DE MATERIA - TÍTULO UNIFORME" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12anpvxyz2"/>
+    <field tag="650" name=" ASIENTO SECUNDARIO DE MATERIA - TÉRMINO TEMÁTICO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12aevxyz2"/>
+    <field tag="651" name="ASIENTO SECUNDARIO DE MATERIA - NOMBRE GEOGRÁFICO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12avxyz2"/>
+    <field tag="653" name="ASIENTO SECUNDARIO DE MATERIA - TERMINO NO CONTROLADO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="655" name=" TÉRMINO DE INDIZACIÓN - GÉNERO/FORMA" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12avxyz2"/>
+    <field tag="700" name="ASIENTO SECUNDARIO - NOMBRE PERSONAL " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="124abcdenqtu"/>
+    <field tag="710" name="ASIENTO SECUNDARIO - NOMBRE CORPORATIVO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abetu4"/>
+    <field tag="711" name=" ASIENTO SECUNDARIO - NOMBRE DE REUNIÓN " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12acdentu4"/>
+    <field tag="720" name="ASIENTO SECUNDARIO - NOMBRE NO CONTROLADO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12ae4"/>
+    <field tag="730" name=" ASIENTO SECUNDARIO - TÍTULO UNIFORME " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12anp"/>
+    <field tag="740" name=" ASIENTO SECUNDARIO - TÍTULOS RELACIONADOS /ANALÍTICOS " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="752" name=" ASIENTO SECUNDARIO - JERARQUÍA DEL NOMBRE DE LUGAR " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abcd"/>
+    <field tag="760" name="ASIENTO DE SERIE PRINCIPAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwx"/>
+    <field tag="762" name="ASIENTO DE SERIE PRINASIENTO DE SUBSERIE" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwx"/>
+    <field tag="765" name=" ASIENTO DE IDIOMA ORIGINAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="767" name="ASIENTO DE TRADUCCIÓN" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="770" name="ASIENTO DE PUBLICADO CON " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="772" name="ASIENTO DE LA PUBLICACIÓN PRINCIPAL " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="773" name="ASIENTO DE LA PUBLICACASIENTO DE ITEM FUENTE" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="774" name="ASIENTO DE UNIDAD CONSTITUYENTE " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="775" name="ASIENTO DE OTRA EDICIÓN" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdefghinotwxyz"/>
+    <field tag="776" name="ASIENTO DE SOPORTE FISICO ADICIONAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="777" name="ASIENTO DE PUBLICADO CON " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwx"/>
+    <field tag="780" name="ASIENTO DE TÍTULO ANTERIOR " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="785" name="ASIENTO DE TÍTULO POSTERIOR" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="787" name="ASIENTO DE RELACIÓN NO ESPECIFICADA " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abdghinotwxz"/>
+    <field tag="830" name="ASIENTO SECUNDARIO DE SERIE--TITULO UNIFORME" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12av"/>
+    <field tag="850" name=" INSTITUCION EN POSESION DE LAS EXISTENCIAS" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12a"/>
+    <field tag="852" name=" LOCALIZACION " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12abchijtxz2"/>
+    <field tag="856" name="LOCALIZACION ELECTRONICA" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="12uxzh"/>
+    <field tag="866" name="EXISTENCIAS TEXTUALES-- UNIDAD BIBLIOGRAFICA BASICA " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="axz"/>
+    <field tag="867" name="EXISTENCIAS TEXTUALES-- MATERIAL SUPLEMENTARIO " type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="axz"/>
+    <field tag="868" name="EXISTENCIAS TEXTUALES-- INDICES" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="axz"/>
+    <field tag="900" name="ITEMS Y EJEMPLARES" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="axz"/>
+    <field tag="901" name="BIBLIOTECA" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="902" name="HOJA DE TRABAJO" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="980" name="FECHA Y HORA DE ACTUALIZACIÓN" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="axz"/>
+    <field tag="3005" name="ESTADO DEL REGISTRO" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3006" name="TIPO DE REGISTRO" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3007" name="REGISTRO BIBLIOGRAFICO" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3008" name="TIPO DE CONTROL" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3009" name="CARACTERES DEL CODIGO DE ESQUEMA" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3017" name="NIVEL DE CODIFICACION" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3018" name="FORMA DE CATALOGACION" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3019" name="REQUERIMIENTOS DE ENLACE" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3020" name="ADJUNTO" type="blob" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+</fdt>

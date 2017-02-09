@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdt recorddefinition="UserDefinedRecords">
+    <field tag="1" name="Número de Control" type="numeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="2" name="Título" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3" name="Autor" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="4" name="Editor" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="5" name="Año de publicación" type="numeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="6" name="Tipo de Material" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="7" name="Sala" type="alphabetic" indicators="false" repetition="true" firstSubfield="false" subfields="ab"/>
+    <field tag="8" name="Autor corporativo" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="9" name="Ciudad " type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="10" name="Código barra" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="11" name="Edición" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="12" name="Estado del material" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="13" name="Nota pública" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="14" name="País" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="15" name="Tomo" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="16" name="Volumen" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="17" name="Localización en estantería" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="18" name="Localización permanente" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="19" name="Restricciones de uso" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="20" name="Fecha de adquisición" type="date" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="21" name="Precio" type="numeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="22" name="Moneda " type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="23" name="Vía de adquisición" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="24" name="Proveedor" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="25" name="Donante" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="26" name="Condiciones " type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="27" name="Referencia" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="28" name="Cantidad recibida" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="29" name="Descripción del objeto" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="30" name="Tipo de objeto (nuevo/copias)" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="31" name="Institución" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="32" name="Canjeado por" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="33" name="Cantidad solicitada" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="34" name="Número de cotización" type="numeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="35" name="Control de Adquisición" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="36" name="Vencimiento de la suscripción" type="date" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="37" name="Prioridad de la Adquisición" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="38" name="Notas administrativas" type="alphabetic" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="39" name="Históricos de compras" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="1234"/>
+</fdt>

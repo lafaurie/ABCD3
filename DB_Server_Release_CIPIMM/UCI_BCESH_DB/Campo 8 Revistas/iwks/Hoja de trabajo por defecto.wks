@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet name="Hoja de trabajo por defecto">
+
+    <field tag="6" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="TIPO DE FECHA/ESTADO DE LA PUBLICACIÓN" displaycontrol="">
+
+        <picklist>
+<![CDATA[b-Sin fechas o implica fechas a.C;
+c-Recurso continuo publicado actualmente;
+d-Recurso continuo que terminó su publicación;
+e-Fecha detallada;
+i-Fechas inclusivas de lacolección;
+k-Rango de años de la mayor parte de la colección;
+m-Fechas múltiples;
+n-Fechas desconocidas;
+p-Fechas de distribución, puesta en circulación, emisión y producción, cuando difieren;
+q-Fecha cuestionable;
+r-Fecha de reimpresión o reedición y fecha original;
+s-Fecha individual conocida o probable;
+t-Fecha de publicación y de derechos de autor (“copyright”);
+u-Estado desconocido del recurso continuo;
+|-No hay intención de codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="7" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="FECHA 1" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No aplica elemento de fecha;
+u-Elemento de fecha total o parcialmente desconocido;
+|-No hay intención de codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="11" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="FECHA 2" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No aplica elemento de fecha;
+u-Elemento de fecha total o parcialmente desconocido;
+|-No hay intención de codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="15" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="LUGAR DE PUBLICACIÓN, PRODUCCIÓN O EJECUCIÓN" displaycontrol="">
+
+        <picklist>
+<![CDATA[a-Albania;abc-Alberta;ac-Ashmore and Cartier Islands;aca-Australian Capital Territory;ae-Algeria;af-Afghanistan;ag-Argentina;ai-Anguilla;ai-Armenia (Republic);air-Armenian S.S.R.;aj-Azerbaijan;ajr-Azerbaijan S.S.R.;aku-Alaska;alu-Alabama;am-Anguilla;an-Andorra;ao-Angola;aq-Antigua and Barbuda;aru-Arkansas;as-American Samoa;at-Australia;au-Austria;aw-Aruba;ay-Antarctica;azu-Arizona;ba-Bahrain;bb-Barbados;bcc-British Columbia;bd-Burundi;be-Belgium;bf-Bahamas;bg-Bangladesh;bh-Belize;bi-British Indian Ocean Territory;bl-Brazil;bm-Bermuda Islands;bn-Bosnia and Herzegovina;bo-Bolivia;bp-Solomon Islands;br-Burma;bs-Botswana;bt-Bhutan;bu-Bulgaria;bv-Bouvet Island;bw-Belarus;bwr-Byelorussian S.S.R.;bx-Brunei;ca-Caribbean Netherlands;cau-California;cb-Cambodia;cc-China;cd-Chad;ce-Sri Lanka;cf-Congo (Brazzaville);cg-Congo (Democratic Republic);ch-China (Republic : 1949- );ci-Croatia;cj-Cayman Islands;ck-Colombia;cl-Chile;cm-Cameroon;cn-Canada;co-Curaçao;cou-Colorado;cp-Canton and Enderbury Islands;cq-Comoros;cr-Costa Rica;cs-Czechoslovakia;ctu-Connecticut;cu-Cuba;cv-Cabo Verde;cw-Cook Islands;cx-Central African Republic;cy-Cyprus;cz-Canal Zone;dcu-District of Columbia;deu-Delaware;dk-Denmark;dm-Benin;dq-Dominica;dr-Dominican Republic;ea-Eritrea;ec-Ecuador;eg-Equatorial Guinea;em-Timor-Leste;enk-England;er-Estonia;err-Estonia;es-El Salvador;et-Ethiopia;fa-Faroe Islands;fg-French Guiana;fi-Finland;fj-Fiji;fk-Falkland Islands;flu-Florida;fm-Micronesia (Federated States);fp-French Polynesia;fr-France;fs-Terres australes et antarctiques françaises;ft-Djibouti;gau-Georgia;gb-Kiribati;gd-Grenada;ge-Germany (East);gh-Ghana;gi-Gibraltar;gl-Greenland;gm-Gambia;gn-Gilbert and Ellice Islands;go-Gabon;gp-Guadeloupe;gr-Greece;gs-Georgia (Republic);gsr-Georgian S.S.R.;gt-Guatemala;gu-Guam;gv-Guinea;gw-Germany;gy-Guyana;gz-Gaza Strip;hiu-Hawaii;hk-Hong Kong;hm-Heard and McDonald Islands;ho-Honduras;ht-Haiti;hu-Hungary;iau-Iowa;ic-Iceland;idu-Idaho;ie-Ireland;ii-India;ilu-Illinois;inu-Indiana;io-Indonesia;iq-Iraq;ir-Iran;is-Israel;it-Italy;iu-Israel-Syria Demilitarized Zones;iv-Côte d'Ivoire;iw-Israel-Jordan Demilitarized Zones;iy-Iraq-Saudi Arabia Neutral Zone;ja-Japan;ji-Johnston Atoll;jm-Jamaica;jn-Jan Mayen;jo-Jordan;ke-Kenya;kg-Kyrgyzstan;kgr-Kirghiz S.S.R.;kn-Korea (North);ko-Korea (South);ksu-Kansas;ku-Kuwait;kv-Kosovo;kyu-Kentucky;kz-Kazakhstan;kzr-Kazakh S.S.R.;lau-Louisiana;lb-Liberia;le-Lebanon;lh-Liechtenstein;li-Lithuania;lir-Lithuaniaabc;ln-Central and Southern Line Islands;lo-Lesotho;ls-Laos;lu-Luxembourg;lv-Latvia;lvr-Latvia;ly-Libya;mau-Massachusetts;mbc-Manitoba;mc-Monaco;mdu-Maryland;meu-Maine;mf-Mauritius;mg-Madagascar;mh-Macao;miu-Michigan;mj-Montserrat;mk-Oman;ml-Mali;mm-Malta;mnu-Minnesota;mo-Montenegro;mou-Missouri;mp-Mongolia;mq-Martinique;mr-Morocco;msu-Mississippi;mtu-Montana;mu-Mauritania;mv-Moldova;mvr-Moldavian S.S.R.;mw-Malawi;mx-Mexico;my-Malaysia;mz-Mozambique;na-Netherlands Antilles;nbu-Nebraska;ncu-North Carolina;ndu-North Dakota;ne-Netherlands;nfc-Newfoundland and Labrador;ng-Niger;nhu-New Hampshire;nik-Northern Ireland;nju-New Jersey;nkc-New Brunswick;nl-New Caledonia;nm-Northern Mariana Islands;nmu-New Mexico;nn-Vanuatu;no-Norway;np-Nepal;nq-Nicaragua;nr-Nigeria;nsc-Nova Scotia;ntc-Northwest Territories;nu-Nauru;nuc-Nunavut;nvu-Nevada;nw-Northern Mariana Islands;nx-Norfolk Island;nyu-New York (State);nz-New Zealand;ohu-Ohio;oku-Oklahoma;onc-Ontario;oru-Oregon;ot-Mayotte;pau-Pennsylvania;pc-Pitcairn Island;pe-Peru;pf-Paracel Islands;pg-Guinea-Bissau;ph-Philippines;pic-Prince Edward Island;pk-Pakistan;pl-Poland;pn-Panama;po-Portugal;pp-Papua New Guinea;pr-Puerto Rico;pt-Portuguese Timor;pw-Palau;py-Paraguay;qa-Qatar;qea-Queensland;quc-Québec (Province);rb-Serbia;re-Réunion;rh-Zimbabwe;riu-Rhode Island;rm-Romania;ru-Russia (Federation);rur-Russian S.F.S.R.;rw-Rwanda;ry-Ryukyu Islands;sou-Southern;sa-South Africa;sb-Svalbard;sc-Saint-Barthélemy;scu-South Carolina;sd-South Sudan;sdu-South Dakota;se-Seychelles;sf-Sao Tome and Principe;sg-Senegal;sh-Spanish North Africa;si-Singapore;sj-Sudan;sk-Sikkim;sl-Sierra Leone;sm-San Marino;sn-Sint Maarten;snc-Saskatchewan;so-Somalia;sp-Spain;sq-Swaziland;sr-Surinam;ss-Western Sahara;st-Saint-Martin;stk-Scotland;su-Saudi Arabia;sv-Swan Islands;sw-Sweden;sx-Namibia;sy-Syria;sz-Switzerland;ta-Tajikistan;tar-Tajik S.S.R.;tc-Turks and Caicos Islands;tg-Togo;th-Thailand;ti-Tunisia;tk-Turkmenistan;tkr-Turkmen S.S.R.;tl-Tokelau;tma-Tasmania;tnu-Tennessee;to-Tonga;tr-Trinidad and Tobago;ts-United Arab Emirates;tt-Trust Territory of the Pacific Islands;tu-Turkey;tv-Tuvalu;txu-Texas;tz-Tanzania;ua-Egypt;uc-United States Misc. Caribbean Islands;ug-Uganda;ui-United Kingdom Misc. Islands;uik-United Kingdom Misc. Islands;uk-United Kingdom;un-Ukraine;unr-Ukraine;up-United States Misc. Pacific Islands;ur-Soviet Union;us-United States;utu-Utah;uv-Burkina Faso;uy-Uruguay;uz-Uzbekistan;uzr-Uzbek S.S.R.;vau-Virginia;vb-British Virgin Islands;vc-Vatican City;ve-Venezuela;vi-Virgin Islands of the United States;vm-Vietnam;vn-Vietnam/North;vp-Various places;vra-Victoria;vs-Vietnam/South;vtu-Vermont;wau-Washington (State);wb-West Berlin;wea-Western Australia;wf-Wallis and Futuna;wiu-Wisconsin;wj-West Bank of the Jordan River;wk-Wake Island;wlk-Wales;ws-Samoa;wvu-West Virginia;wyu-Wyoming;xa-Christmas Island (Indian Ocean);xb-Cocos (Keeling) Islands;xc-Maldives;xd-Saint Kitts-Nevis;xe-Marshall Islands;xf-Midway Islands;xga-Coral Sea Islands Territory;xh-Niue;xi-Saint Kitts-Nevis-Anguilla;xj-Saint Helena;xk-Saint Lucia;xl-Saint Pierre and Miquelon;xm-Saint Vincent and the Grenadines;xn-Macedonia;xna-New South Wales;xo-Slovakia;xoa-Northern Territory;xp-Spratly Island;xr-Czech Republic;xra-South Australia;xs-South Georgia and the South Sandwich Islands;xv-Slovenia;xx-No place/unknown;or-undetermined;xxc-Canada;xxk-United Kingdom;xxr-Soviet Union;xxu-United States;ye-Yemen;ykc-Yukon Territory;ys-Yemen (People's Democratic Republic);yu-Serbia and Montenegro;za-Zambia]]>
+        </picklist>
+
+    </field>
+    <field tag="18" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="RELIEVE" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Sin relieve;
+a-Contornos;
+b-Sombreado;
+c-Matices descendiente y batimétrico;
+d-Sombreado con líneas;
+e-Batimetría/sondeo;
+f-Líneas de forma;
+g-Alturas de punto;
+i-Con gráficas;
+j-Formaciones terrestres;
+k-Batimetría/isogramas;
+m-Dibujos de rocas;
+z-Otro tipo de relieve;
+|-No se intenta codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="23" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="PROYECCIÓN" displaycontrol="">
+
+        <picklist>
+<![CDATA[##-Proyección no especificada;
+aa-Aitoff;
+ab-Nómica;
+ac-Area azimutal nivelada de Lambert;
+ad-Ortográfica;
+ae-Azimuthal equidistante;
+af-Estereográfica;
+ag-Vertical general cercana;
+am-Estereográfica modificada para Alaska;
+an-Trimétrico de Chamberlin;
+ap-Estereográfica polar;
+au-Azimutal, tipo específico desconocido;
+az-Azimutal, otro;
+ba-Gall;
+bb-Homolográfica de Goode;
+bc-Area cilíndrica nivelada de Lambert;
+bd-Mercator;
+be-Miller;
+bf-Mollweide;
+bg-Sinusoidal;
+bh-Mercator transversal;
+bi-Gauss-Kruger;
+bj-Equirrectangular;
+bo-Mercator oblicuo;
+br-Robinson;
+bs-Mercator oblicuo espacial;
+bu-Cilíndrica, tipo específico desconocido;
+bz-Cilíndrica, otra;
+ca-Area nivelada de Alber;
+cb-Bonne;
+cc-Cónica conforme de Lambert;
+ce-Cónica equidistante;
+cp-Policónica;
+cu-Cónica, tipo específico desconocido;
+cz-Cónica , otra;
+da-Armadillo;
+db-Butterfly;
+dc-Eckert;
+dd-Homolosenoidal de Goode;
+de-Cónica conforme oblicua bipolar de Miller;
+df-Van Der Grinten;
+dg-Dimaxión;
+dh-Cordiforme;
+dl-Conforme de Lambert;
+zz-Otro;
+|-No se intenta codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="25" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="TIPO DE MATERIAL CARTOGFRÁFICO" displaycontrol="">
+
+        <picklist>
+<![CDATA[a-Mapa individual;
+b-Serie de mapas;
+c-Mapa seriado;
+d-Globo;
+e-Atlas;
+f-Mapa separado, suplemento de otra obra;
+g-Mapa encuadernado como parte de otra obra;
+u-Desconocido;
+z-Otro;
+|-No se intenta codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="28" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="PUBLICACIÓN GUBERNAMENTAL" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No es publicación gubernamental;
+a-Componente autónomo o semiautónomo;
+c-Multilocal;
+f-Federal/nacional;
+i-Intergubernamental/Internacional;
+l-Local;
+m-Multiestatal;
+o-Publicación gubernamental—nivel indeterminado;
+s-Estado, provincia, territorio, jurisdicción dependiente, etc.;
+u-Se desconoce si el ítem es una publicación gubernamental;
+z-Otro;
+|-No se intenta codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="33" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="CARACTERÍSTICAS DE FORMATO ESPECIAL" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Características del formato especial no especificada;
+e-Manuscrito;
+j-Tarjeta postal;
+k-Calendario;
+l-Rompecabezas;
+n-Conjunto (“Kit”);
+o-Mapa de pared;
+p-Tarjetas de juego;
+r-En hojas sueltas;
+z-Otro;
+|-No hay intención de codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="38" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="REGISTRO MODIFICADO" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No modificado;
+s-Recortado;
+d-Información omitida con guiones;
+x-Caracteres faltantes;
+r-Completamente en alfabeto latino/fichas impresas en manuscrito;
+o-Completamente en alfabeto latino/fichas latinizadas impresas;
+|-No hay intención de codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="39" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="FUENTE DE CATALOGACIÓN" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Agencia bibliográfica nacional;
+c-Programa de catalogación cooperativa;
+d-Otro;
+u-Desconocido;
+|-No hay intención de codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="29" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="FORMA DEL MATERIAL" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Ninguno de los siguientes;
+a-Micropelícula;
+b-Microficha;
+c-Microopacom;
+d-En tipografía mayorm;
+f-Braillem;
+r-Impresión regularm;
+s-Electrónica;
+|-No hay intención de codificar, o definido]]>
+        </picklist>
+
+    </field>
+
+</worksheet>

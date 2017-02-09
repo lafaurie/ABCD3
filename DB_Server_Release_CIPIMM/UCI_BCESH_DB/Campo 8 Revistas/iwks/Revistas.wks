@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet name="Revistas">
+
+    <field tag="6" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="00 - 05 TIPO DE FECHA/ESTADO DE LA PUBLICACIÓN" displaycontrol="">
+
+    </field>
+    <field tag="7" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="06 - FECHA DE ENTRADA DEL FICHERO" displaycontrol="">
+
+    </field>
+    <field tag="11" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="FECHA DE PUBLICACIÓN" displaycontrol="">
+
+    </field>
+    <field tag="15" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="LUGAR DE PUBLICACIÓN, PRODUCCIÓN O EJECUCIÓN" displaycontrol="">
+
+    </field>
+    <field tag="18" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="18 - FRECUENCIA" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Periodicidad no determinada;
+a-Anual;
+b-Bimestral;
+c-Bisemanal;
+d-Diaria;
+e-Bimensual;
+f-Semestral;
+g-Bienal;
+h-Trienal;
+i-Tres veces por semana;
+j-Trimensual;
+k-Actualizado de forma continuada;
+m-Mensual;
+q-Trimestral;
+s-Quincenal;
+t-Cuatrimestral;
+u-Desconocido;
+w-Semanal;
+z-Otro;
+|-No se utiliza]]>
+        </picklist>
+
+    </field>
+    <field tag="19" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="19 - REGULARIDAD" displaycontrol="">
+
+        <picklist>
+<![CDATA[n-Irregular normalizada;
+r-Regular;
+u-Desconocida;
+x-Completamente irregular;
+|-No se utiliza]]>
+        </picklist>
+
+    </field>
+    <field tag="20" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="20 - NO DEFINIDO" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No definida]]>
+        </picklist>
+
+    </field>
+    <field tag="21" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="21 - TIPO DE RECURSO CONTINUO" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Ninguno de los siguientes;
+d-Base de datos actualizable;
+l-Hojas sueltas actualizables;
+m-Serie monográfica;
+n-Periódico;
+p-Revista;
+w-Sitio web actualizable;
+|-No se utiliza]]>
+        </picklist>
+
+    </field>
+    <field tag="22" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="22 - FORMA DEL ÍTEM ORIGINAL" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Ninguna de las siguientes;
+a-Microfilme;
+b-Microficha;
+c-Microopaco;
+d-Caracteres grandes;
+e-Formato de periódico;
+f-Braille;
+o-En línea;
+q-Electrónica de acceso directo;
+s-Electrónica;
+|-No se utiliza]]>
+        </picklist>
+
+    </field>
+    <field tag="23" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="23 - FORMA DEL MATERIAL" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Ninguna de las siguientes;
+a-Microfilme;
+b–Microficha;
+c-Microopaco;
+d-Caracteres grandes;
+f-Braille;
+o- En línea;
+q-Electrónica de acceso directo;
+r-Reproducción en caracteres normales;
+s-Electrónica;
+|-No se utiliza]]>
+        </picklist>
+
+    </field>
+    <field tag="24" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="24 - NATURALEZA DE LA OBRA COMPLETA" displaycontrol="">
+
+        <picklist>
+<![CDATA[#- No se especifica la naturaleza del contenido;
+a- Resúmenes/sumarios;
+b- Bibliografías;
+c- Catálogos;
+d- Diccionarios;
+e- Enciclopedias;
+f- Manuales;
+g- Artículos sobre temas legales;
+h- Biografías;
+i- Índices;
+k- Discografías;
+l- Legislación;
+m- Tesis;
+n- Estado de la cuestión en una materia;
+o- Reseñas;
+p- Textos programados;
+q- Filmografías;
+r- Directorios;
+s- Estadísticas;
+t- Informes técnicos;
+u- Normas/Especificaciones;
+v- Jurisprudencia comentada;
+w- Sentencias y resoluciones;
+y- Anuarios;
+z- Tratados;
+5- Calendarios;
+6- Cómics/Novelas gráficas;
+|- No se utiliza]]>
+        </picklist>
+
+    </field>
+    <field tag="25" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="25 - 27  NATURALEZA DEL CONTENIDO" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No se especifica la naturaleza del contenido;
+a-Resúmenes/sumarios;
+b-Bibliografías;
+c-Catálogos;
+d-Diccionarios;
+e-Enciclopedias;
+f-Manuales;
+g-Artículos sobre temas legales;
+h-Biografías;
+i-Índices;
+k-Discografías;
+l-Legislación;
+m-Tesis;
+n-Estado de la cuestión en una materia;
+o-Reseñas;
+p-Textos programados;
+q-Filmografías;
+r-Directorios;
+s-Estadísticas;
+t-Informes técnicos;
+u-Normas/Especificaciones;
+v-Jurisprudencia comentada;
+w-Sentencias y resoluciones;
+y-Anuarios;
+z-Tratados;
+5-Calendarios;
+6-Cómics/Novelas gráficas;
+|||-No se utiliza]]>
+        </picklist>
+
+    </field>
+    <field tag="28" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="28 - PUBLICACIÓN GUBERNAMENTAL" displaycontrol="">
+
+        <picklist>
+<![CDATA[#–No es publicación gubernamental;
+a–Componente autónomo o semiautónomo;
+c–Multilocal;
+f–Federal/nacional;
+i–Intergubernamental/Internacional;
+l–Local;
+m–Multiestatal;
+o–Publicación gubernamental—nivel indeterminado;
+s–Estado, provincia, territorio, jurisdicción dependiente, etc.;
+u–Se desconoce si el ítem es una publicación gubernamental;
+z–Otro;
+|–No se intenta codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="29" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="29 - CONFERENCIA" displaycontrol="">
+
+        <picklist>
+<![CDATA[0–No es una conferencia; 1–Conferencia; |–No se intenta codificar]]>
+        </picklist>
+
+    </field>
+    <field tag="30" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="30 - 32" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No definido]]>
+        </picklist>
+
+    </field>
+    <field tag="33" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="33 - ALFABETO O ESCRITURA DEL TÍTULO" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No se indica el alfabeto/ningún título clave; a-Latino básico; b-Latino extendido; c-Cirílico; d-Japonés; e-Chino; f-Árabe; g-Griego; h-Hebreo; i-Thai; j-Devanagari; k-Coreano; l-Tamil; u-Desconocido; z-Otro; |-No se utiliza]]>
+        </picklist>
+
+    </field>
+    <field tag="38" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="38 - REGISTRO MODIFICADO" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-No modificado;
+d-Se omite información pertinente;
+o-Completamente transliterado/fichas impresas en alfabeto latino;
+r-Completamente transliterado/fichas impresas en alfabeto no latino;
+s-Abreviado;
+x-Caracteres omitidos;
+|-No se utiliza]]>
+        </picklist>
+        <subfield code="$#" repeatable="false" subfieldtype="alphanumeric" description="V38^#" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No modificado;
+d-Se omite información pertinente;
+o-Completamente transliterado/fichas impresas en alfabeto latino;
+r-Completamente transliterado/fichas impresas en alfabeto no latino;
+s-Abreviado;
+x-Caracteres omitidos;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$s" repeatable="false" subfieldtype="alphanumeric" description="V38^s" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No modificado;
+d-Se omite información pertinente;
+o-Completamente transliterado/fichas impresas en alfabeto latino;
+r-Completamente transliterado/fichas impresas en alfabeto no latino;
+s-Abreviado;
+x-Caracteres omitidos;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="V38^d" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No modificado;
+d-Se omite información pertinente;
+o-Completamente transliterado/fichas impresas en alfabeto latino;
+r-Completamente transliterado/fichas impresas en alfabeto no latino;
+s-Abreviado;
+x-Caracteres omitidos;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="V38^x" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No modificado;
+d-Se omite información pertinente;
+o-Completamente transliterado/fichas impresas en alfabeto latino;
+r-Completamente transliterado/fichas impresas en alfabeto no latino;
+s-Abreviado;
+x-Caracteres omitidos;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$r" repeatable="false" subfieldtype="alphanumeric" description="V38^r" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No modificado;
+d-Se omite información pertinente;
+o-Completamente transliterado/fichas impresas en alfabeto latino;
+r-Completamente transliterado/fichas impresas en alfabeto no latino;
+s-Abreviado;
+x-Caracteres omitidos;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="V38^o" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No modificado;
+d-Se omite información pertinente;
+o-Completamente transliterado/fichas impresas en alfabeto latino;
+r-Completamente transliterado/fichas impresas en alfabeto no latino;
+s-Abreviado;
+x-Caracteres omitidos;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$I" repeatable="false" subfieldtype="alphanumeric" description="V38^I" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-No modificado;
+d-Se omite información pertinente;
+o-Completamente transliterado/fichas impresas en alfabeto latino;
+r-Completamente transliterado/fichas impresas en alfabeto no latino;
+s-Abreviado;
+x-Caracteres omitidos;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+
+    </field>
+    <field tag="39" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="FUENTE DE CATALOGACIÓN" displaycontrol="">
+
+        <picklist>
+<![CDATA[#-Agencia bibliográfica nacional;
+c-Programa de catalogación cooperativa;
+d-Otros;
+u-Desconocido;
+|-No se utiliza]]>
+        </picklist>
+        <subfield code="$#" repeatable="false" subfieldtype="alphanumeric" description="V39^#" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Agencia bibliográfica nacional;
+c-Programa de catalogación cooperativa;
+d-Otros;
+u-Desconocido;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="V39^c" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Agencia bibliográfica nacional;
+c-Programa de catalogación cooperativa;
+d-Otros;
+u-Desconocido;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="V39^d" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Agencia bibliográfica nacional;
+c-Programa de catalogación cooperativa;
+d-Otros;
+u-Desconocido;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$u" repeatable="false" subfieldtype="alphanumeric" description="V39^u" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Agencia bibliográfica nacional;
+c-Programa de catalogación cooperativa;
+d-Otros;
+u-Desconocido;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+        <subfield code="$I" repeatable="false" subfieldtype="alphanumeric" description="V39^I" displaycontrol="">
+
+            <picklist>
+<![CDATA[#-Agencia bibliográfica nacional;
+c-Programa de catalogación cooperativa;
+d-Otros;
+u-Desconocido;
+|-No se utiliza]]>
+            </picklist>
+
+        </subfield>
+
+    </field>
+
+</worksheet>

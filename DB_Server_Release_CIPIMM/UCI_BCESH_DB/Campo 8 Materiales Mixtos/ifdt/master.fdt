@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdt recorddefinition="UserDefinedRecords">
+    <field tag="5" name="Fecha de Ingreso del Registro" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="7" name="Fecha 1" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="11" name="Fecha 2" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="15" name="Lugar de Publicación" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="18" name="No Definidos" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="23" name="Forma del Material" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="24" name="No definidos" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="35" name="Idioma" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="38" name="Registro Modificado" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="39" name="Fuente de Catalogación" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+</fdt>

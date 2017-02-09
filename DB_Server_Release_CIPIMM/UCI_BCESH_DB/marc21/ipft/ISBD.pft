@@ -1,0 +1,17 @@
+v82^a/
+v100^a*0.3/
+v245^a*0.1/
+if p(v100^a) then x8 v100^a/ else if p(v110^a) then v110^a/ else v111^a fi fi
+if p(v100^a) or p(v110^a) or p(v111^a) then x20 v245^a x1 '/' x1 v245^c '.' else v245^a x1 '/' x1 v245^c '.' fi if p(v250^a) then x1 '-- ' v250^a x1 v250^b '. -- ' fi/
+x8 if p(v260^a) then v260^a else '[s.l.]' fi x1 ':' x1 if p(v260^b) then v260^b else '[s.n.]' fi ', ' if p(v260^c) then v260^c else '[s.a.]' fi '.'/ 
+x20 v300^a x1 ':' x1 v300^b x1 ';' x1 v300^c
+##
+x20 v20^a/
+x20 v500^a/
+x20 v504^a/
+x20 v521^a/
+##
+x20 f(occ,1,0)( '. 'v650^a) if p(v650^v) then ' -- ' (v650^v) fi if p(v650^z) then ' -- ' (v650^z) fi
+##
+if p(v100^a) or p(v110^a) or p(v111^a) then x20 'I. ' v245^a fi
+if p(v700^a) then f(occ,1,0)('. 'v700^a) fi

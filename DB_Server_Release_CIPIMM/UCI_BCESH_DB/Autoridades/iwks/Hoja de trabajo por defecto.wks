@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet name="Hoja de trabajo por defecto">
+
+    <field tag="1" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE CONTROL DEL REGISTRO" displaycontrol="NW">
+
+        <defaultvalue>
+<![CDATA[GCN]]>
+        </defaultvalue>
+        <validatepft>
+<![CDATA[mandatory]]>
+        </validatepft>
+
+    </field>
+    <field tag="3" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="IDENTIFICADOR DE CONTROL DEL REGISTRO" displaycontrol="">
+
+    </field>
+    <field tag="5" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ESTADO DEL REGISTRO" displaycontrol="">
+
+    </field>
+    <field tag="6" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="TIPO DE REGISTRO" displaycontrol="">
+
+    </field>
+    <field tag="9" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ESQUEMA DE CODIFICACIÓN DE CARACTERES" displaycontrol="">
+
+    </field>
+    <field tag="10" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="VÍNCULO DE LA SERIE AL REGISTRO BIBLIOGRÁFICO" displaycontrol="">
+
+    </field>
+    <field tag="14" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="VÍNCULO DE LA SERIE AL REGISTRO BIBLIOGRÁFICO" displaycontrol="">
+
+    </field>
+    <field tag="16" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NÚMERO DE CONTROL DE LA AGENCIA BIBLIOGRÁFICA NACIONAL" displaycontrol="">
+
+    </field>
+    <field tag="17" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="NIVEL DE CODIFICACIÓN" displaycontrol="">
+
+    </field>
+    <field tag="40" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="FUENTE DE CATALOGACIÓN" displaycontrol="">
+
+    </field>
+    <field tag="42" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="CÓDIGO DE AUTENTICACIÓN" displaycontrol="">
+
+    </field>
+    <field tag="100" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="NOMBRE PERSONAL" displaycontrol="">
+
+        <subfield code="$a" repeatable="false" subfieldtype="alphanumeric" description="V100^a" displaycontrol="">
+
+        </subfield>
+        <subfield code="$b" repeatable="false" subfieldtype="alphanumeric" description="V100^b" displaycontrol="">
+
+        </subfield>
+        <subfield code="$c" repeatable="false" subfieldtype="alphanumeric" description="V100^c" displaycontrol="">
+
+        </subfield>
+        <subfield code="$d" repeatable="false" subfieldtype="alphanumeric" description="V100^d" displaycontrol="">
+
+        </subfield>
+        <subfield code="$e" repeatable="false" subfieldtype="alphanumeric" description="V100^e" displaycontrol="">
+
+        </subfield>
+        <subfield code="$f" repeatable="false" subfieldtype="alphanumeric" description="V100^f" displaycontrol="">
+
+        </subfield>
+        <subfield code="$g" repeatable="false" subfieldtype="alphanumeric" description="V100^g" displaycontrol="">
+
+        </subfield>
+        <subfield code="$h" repeatable="false" subfieldtype="alphanumeric" description="V100^h" displaycontrol="">
+
+        </subfield>
+        <subfield code="$j" repeatable="false" subfieldtype="alphanumeric" description="V100^j" displaycontrol="">
+
+        </subfield>
+        <subfield code="$k" repeatable="false" subfieldtype="alphanumeric" description="V100^k" displaycontrol="">
+
+        </subfield>
+        <subfield code="$l" repeatable="false" subfieldtype="alphanumeric" description="V100^l" displaycontrol="">
+
+        </subfield>
+        <subfield code="$m" repeatable="false" subfieldtype="alphanumeric" description="V100^m" displaycontrol="">
+
+        </subfield>
+        <subfield code="$n" repeatable="false" subfieldtype="alphanumeric" description="V100^n" displaycontrol="">
+
+        </subfield>
+        <subfield code="$o" repeatable="false" subfieldtype="alphanumeric" description="V100^o" displaycontrol="">
+
+        </subfield>
+        <subfield code="$p" repeatable="false" subfieldtype="alphanumeric" description="V100^p" displaycontrol="">
+
+        </subfield>
+        <subfield code="$q" repeatable="false" subfieldtype="alphanumeric" description="V100^q" displaycontrol="">
+
+        </subfield>
+        <subfield code="$r" repeatable="false" subfieldtype="alphanumeric" description="V100^r" displaycontrol="">
+
+        </subfield>
+        <subfield code="$s" repeatable="false" subfieldtype="alphanumeric" description="V100^s" displaycontrol="">
+
+        </subfield>
+        <subfield code="$t" repeatable="false" subfieldtype="alphanumeric" description="V100^t" displaycontrol="">
+
+        </subfield>
+        <subfield code="$v" repeatable="false" subfieldtype="alphanumeric" description="V100^v" displaycontrol="">
+
+        </subfield>
+        <subfield code="$x" repeatable="false" subfieldtype="alphanumeric" description="V100^x" displaycontrol="">
+
+        </subfield>
+        <subfield code="$z" repeatable="false" subfieldtype="alphanumeric" description="V100^z" displaycontrol="">
+
+        </subfield>
+        <subfield code="$6" repeatable="false" subfieldtype="alphanumeric" description="V100^6" displaycontrol="">
+
+        </subfield>
+        <subfield code="$8" repeatable="false" subfieldtype="alphanumeric" description="V100^8" displaycontrol="">
+
+        </subfield>
+
+    </field>
+    <field tag="110" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ENCABEZAMIENTO - NOMBRE PERSONAL" displaycontrol="">
+
+    </field>
+    <field tag="130" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="ENCABEZAMIENTO DE TÍTULO UNIFORME" displaycontrol="">
+
+    </field>
+    <field tag="400" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE ENVÍO &quot;VÉASE&quot; NOMBRE PERSONAL" displaycontrol="">
+
+    </field>
+    <field tag="410" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE ENVÍO &quot;VÉASE&quot; NOMBRE CORPORATIVO" displaycontrol="">
+
+    </field>
+    <field tag="411" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE ENVÍO &quot;VÉASE&quot; NOMBRE DE REUNIÓN" displaycontrol="">
+
+    </field>
+    <field tag="430" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE ENVÍO &quot;VÉASE&quot; TÍTULO UNIFORME" displaycontrol="">
+
+    </field>
+    <field tag="500" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE ENVÍO &quot;VÉASE ADEMÁS&quot; - NOMBRE PERSONAL" displaycontrol="">
+
+    </field>
+    <field tag="510" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE ENVÍO &quot;VÉASE ADEMÁS&quot; - NOMBRE CORPORATIVO" displaycontrol="">
+
+    </field>
+    <field tag="511" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE ENVÍO &quot;VÉASE ADEMÁS&quot; - NOMBRE DE REUNIÓN" displaycontrol="">
+
+    </field>
+    <field tag="530" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE ENVÍO &quot;VÉASE ADEMÁS&quot; - TÍTULO UNIFORME" displaycontrol="">
+
+    </field>
+    <field tag="663" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA COMPLEJA DE &quot;VÉASE ADEMÁS&quot; - NOMBRE" displaycontrol="">
+
+    </field>
+    <field tag="664" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA COMPLEJA DE &quot;VÉASE&quot; - NOMBRE" displaycontrol="">
+
+    </field>
+    <field tag="665" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA DE HISTÓRIA DE LOS CAMBIOS DEL NOMBRE" displaycontrol="">
+
+    </field>
+    <field tag="666" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REFERENCIA GENERAL EXPLICATIVA – NOMBRE" displaycontrol="">
+
+    </field>
+    <field tag="667" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="NOTA GENERAL SIN DESPLIEGUE AL PÚBLICO" displaycontrol="">
+
+    </field>
+    <field tag="670" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="FUENTE EN LA QUE SE LOCALIZARON DATOS" displaycontrol="">
+
+    </field>
+    <field tag="675" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="FUENTE EN LA QUE NO SE LOCALIZARON DATOS" displaycontrol="">
+
+    </field>
+    <field tag="678" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="DATOS BIOGRÁFICOS Y/O HISTÓRICOS" displaycontrol="">
+
+    </field>
+    <field tag="700" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO LIGADO AL ENCABEZAMIENTO - NOMBRE PERSONAL" displaycontrol="">
+
+    </field>
+    <field tag="710" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO LIGADO AL ENCABEZAMIENTO - NOMBRE CORPORATIVO" displaycontrol="">
+
+    </field>
+    <field tag="711" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO LIGADO AL ENCABEZAMIENTO - NOMBRE DE REUNIÓN" displaycontrol="">
+
+    </field>
+    <field tag="730" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="ASIENTO LIGADO AL ENCABEZAMIENTO - TÍTULO UNIFORME" displaycontrol="">
+
+    </field>
+    <field tag="788" repeatable="false" descriptors="false" fieldtype="alphanumeric" description="INFORMACIÓN DE ASIENTO LIGADO COMPLEJO" displaycontrol="">
+
+    </field>
+    <field tag="880" repeatable="true" descriptors="false" fieldtype="alphanumeric" description="REPRESENTACIÓN GRÁFICA ALTERNA" displaycontrol="">
+
+    </field>
+
+</worksheet>

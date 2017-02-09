@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fdt recorddefinition="UserDefinedRecords">
+    <field tag="1" name="Número de Control del Registro" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="3" name="Identificador del Número de Control" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields=""/>
+    <field tag="5" name="Record Status" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="acdn"/>
+    <field tag="6" name="Type of Record" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="z"/>
+    <field tag="8" name="Elementos de Longitud Fija" type="alphanumeric" indicators="false" repetition="false" firstSubfield="true" subfields="00-005 06 09 10 28 32 33 38 39"/>
+    <field tag="9" name="Esquema de Codificación de Caracteres" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="#a"/>
+    <field tag="10" name="Vínculo de la Serie al Registro Bibliográfico" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklmnopqrstuvw"/>
+    <field tag="14" name="Vínculo de la Serie al Registro Bibliográfico" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a68"/>
+    <field tag="16" name="Número de Control de la Agencia Bibliográfica Nacional" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="az28"/>
+    <field tag="17" name="Nivel de Codificaci'on" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="no"/>
+    <field tag="40" name="Fuente de Catalogación" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdef68"/>
+    <field tag="42" name="Código de Autenticación" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="abcdef68"/>
+    <field tag="100" name="Nombre Personal" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="abcdefghjklmnopqrstvxz68"/>
+    <field tag="110" name="Encabezamiento - Nombre de Reunión" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="acdefghklnpqstvxyz68"/>
+    <field tag="130" name="Encabezamiento de T'itulo Uniforme" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="adfghklmnoprstvxyz68"/>
+    <field tag="400" name="Referencia de Envío &quot;Vease&quot; Nombre Personal" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklnmoprstvwyz568"/>
+    <field tag="410" name="Referencia de Envío &quot;Vease&quot; Nombre Corporativo" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklnmoprstvwyz568"/>
+    <field tag="411" name="Referencia de Envío &quot;Vease&quot; Nombre de Reunión" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklnmoprstvwyz568"/>
+    <field tag="430" name="Referencia de Envío &quot;Vease&quot; Título Uniforme" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdfghijklnmoprstvwyz568"/>
+    <field tag="500" name="REFERENCIA DE ENVIO &quot;VEASE ADEMAS&quot; - NOMBRE PERSONAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklnmoprstvwyz568"/>
+    <field tag="510" name=" REFERENCIA DE ENVIO “VEASE ADEMAS” - NOMBRE CORPORATIVO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklnmoprstvwyz568"/>
+    <field tag="511" name=" REFERENCIA DE ENVIO &quot;VEASE ADEMAS&quot; - NOMBRE DE REUNION" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklnmoprstvwyz568"/>
+    <field tag="530" name="REFERENCIA DE ENVIO &quot;VEASE ADEMAS&quot; - TITULO UNIFORME" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdfghijklnmoprstvwyz568"/>
+    <field tag="663" name="REFERENCIA COMPLEJA DE &quot;VEASE ADEMAS&quot; - NOMBRE" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="abt68"/>
+    <field tag="664" name="REFERENCIA COMPLEJA DE “VÉASE” - NOMBRE" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="abt68"/>
+    <field tag="665" name="REFERENCIA DE HISTORIA DE LOS CAMBIOS DEL NOMBRE" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="a68"/>
+    <field tag="666" name="REFERENCIA GENERAL EXPLICATIVA – NOMBRE" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a"/>
+    <field tag="667" name="NOTA GENERAL SIN DESPLIEGUE AL PUBLICO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a568"/>
+    <field tag="670" name="FUENTE EN LA QUE SE LOCALIZARON DATOS" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abu"/>
+    <field tag="675" name="FUENTE EN LA QUE NO SE LOCALIZARON DATOS" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="a68"/>
+    <field tag="678" name="DATOS BIOGRAFICOS Y/O HISTORICOS" type="alphanumeric" indicators="false" repetition="false" firstSubfield="false" subfields="abu68"/>
+    <field tag="700" name="ASIENTO LIGADO AL ENCABEZAMIENTO - NOMBRE PERSONAL" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklmnopqrstvxyz02568"/>
+    <field tag="710" name="ASIENTO LIGADO AL ENCABEZAMIENTO - NOMBRE CORPORATIVO" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="abcdefghijklmnopqrstvxyz02568"/>
+    <field tag="711" name="ASIENTO LIGADO AL ENCABEZAMIENTO - NOMBRE DE REUNION" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="acdefghijklmnopqrstvxyz02568"/>
+    <field tag="730" name="ASIENTO LIGADO AL ENCABEZAMIENTO - TITULO UNIFORME" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="adfghklmnoprstvwxyz02568"/>
+    <field tag="750" name=" Entrada de Enlace de Encabezamiento Establecido" type="alphanumeric" indicators="true" repetition="true" firstSubfield="false" subfields="01234567"/>
+    <field tag="751" name=" Entrada de Enlace de Encabezamiento Establecido- Nombre Geográfico" type="alphanumeric" indicators="true" repetition="true" firstSubfield="false" subfields="01234567"/>
+    <field tag="752" name=" Entrada de Enlace de Encabezamiento Establecido- Término Género / Forma (R)" type="alphanumeric" indicators="true" repetition="true" firstSubfield="false" subfields="01234567"/>
+    <field tag="780" name=" Entrada de Enlace de Subdivisión - Subdivisión Genenral" type="alphanumeric" indicators="true" repetition="true" firstSubfield="false" subfields="01234567"/>
+    <field tag="781" name=" Entrada de Enlace de Subdivisión - Subdivisión Geográfica" type="alphanumeric" indicators="true" repetition="true" firstSubfield="false" subfields="01234567"/>
+    <field tag="782" name=" Entrada de Enlace de Subdivisión - Subdivisión Cronológica" type="alphanumeric" indicators="true" repetition="true" firstSubfield="false" subfields="01234567"/>
+    <field tag="785" name=" Entrada de Enlace de Subdivisión - Subdivisión de Forma" type="alphanumeric" indicators="true" repetition="true" firstSubfield="false" subfields="01234567"/>
+    <field tag="788" name="Entrada de Enlace Complejo" type="alphanumeric" indicators="true" repetition="false" firstSubfield="false" subfields="01234567"/>
+    <field tag="880" name="REPRESENTACION GRAFICA ALTERNA" type="alphanumeric" indicators="false" repetition="true" firstSubfield="false" subfields="0568"/>
+</fdt>
