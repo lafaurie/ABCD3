@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-Version: 0.0.1
+Bundle-Name: ABOS Graphic
+Bundle-ManifestVersion: 2
+Bundle-Description: Gesti??n de generaci??n de gr??ficos
+Bundle-SymbolicName: cu.uci.abos.ui.graphics
+

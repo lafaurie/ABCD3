@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Ui
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abcd.common.ui
+Import-Bundle: org.eclipse.rap.rwt;version="[3.0.1.20150908-1130,3.0.1.20150908-1130]",
+ cu.uci.abos.core;version="[2.0.0,2.0.0]",
+ cu.uci.abos.api;version="[2.0.0,2.0.0]"
+Import-Package: cu.uci.abcd.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.management.library;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.management.library;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.util;version="[1.0.0,1.0.0]",
+ javax.persistence;version="[2.1.0,2.1.0]",
+ javax.persistence.criteria;version="[2.1.0,2.1.0]",
+ javax.servlet;version="[2.6.0,2.6.0]",
+ javax.servlet.http;version="[2.6.0,2.6.0]",
+ org.springframework.data.domain;version="[1.4.1.RELEASE,1.4.1.RELEASE]",
+ org.springframework.data.jpa.domain;version="[1.2.1.RELEASE,1.2.1.RELEASE]"
+Export-Package: cu.uci.abcd.common.l10n;version="1.0.0",
+ cu.uci.abcd.common.ui;version="1.0.0"
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<reference id="personDAO" interface="cu.uci.abcd.dao.common.PersonDAO">
+		<listener bind-method="bindPersonDAO" ref="personService" />
+	</reference>
+	
+	<reference id="loanUserTypeDAO" interface="cu.uci.abcd.dao.circulation.LoanUserTypeDAO">
+		<listener bind-method="bindLoanUserTypeDAO" ref="personService" />
+	</reference>
+	
+	<reference id="accountDAO" interface="cu.uci.abcd.dao.common.AccountDAO">
+		<listener bind-method="bindAccountDAO" ref="personService" />
+	</reference>
+	
+	<reference id="permissionDAO" interface="cu.uci.abcd.dao.management.security.PermissionDAO">
+		<listener bind-method="bindPermission" ref="personService" />
+	</reference>
+	
+	<reference id="nomenclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		<listener bind-method="bindNomenclator" ref="personService" />
+	</reference>
+</beans:beans>

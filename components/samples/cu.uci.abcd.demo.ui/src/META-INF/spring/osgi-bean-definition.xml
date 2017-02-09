@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<!-- Creacion del controlador de la presentacion -->
+	<bean id="viewController" class="cu.uci.abcd.demo.ui.controller.DemoViewController" />
+	<!-- Creacion de la factoria de presentacion -->
+	<bean id="personContributor" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+</beans> 

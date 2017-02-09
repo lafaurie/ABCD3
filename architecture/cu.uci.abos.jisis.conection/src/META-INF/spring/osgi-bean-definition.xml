@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:osgi-compendium="http://www.springframework.org/schema/osgi-compendium"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/osgi-compendium 
+    	http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium-1.2.xsd">
+
+	<osgi-compendium:cm-properties id="jisisConfigDBProperties"
+		persistent-id="jisis.configuration" />
+	<context:property-placeholder
+		properties-ref="jisisConfigDBProperties" />
+
+	<bean id="connectionManager" class="cu.uci.abos.jisis.conection.impl.ConnectionManager"
+		destroy-method="closeConnection">
+		<property name="serverAddress" value="${jisis.server.address}"></property>
+		<property name="serverPort" value="${jisis.server.port}"></property>
+		<property name="dbUser" value="${jisis.server.user}"></property>
+		<property name="dbPassword" value="${jisis.server.password}"></property>
+	</bean>
+
+
+</beans> 

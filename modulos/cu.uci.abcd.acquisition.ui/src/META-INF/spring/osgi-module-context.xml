@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+
+
+	<service ref="ApproveRejectPurchaseOrders" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.ApproveRejectPurchaseOrder"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+	<service ref="ApproveRejectSuggestions" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.ApproveRejectSuggestion"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+	
+	<service ref="ConsultPurchaseRequests" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.ConsultPurchaseRequest"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+	<service ref="ConsultPurchaseOrders" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.ConsultPurchaseOrder"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+	<service ref="ConsultDesideratas" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.ConsultDesiderata"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+
+	<service ref="ConsultSuggestions" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.ConsultSuggestions"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+
+	<service ref="RegisterPurchaseRequests" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.RegisterPurchaseRequest"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+	<service ref="RegisterDesideratas" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.RegisterDesiderata"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+	<service ref="registrarRegistroDeAdquisicion" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.RegisterLogAcquisition"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service> 
+	
+	
+	 <service ref="consultContributor" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.ConsultLogAcquisition" />
+			<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties> 
+	</service>
+	
+	<service ref="registerPurchaseOrder" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.RegisterPurchaseOrder"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+	<service ref="viewDesiderataContributer" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.acquisition.ui.ViewDesiderataContributer"/>
+				<beans:entry key="viewController" value-ref="allControllerManagement"/>
+		</service-properties>
+	</service>
+	
+	
+	<reference id="ManageDesiderataService" interface="cu.uci.abcd.acquisition.IManageDesiderataService">
+		<listener bind-method="bindDesiderata" ref="allControllerManagement" />
+	</reference> 
+	 
+	<reference id="ManagePurchaseRequestService" interface="cu.uci.abcd.acquisition.IManagePurchaseRequestService">
+		<listener bind-method="bindPurchaseRequest" ref="allControllerManagement" />
+	</reference> 
+	
+	<reference id="ManageSuggestionService" interface="cu.uci.abcd.acquisition.IManageSuggestionService">
+		<listener bind-method="bindSuggestion" ref="allControllerManagement" />
+	</reference> 
+
+	<reference id="ManagePurchaseOrderService" interface="cu.uci.abcd.acquisition.IManagePurchaseOrderService">
+		<listener bind-method="bindPurchaseOrder" ref="allControllerManagement" />
+	</reference>
+		
+<reference id="ManageAcquisitionService" interface="cu.uci.abcd.acquisition.IRegistrationManageAcquisitionService">
+		<listener bind-method="bindAcquisition" ref="allControllerManagement" />
+	</reference> 
+	
+	<reference id="ManageSampleAcquisitionService" interface="cu.uci.abcd.acquisition.IRegistrationManageSampleAcquisitionService">
+		<listener bind-method="bindSampleAcquisition" ref="allControllerManagement" />
+	</reference> 
+	
+	<reference id="ManageLoanObjectService" interface="cu.uci.abcd.acquisition.IManageLoanObjectService">
+		<listener bind-method="bindLoanObjectAcquisition" ref="allControllerManagement" />
+	</reference> 
+	
+	 <reference id="roomService" interface="cu.uci.abcd.acquisition.IManageRoomService">
+		<listener bind-method="bindRoomService" ref="allControllerManagement" />
+	</reference>
+	
+	</beans:beans> 

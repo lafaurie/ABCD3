@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Impl
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abcd.management.report.impl
+Import-Package: cu.uci.abcd.management.report;version="[1.0.0,2.0.0)"
+Import-Bundle: de.twentyeleven.skysail.org.apache.poi-osgi;version="[3.8.0,3.8.0]",
+ com.itextpdf;version="[5.5.3,5.5.3]",
+ org.apache.commons.codec;version="[1.7.0,1.7.0]"
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+			http://www.springframework.org/schema/data/jpa 
+			http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+ 
+	<context:property-placeholder location="classpath*:META-INF/config/config.properties"/>
+	
+	<bean id="jpaDialect" class="${config.jpa.dialect}" />
+
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="cu.uci.abcd.domain" />
+		<property name="dataSource" ref="dataSource" />
+		<property name="jpaDialect" ref="jpaDialect" />
+		<property name="jpaProperties">
+			<util:properties location="classpath:META-INF/config/jta.properties" />
+		</property>
+
+		<property name="jpaVendorAdapter">
+			<bean class="${config.jpa.vendorAdapter}">
+				<property name="databasePlatform" value="${config.db.platform}" />
+			</bean>
+		</property>
+
+	</bean>
+
+	<!-- Transaction Manager -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
+		p:entityManagerFactory-ref="entityManagerFactory">
+		<property name="jpaDialect" ref="jpaDialect" />
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<!-- Spring Data JPA -->
+	<!-- Common package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.common">
+		<jpa:repository id="personDAO" />
+		<jpa:repository id="actorRoleTypeDAO" />
+		<jpa:repository id="applicationDAO" />
+		<jpa:repository id="accountDAO" />
+		<jpa:repository id="actorRoleTypeDAO" />
+		<jpa:repository id="addressRoleTypeDAO" />
+		<jpa:repository id="emailAddressDAO" />
+		<jpa:repository id="phoneNumberDAO" />
+		<jpa:repository id="postalAddressDAO" />
+		<jpa:repository id="urlDAO" />
+	</jpa:repositories>
+	<!-- circulation package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.circulation">
+		<jpa:repository id="loanUserDAO" />
+		<jpa:repository id="loanUserTypeDAO" />
+	</jpa:repositories>
+	<!-- Management library package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.management.library">
+		<jpa:repository id="libraryDAO" />
+		<jpa:repository id="formationCourseDAO" />
+	</jpa:repositories>
+</beans>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+    <reference id="libraryService" interface="cu.uci.abcd.administration.library.ILibraryService"
+    availability="optional">
+		<listener bind-method="bindLibraryService" ref="allManagementLibraryViewController" />
+	</reference>
+	
+	 <reference id="roomService" interface="cu.uci.abcd.administration.library.IRoomService">
+		<listener bind-method="bindRoomService" ref="allManagementLibraryViewController" />
+	</reference>
+	
+	<reference id="formationCourseService" interface="cu.uci.abcd.administration.library.IFormationCourseService">
+		<listener bind-method="bindFormationCourseService" ref="allManagementLibraryViewController" />
+	</reference>
+	<!-- 
+	<reference id="personService" interface="cu.uci.abcd.administration.library.IPersonService">
+		<listener bind-method="bindPersonService" ref="allManagementLibraryViewController" />
+	</reference>
+	-->
+	<reference id="workerService" interface="cu.uci.abcd.administration.library.IWorkerService">
+		<listener bind-method="bindWorkerService" ref="allManagementLibraryViewController" />
+	</reference>
+	
+	<reference id="providerService" interface="cu.uci.abcd.administration.library.IProviderService">
+		<listener bind-method="bindProviderService" ref="allManagementLibraryViewController" />
+	</reference>
+	
+	<reference id="coinService" interface="cu.uci.abcd.administration.library.ICoinService">
+		<listener bind-method="bindCoinService" ref="allManagementLibraryViewController" />
+	</reference>
+	
+	<reference id="fineEquationService" interface="cu.uci.abcd.administration.library.IFineEquationService">
+		<listener bind-method="bindFineEquationService" ref="allManagementLibraryViewController" />
+	</reference>
+	
+	<reference id="calendarService" interface="cu.uci.abcd.administration.library.ICalendarService">
+		<listener bind-method="bindCalendarService" ref="allManagementLibraryViewController" />
+	</reference>
+	
+	<reference id="scheduleService" interface="cu.uci.abcd.administration.library.IScheduleService">
+		<listener bind-method="bindScheduleService" ref="allManagementLibraryViewController" />
+	</reference>
+
+	<reference id="circulationRuleService" interface="cu.uci.abcd.administration.library.ICirculationRuleService">
+		<listener bind-method="bindCirculationRuleService" ref="allManagementLibraryViewController" />
+	</reference>
+	
+	<reference id="enrollmentService" interface="cu.uci.abcd.administration.library.IEnrollmentService">
+		<listener bind-method="bindEnrollmentService" ref="allManagementLibraryViewController" />
+	</reference>
+
+	
+ <!-- ADMINISTRAR -->
+    <service ref="manageLibrary" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ManageLibrary"/>
+				<beans:entry key="viewController" value-ref="managementLibraryViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="manageProviders" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ManageProviders"/>
+				<beans:entry key="viewController" value-ref="managementProviderViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="manageCoin" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ManageCoin"/>
+				<beans:entry key="viewController" value-ref="managementCoinViewController"/>
+		</service-properties>
+	</service>
+
+	<!-- CONFIGURAR -->
+	<service ref="configureCalendar" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ConfigureCalendar"/>
+				<beans:entry key="viewController" value-ref="managementCalendarViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="configureSchedule" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ConfigureSchedule"/>
+				<beans:entry key="viewController" value-ref="managementScheduleViewController"/> 
+		</service-properties>
+	</service>
+	
+	<service ref="configureFineEquation" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ConfigureFineEquation"/>
+				<beans:entry key="viewController" value-ref="managementFineEquationViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="configureCirculationRules" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ConfigureCirculationRules"/>
+				<beans:entry key="viewController" value-ref="managementCirculationRuleViewController"/>
+		</service-properties>
+	</service>
+	
+	<!-- REGISTRAR -->
+	<service ref="registerRoom" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.RegisterRoom"/>
+				<beans:entry key="viewController" value-ref="managementLibraryViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="registerWorker" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.RegisterWorker"/>
+				<beans:entry key="viewController" value-ref="managementLibraryViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="registerFormationCourse" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.RegisterFormationCourse"/>
+				<beans:entry key="viewController" value-ref="managementLibraryViewController"/>
+		</service-properties>
+	</service>
+	
+	<!-- CONSULTAR -->
+	<service ref="consultRoom" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ConsultRoom"/>
+				<beans:entry key="viewController" value-ref="managementLibraryViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="consultWorker" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ConsultWorker"/>
+				<beans:entry key="viewController" value-ref="managementLibraryViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="consultFormationCourse" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ConsultFormationCourse"/>
+				<beans:entry key="viewController" value-ref="managementLibraryViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="viewRoom" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ViewRoom"/>
+		</service-properties>
+	</service>
+	
+	<service ref="viewWorker" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ViewWorker"/>
+		</service-properties>
+	</service>
+	
+	<service ref="viewFormationCourse" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administration.library.ui.ViewFormationCourse"/>
+		</service-properties>
+	</service>
+	
+</beans:beans> 

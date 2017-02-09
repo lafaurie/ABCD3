@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	
+	<persistence-unit name="cu.uci.abcd.domain" transaction-type="RESOURCE_LOCAL">
+		
+		<!-- Common domain entities -->
+		<class>cu.uci.abcd.domain.common.Internationalization</class>
+		<class>cu.uci.abcd.domain.common.Person</class>
+		<class>cu.uci.abcd.domain.common.Nomenclator</class>
+		<class>cu.uci.abcd.domain.common.LoanObject</class>
+		<class>cu.uci.abcd.domain.common.Statistic</class>
+		<class>cu.uci.abcd.domain.common.Picture</class>
+		<class>cu.uci.abcd.domain.common.User</class>
+		
+		<!-- Circulation domain entities -->
+		<class>cu.uci.abcd.domain.circulation.LoanUser</class>
+		<class>cu.uci.abcd.domain.circulation.Penalty</class>
+		<class>cu.uci.abcd.domain.circulation.Reservation</class>
+		<class>cu.uci.abcd.domain.circulation.Transaction</class>
+		<class>cu.uci.abcd.domain.circulation.LoanUserPostgraduate</class>
+		<class>cu.uci.abcd.domain.circulation.LoanUserProfessor</class>
+		<class>cu.uci.abcd.domain.circulation.LoanUserStudents</class>
+		
+		<!-- Management library entities -->
+		<class>cu.uci.abcd.domain.management.library.Calendar</class>
+		<class>cu.uci.abcd.domain.management.library.CirculationRule</class>
+		<class>cu.uci.abcd.domain.management.library.Coin</class>
+		<class>cu.uci.abcd.domain.management.library.FineEquation</class>
+		<class>cu.uci.abcd.domain.management.library.FormationCourse</class>
+		<class>cu.uci.abcd.domain.management.library.Library</class>
+		<class>cu.uci.abcd.domain.management.library.Provider</class>
+		<class>cu.uci.abcd.domain.management.library.Room</class>
+		<class>cu.uci.abcd.domain.management.library.Schedule</class>
+		<class>cu.uci.abcd.domain.management.library.Worker</class>
+        <class>cu.uci.abcd.domain.management.library.Enrollment</class>
+
+		<!-- Management security entities -->
+		<class>cu.uci.abcd.domain.management.security.Permission</class>
+		<class>cu.uci.abcd.domain.management.security.Profile</class>
+		<class>cu.uci.abcd.domain.management.security.AccessRecord</class>
+		<class>cu.uci.abcd.domain.management.security.Ldap</class>
+		
+		<!-- Acquisition entities -->
+		<class>cu.uci.abcd.domain.acquisition.Desiderata</class>
+		<class>cu.uci.abcd.domain.acquisition.PurchaseRequest</class>
+		<class>cu.uci.abcd.domain.acquisition.Suggestion</class>
+		<class>cu.uci.abcd.domain.acquisition.PurchaseOrder</class>
+		                  
+		<!-- OPAC entities -->
+		<class>cu.uci.abcd.domain.opac.Comment</class>
+		<class>cu.uci.abcd.domain.opac.Recommendation</class>
+		<class>cu.uci.abcd.domain.opac.SelectionList</class>
+		<class>cu.uci.abcd.domain.opac.SelectionListData</class>
+		<class>cu.uci.abcd.domain.opac.Tag</class>
+		<class>cu.uci.abcd.domain.opac.OPACAction</class>
+		<class>cu.uci.abcd.domain.opac.Rating</class>
+		<class>cu.uci.abcd.domain.opac.RecordRating</class>	    
+		<class>cu.uci.abcd.domain.opac.OpacDataSources</class>	    	
+		    
+		<!-- Statistic entities -->
+		<class>cu.uci.abcd.domain.statistic.Indicator</class>
+		<class>cu.uci.abcd.domain.statistic.Report</class>
+		<class>cu.uci.abcd.domain.statistic.Variable</class>
+		<class>cu.uci.abcd.domain.statistic.ReportGroup</class>
+		
+	</persistence-unit>
+</persistence>

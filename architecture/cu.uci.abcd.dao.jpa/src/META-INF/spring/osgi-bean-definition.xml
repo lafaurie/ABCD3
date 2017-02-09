@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+			http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd"
+			>
+
+	<context:property-placeholder location="classpath*:META-INF/config/config.properties" />
+	
+	<bean id="jpaDialect" class="${config.jpa.dialect}" />
+
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="cu.uci.abcd.domain" />
+		<property name="dataSource" ref="dataSource" />
+		<property name="jpaDialect" ref="jpaDialect" />
+		<property name="jpaProperties">
+			<util:properties location="classpath:META-INF/config/jta.properties" />
+		</property>
+		<property name="jpaVendorAdapter">
+			<bean class="${config.jpa.vendorAdapter}">
+				<property name="databasePlatform" value="${config.db.platform}" />
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="statementExecutorDAO" class="cu.uci.abcd.dao.common.StatementExecutorDAOImpl">
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<!-- Transaction Manager -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
+		p:entityManagerFactory-ref="entityManagerFactory">
+		<property name="jpaDialect" ref="jpaDialect" />
+	</bean>
+	
+	<bean id="auditorBean" class="cu.uci.abcd.dao.SystemAuditor">
+	</bean>
+
+	<context:component-scan base-package="cu.uci.abcd.dao" />
+	
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<!-- Spring Data JPA -->
+	<!-- Common package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.common" />
+
+	<!-- circulation package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.circulation" />
+
+	<!-- Management library package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.management.library" />
+
+	<!-- Management security package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.management.security" />
+
+	<!-- Acquisition package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.acquisition" />
+
+	<!-- Opac package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.opac" />
+
+	<!-- Statistic package -->
+	<jpa:repositories base-package="cu.uci.abcd.dao.statistic" />
+
+	<jpa:auditing auditor-aware-ref="auditorBean" />
+
+</beans>

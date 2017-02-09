@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Wizard Demo
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abos.widgets.wizard.demo
+Import-Package: cu.uci.abos.core.ui;version="[1.0.0,1.0.0]",
+ cu.uci.abos.ui.api;version="[1.0.0,1.0.0]",
+ cu.uci.abos.util.api;version="[1.0.0,1.0.0]",
+ cu.uci.abos.widgets.wizard;version="[1.0.0,1.0.0]",
+ cu.uci.abos.widgets.wizard.listeners;version="[1.0.0,1.0.0]"
+Import-Bundle: org.eclipse.rap.rwt;version="[3.0.0.20141110-1349,3.0.0.20141110-1349]"
+

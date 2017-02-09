@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Validation Component
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abos.validation.ui
+Import-Bundle: org.eclipse.rap.jface;version="[3.0.0,4.0.0)",
+ org.eclipse.rap.rwt;version="[3.0.0,4.0.0)"
+Export-Package: cu.uci.abos.validation.ui;version="1.0.0"
+

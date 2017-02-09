@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		
+	 <bean id="libraryService" class="cu.uci.abcd.administration.library.impl.LibraryServiceImpl" />
+	 <bean id="roomService" class="cu.uci.abcd.administration.library.impl.RoomServiceImpl" />
+	 <bean id="formationCourseService" class="cu.uci.abcd.administration.library.impl.FormationCourseServiceImpl" />
+	 <bean id="providerService" class="cu.uci.abcd.administration.library.impl.ProviderServiceImpl" />
+	 <bean id="coinService" class="cu.uci.abcd.administration.library.impl.CoinServiceImpl" />
+	 <bean id="workerService" class="cu.uci.abcd.administration.library.impl.WorkerServiceImpl" />
+	 <bean id="fineEquationService" class="cu.uci.abcd.administration.library.impl.FineEquationServiceImpl" />
+	 <bean id="calendarService" class="cu.uci.abcd.administration.library.impl.CalendarServiceImpl" />
+	 <bean id="scheduleService" class="cu.uci.abcd.administration.library.impl.ScheduleServiceImpl" />
+	 <bean id="circulationRuleService" class="cu.uci.abcd.administration.library.impl.CirculationRuleServiceImpl" />
+	 <bean id="enrollmentService" class="cu.uci.abcd.administration.library.impl.EnrollmentServiceImpl" />
+	 
+	 
+</beans> 

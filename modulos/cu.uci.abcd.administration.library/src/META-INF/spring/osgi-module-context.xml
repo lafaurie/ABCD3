@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<reference id="libraryDAO" interface="cu.uci.abcd.dao.management.library.LibraryDAO">
+		<listener bind-method="bind" ref="libraryService" />
+	</reference>
+	
+	<reference id="nomenclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		<listener bind-method="bind1" ref="libraryService" />
+	</reference>
+	
+	 <reference id="providerJISIS"
+                interface="cu.uci.abcd.dataprovider.jisis.IJisisDataProvider">
+        <listener bind-method="bind2" ref="libraryService" />
+    </reference>
+	
+	
+	 
+	<reference id="roomDAO" interface="cu.uci.abcd.dao.management.library.RoomDAO">
+		<listener bind-method="bind" ref="roomService" />
+	</reference>
+	
+	<reference id="formationCourseDAO" interface="cu.uci.abcd.dao.management.library.FormationCourseDAO">
+		<listener bind-method="bind" ref="formationCourseService" />
+	</reference>
+	
+	<reference id="providerDAO" interface="cu.uci.abcd.dao.management.library.ProviderDAO">
+		<listener bind-method="bind" ref="providerService" />
+	</reference>
+	
+	<reference id="coinDAO" interface="cu.uci.abcd.dao.management.library.CoinDAO">
+		<listener bind-method="bind" ref="coinService" />
+	</reference>
+	
+	<reference id="workerDAO" interface="cu.uci.abcd.dao.management.library.WorkerDAO">
+		<listener bind-method="bind" ref="workerService" />
+	</reference>
+	
+	<reference id="fineEquationDAO" interface="cu.uci.abcd.dao.management.library.FineEquationDAO">
+		<listener bind-method="bind" ref="fineEquationService" />
+	</reference>
+	
+	<reference id="calendarDAO" interface="cu.uci.abcd.dao.management.library.CalendarDAO">
+		<listener bind-method="bind" ref="calendarService" />
+	</reference>
+	
+	<reference id="scheduleDAO" interface="cu.uci.abcd.dao.management.library.ScheduleDAO">
+		<listener bind-method="bind" ref="scheduleService" />
+	</reference>
+	
+	<reference id="circulationRuleDAO" interface="cu.uci.abcd.dao.management.library.CirculationRuleDAO">
+		<listener bind-method="bind" ref="circulationRuleService" />
+	</reference>
+	
+	<reference id="enrollmentDAO" interface="cu.uci.abcd.dao.management.library.EnrollmentDAO">
+		<listener bind-method="bind" ref="enrollmentService" />
+	</reference>
+	
+	
+	
+	<service ref="libraryService" interface="cu.uci.abcd.administration.library.ILibraryService" />
+	<service ref="roomService" interface="cu.uci.abcd.administration.library.IRoomService" />
+	<service ref="formationCourseService" interface="cu.uci.abcd.administration.library.IFormationCourseService" />
+	<service ref="providerService" interface="cu.uci.abcd.administration.library.IProviderService" />
+	<service ref="coinService" interface="cu.uci.abcd.administration.library.ICoinService" />
+	<service ref="workerService" interface="cu.uci.abcd.administration.library.IWorkerService" />
+	<service ref="fineEquationService" interface="cu.uci.abcd.administration.library.IFineEquationService" />
+	<service ref="calendarService" interface="cu.uci.abcd.administration.library.ICalendarService" />
+	<service ref="scheduleService" interface="cu.uci.abcd.administration.library.IScheduleService" />
+	<service ref="circulationRuleService" interface="cu.uci.abcd.administration.library.ICirculationRuleService" />
+	<service ref="enrollmentService" interface="cu.uci.abcd.administration.library.IEnrollmentService" />
+	     
+	
+</beans:beans>

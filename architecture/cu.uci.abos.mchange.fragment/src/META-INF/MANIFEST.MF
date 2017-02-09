@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: cu.uci.abos.mchange.fragment
+Bundle-Version: 1.0.0
+Bundle-Name: ABOS Mchange Fragment
+Bundle-ManifestVersion: 2
+Fragment-Host: com.springsource.com.mchange.v2.c3p0;bundle-version="0.9.1.2"
+Import-Package: org.apache.derby.impl.io;version="10.5.1000001.764942";resolution:=optional,
+ org.apache.derby.jdbc;version="10.5.1000001.764942";resolution:=optional,
+ org.postgresql;version="9.1.901.jdbc4_1";resolution:=optional,
+ org.postgresql.jdbc4;version="9.1.901.jdbc4_1";resolution:=optional
+

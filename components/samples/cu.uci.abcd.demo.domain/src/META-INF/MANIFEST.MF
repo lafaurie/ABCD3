@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Domain
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abcd.demo.domain
+Export-Package: cu.uci.abcd.demo.domain.circulation;version="1.0.0",
+ cu.uci.abcd.demo.domain.common;version="1.0.0",
+ cu.uci.abcd.demo.domain.management.library;version="1.0.0"
+Import-Package: javax.persistence;resolution:=optional
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- Reference for DataSource service -->
+	<reference id="dataSource" interface="javax.sql.DataSource" />
+
+	<!-- Publishing services for DAO's implementation -->
+	<service ref="personDAO" interface="cu.uci.abcd.dao.common.PersonDAO" />
+	<service ref="actorRoleTypeDAO" interface="cu.uci.abcd.dao.common.ActorRoleTypeDAO" />
+	<service ref="applicationDAO" interface="cu.uci.abcd.dao.common.ApplicationDAO" />
+	<service ref="accountDAO" interface="cu.uci.abcd.dao.common.AccountDAO" />
+	<service ref="actorRoleTypeDAO" interface="cu.uci.abcd.dao.common.ActorRoleTypeDAO" />
+	<service ref="addressRoleTypeDAO" interface="cu.uci.abcd.dao.common.AddressRoleTypeDAO" />
+	<service ref="emailAddressDAO" interface="cu.uci.abcd.dao.common.EmailAddressDAO" />
+	<service ref="phoneNumberDAO" interface="cu.uci.abcd.dao.common.PhoneNumberDAO" />
+	<service ref="postalAddressDAO" interface="cu.uci.abcd.dao.common.PostalAddressDAO" />
+	<service ref="urlDAO" interface="cu.uci.abcd.dao.common.UrlDAO" />
+	<!-- Circulation DAO's implementation-->
+	<service ref="loanUserDAO" interface="cu.uci.abcd.dao.circulation.LoanUserDAO" />
+	<service ref="loanUserTypeDAO" interface="cu.uci.abcd.dao.circulation.LoanUserTypeDAO" />
+	<!-- Management library DAO's implementation-->
+	<service ref="libraryDAO" interface="cu.uci.abcd.dao.management.library.LibraryDAO" />
+	<service ref="formationCourseDAO" interface="cu.uci.abcd.dao.management.library.FormationCourseDAO" />
+</beans:beans>

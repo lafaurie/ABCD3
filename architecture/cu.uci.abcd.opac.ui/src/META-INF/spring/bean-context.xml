@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="MainContent" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="Configuration" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="Citas" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="Seleccion" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />	
+	<bean id="Alertas" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />	
+	<bean id="Etiquetas" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />	
+	<bean id="Listas" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />	
+	<bean id="Circulation" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />	
+	<bean id="Adquisicion" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />	
+	<bean id="SugerenciaListView" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<!-- Opac entrypoint bean creation -->
+	<bean id="opacEntryPoint" class="cu.uci.abcd.opac.ui.EntryPointServiceImpl" />
+
+
+</beans>

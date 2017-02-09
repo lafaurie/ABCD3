@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<reference id="iJisisServices"
+                interface="cu.uci.abcd.dataprovider.jisis.IJisisDataProvider">
+                <listener bind-method="bind" ref="dataBaseManager" />
+        </reference>
+        
+        <service ref="dataBaseManager"
+                interface="cu.uci.abcd.cataloguing.IDataBaseManager" />
+         
+                
+    <reference id="loanObjectDAO" 
+                interface="cu.uci.abcd.dao.common.LoanObjectDAO">
+		         <listener bind-method="bind" ref="loanObjectCreation" />
+	     </reference>
+	     
+	<reference id="roomDAO" 
+                interface="cu.uci.abcd.dao.management.library.RoomDAO">
+		         <listener bind-method="bindRoom" ref="loanObjectCreation" />
+	     </reference>
+	
+	<reference id="transactionDAO" 
+                interface="cu.uci.abcd.dao.circulation.TransactionDAO">
+		         <listener bind-method="bindTransaction" ref="loanObjectCreation" />
+	     </reference>
+	     
+	<reference id="penaltyDAO" 
+                interface="cu.uci.abcd.dao.circulation.PenaltyDAO">
+		         <listener bind-method="bindPenalty" ref="loanObjectCreation" />
+	     </reference>
+	     
+	<reference id="reservationDAO" 
+                interface="cu.uci.abcd.dao.circulation.ReservationDAO">
+		         <listener bind-method="bindReservation" ref="loanObjectCreation" />
+	     </reference>                 
+	     
+    <reference id="nomenclatorDAO" 
+                interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		         <listener bind-method="bindNomenclator" ref="loanObjectCreation" />
+	     </reference>
+	     
+	<reference id="providerDAO" 
+                interface="cu.uci.abcd.dao.management.library.ProviderDAO">
+		         <listener bind-method="bindProvider" ref="loanObjectCreation" />
+	     </reference>
+	     
+	<reference id="purchaseOrderDAO" 
+                interface="cu.uci.abcd.dao.acquisition.PurchaseOrderDAO">
+		         <listener bind-method="bindPurchaseOrder" ref="loanObjectCreation" />
+	     </reference>
+	     
+	<reference id="suggestionDAO" 
+                interface="cu.uci.abcd.dao.acquisition.SuggestionDAO">
+		         <listener bind-method="bindSuggestion" ref="loanObjectCreation" />
+	     </reference>     
+	          
+	   <service ref="loanObjectCreation"
+                interface="cu.uci.abcd.cataloguing.ILoanObjectCreation" />
+                
+       <service ref="exemplaryRecord"
+                interface="cu.uci.abcd.cataloguing.IExemplaryRecord" />
+                
+       <service ref="authoritiesRecord"
+                interface="cu.uci.abcd.cataloguing.IAuthoritiesRecord" />         
+</beans:beans> 

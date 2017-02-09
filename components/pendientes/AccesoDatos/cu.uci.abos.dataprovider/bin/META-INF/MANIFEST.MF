@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Tool: Bundlor 1.1.2.RELEASE
+Bundle-Vendor: ABOS
+Bundle-Version: 0.0.1
+Bundle-Name: DA Generic Data Provider
+Bundle-ManifestVersion: 2
+Bundle-Description: Especificación Genérica de Acceso Datos
+Bundle-SymbolicName: cu.uci.abos.data.provider
+Export-Package: cu.uci.abos.dataprovider.advanced;version="0.0.1",
+ cu.uci.abos.dataprovider.basic;version="0.0.1",
+ cu.uci.abos.dataprovider.exception;version="0.0.1"

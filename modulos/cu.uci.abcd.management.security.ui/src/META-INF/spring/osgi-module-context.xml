@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+	 <reference id="personService" interface="cu.uci.abcd.management.security.IPersonService">
+		<listener bind-method="bindPersonService" ref="allManagementSecurityViewController" />
+	</reference>
+	
+	<reference id="profileService" interface="cu.uci.abcd.management.security.IProfileService">
+		<listener bind-method="bindProfileService" ref="allManagementSecurityViewController" />
+	</reference>
+	
+	<reference id="userService" interface="cu.uci.abcd.management.security.IUserService">
+		<listener bind-method="bindUserService" ref="allManagementSecurityViewController" />
+	</reference>
+	
+	<reference id="accessRecordService" interface="cu.uci.abcd.management.security.IAccessRecordService">
+		<listener bind-method="bindAccessRecordService" ref="allManagementSecurityViewController" />
+	</reference>
+	
+	<reference id="permissionService" interface="cu.uci.abcd.management.security.IPermissionService">
+		<listener bind-method="bindPermissionService" ref="allManagementSecurityViewController" />
+	</reference>
+	
+	<reference id="ldapService" interface="cu.uci.abcd.management.security.ILdapService">
+		<listener bind-method="bindLdapService" ref="allManagementSecurityViewController" />
+	</reference>
+	
+	
+	<service ref="consultPerson" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ConsultPerson"/>
+				<beans:entry key="viewController" value-ref="managementPersonViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="consultProfile" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ConsultProfile"/>
+				<beans:entry key="viewController" value-ref="managementProfileViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="consultUser" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ConsultUser"/>
+				<beans:entry key="viewController" value-ref="managementUserViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="consultAccessControl" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ConsultAccessControl"/>
+				<beans:entry key="viewController" value-ref="managementAccessRecordViewController"/> 
+		</service-properties>
+	</service>
+	
+	<service ref="registerProfile" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.RegisterProfile"/>
+				<beans:entry key="viewController" value-ref="managementProfileViewController"/>
+		</service-properties>
+	</service>
+	
+	
+	<service ref="registerPerson" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.RegisterPerson"/>
+				<beans:entry key="viewController" value-ref="managementPersonViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="registerUser" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.RegisterUser"/>
+				<beans:entry key="viewController" value-ref="managementUserViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="registerAccessControl" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.RegisterAccessControl"/>
+				<beans:entry key="viewController" value-ref="managementAccessRecordViewController"/> 
+		</service-properties>
+	</service>
+	
+	<service ref="myPerfil" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.MyPerfil"/>
+				<beans:entry key="viewController" value-ref="managementUserViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="aboutUsID" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.AboutUs"/>
+		</service-properties>
+	</service>
+	
+	<service ref="manualsID" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.Manuals"/>
+		</service-properties>
+	</service>
+	
+	<service ref="configureLdap" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ConfigureLdap"/>
+				<beans:entry key="viewController" value-ref="managementLdapViewController"/>
+		</service-properties>
+	</service>
+	
+	<service ref="viewAccessControl" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ViewAccessControl"/>
+		</service-properties>
+	</service>
+	
+	<service ref="viewPerson" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ViewPerson"/>
+		</service-properties>
+	</service>
+	
+	
+	<service ref="viewUser" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ViewUser"/>
+		</service-properties>
+	</service>
+	
+	
+	<service ref="viewProfile" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.security.ui.ViewProfile"/>
+		</service-properties>
+	</service>
+	
+	
+	<!-- 
+	<reference id="reportGeneratorPDF" interface="cu.uci.abcd.management.report.PDFGenerator">
+		<listener bind-method="bindPDFGenerator" ref="allManagementSecurityViewController" />
+	</reference>
+	
+	<reference id="reportGeneratorExcel" interface="cu.uci.abcd.management.report.SpreadsheetGenerator">
+		<listener bind-method="bindSpreadsheetGenerator" ref="allManagementSecurityViewController" />
+	</reference>
+	-->
+	
+</beans:beans> 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	<!-- Adquisition -->
+	<bean id="orderDAO" class="cu.uci.abcd.dao.test.adquisition.DesiderataDAOImpl" />
+	<bean id="purchaseOrderDAO" class="cu.uci.abcd.dao.test.adquisition.PurchaseRequestDAOImpl" />
+	<bean id="suggestionDAO" class="cu.uci.abcd.dao.test.adquisition.SuggestionDAOImpl" />
+	<!-- Circulation -->
+	<bean id="loanUserDAO" class="cu.uci.abcd.dao.test.circulation.LoanUserDAOImpl" />
+	<bean id="penaltyDAO" class="cu.uci.abcd.dao.test.circulation.PenaltyDAOImpl" />
+	<bean id="reservationDAO" class="cu.uci.abcd.dao.test.circulation.ReservationDAOImpl" />
+	<bean id="transactionDAO" class="cu.uci.abcd.dao.test.circulation.TransactionDAOImpl" />
+
+	<!-- Common -->
+	<bean id="loanObjectDAO" class="cu.uci.abcd.dao.test.common.LoanObjectDAOImpl" />
+	<bean id="nomenclatorDAO" class="cu.uci.abcd.dao.test.common.NomenclatorDAOImpl" />
+	<bean id="personDAO" class="cu.uci.abcd.dao.test.common.PersonDAOImpl" />
+	<bean id="userDAO" class="cu.uci.abcd.dao.test.common.UserDAOImpl" />
+
+	<!-- Library -->
+	<bean id="calendarDAO" class="cu.uci.abcd.dao.test.management.library.CalendarDAOImpl" />
+	<bean id="circulationRuleDAO" class="cu.uci.abcd.dao.test.management.library.CirculationRuleDAOImpl" />
+	<bean id="coinDAO" class="cu.uci.abcd.dao.test.management.library.CoinDAOImpl" />
+	<bean id="fineEquationDAO" class="cu.uci.abcd.dao.test.management.library.FineEquationDAOImpl" />
+	<bean id="formationCourseDAO" class="cu.uci.abcd.dao.test.management.library.FormationCourseDAOImpl" />
+	<bean id="libraryDAO" class="cu.uci.abcd.dao.test.management.library.LibraryDAOImpl" />
+	<bean id="providerDAO" class="cu.uci.abcd.dao.test.management.library.ProviderDAOImpl" />
+	<bean id="roomDAO" class="cu.uci.abcd.dao.test.management.library.RoomDAOImpl" />
+	<bean id="scheduleDAO" class="cu.uci.abcd.dao.test.management.library.ScheduleDAOImpl" />
+	<bean id="statisticalEntityDAO" class="cu.uci.abcd.dao.test.management.library.StatisticalEntityDAOImpl" />
+	<bean id="workerDAO" class="cu.uci.abcd.dao.test.management.library.WorkerDAOImpl" />
+
+	<!-- Security -->
+	<bean id="permissionDAO" class="cu.uci.abcd.dao.test.management.security.PermissionDAOImpl" />
+	<bean id="profileDAO" class="cu.uci.abcd.dao.test.management.security.ProfileDAOImpl" />
+
+	<!-- opac -->
+	<bean id="commentDAO" class="cu.uci.abcd.dao.test.opac.CommentDAOImpl" />
+	<bean id="oPACActionDAO" class="cu.uci.abcd.dao.test.opac.OPACActionDAOImpl" />
+	<bean id="recommendationDAO" class="cu.uci.abcd.dao.test.opac.RecommendationDAOImpl" />
+	<bean id="selectionListDAO" class="cu.uci.abcd.dao.test.opac.SelectionListDAOImpl" />
+	<bean id="tagDAO" class="cu.uci.abcd.dao.test.opac.TagDAOImpl" />
+
+	<!-- statistic -->
+	<bean id="indicatorDAO" class="cu.uci.abcd.dao.test.statistic.IndicatorDAOImpl" />
+	<bean id="reportDAO" class="cu.uci.abcd.dao.test.statistic.ReportDAOImpl" />
+	<bean id="statisticDAO" class="cu.uci.abcd.dao.test.statistic.StatisticDAOImpl" />
+
+
+</beans>

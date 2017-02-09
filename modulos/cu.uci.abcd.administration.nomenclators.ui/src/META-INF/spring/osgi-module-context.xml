@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+   <reference id="nomenclatorImpl" interface="cu.uci.abcd.administration.nomenclators.IManageNomenclator">
+		<listener bind-method="bind" ref="controllerNomenclator" />
+	</reference> 
+	
+
+	<service ref="nomenclatorContributor" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.administration.nomenclators.ui.ManageNomenclator" />
+			<beans:entry key="viewController" value-ref="controllerNomenclator"/>
+		</service-properties>
+	</service>
+ 
+</beans:beans>

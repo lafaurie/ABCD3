@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<reference id="personService" interface="cu.uci.abcd.circulation.IPersonService">
+	<listener bind-method="bindPersonService" ref="proxy"/>
+	</reference>
+	<reference id="loanUserService" interface="cu.uci.abcd.circulation.ILoanUserService">
+		<listener bind-method="bindManageLoanUser" ref="proxy" />
+	</reference>
+	
+	<reference id="loanObjectService" interface="cu.uci.abcd.circulation.ILoanObjectService">
+		<listener bind-method="bindManageObject" ref="proxy" />
+	</reference>
+	
+	<reference id="penaltyService" interface="cu.uci.abcd.circulation.IPenaltyService">
+		<listener bind-method="bindManagePenalty" ref="proxy" />
+	</reference>
+	
+	<reference id="transactionService" interface="cu.uci.abcd.circulation.ITransactionService">
+		<listener bind-method="bindManageTransaction" ref="proxy" />
+	</reference>
+
+	<reference id="reservationService" interface="cu.uci.abcd.circulation.IReservationService">
+		<listener bind-method="bindReservationService" ref="proxy" />
+	</reference>	
+	
+	<reference id="loanObjectJISISService" interface="cu.uci.abcd.circulation.ILoanObjectJISISService">
+		<listener bind-method="bindLoanObjectJISIS" ref="proxy" />
+	</reference>		
+
+	<service ref="consultLoanUser" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.ConsultLoanUser" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>
+	
+	<service ref="consultSanction" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.ConsultSanction" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>
+	
+	<service ref="consultLoanObject" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.ConsultLoanObject" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>
+	
+	
+	<service ref="consultTransaction" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.ConsultTransaction" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>
+	
+		<service ref="consultReservation" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.ConsultReservation" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>
+	
+	<service ref="registerLoanUser" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.RegisterLoanUser" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>
+	
+	<service ref="registerSantion" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.RegisterSanction" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+			</service-properties>
+	</service>
+	
+	<service ref="registerLoan" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.RegisterLoan" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>
+	
+		<service ref="registerRenew" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.RegisterRenew" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>
+	
+	
+	<service ref="registerReturn" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.circulation.ui.RegisterReturn" />
+			<beans:entry key="viewController" value-ref="proxy"/>
+		</service-properties>
+	</service>	
+</beans:beans>

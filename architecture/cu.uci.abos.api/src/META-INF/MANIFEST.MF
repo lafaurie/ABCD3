@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-Version: 2.0.0
+Bundle-Name: CIGED Interface Api
+Bundle-ManifestVersion: 2
+Bundle-Description: API for manage modules contributors
+Bundle-SymbolicName: cu.uci.abos.api
+Bundle-Vendor: UCI
+Import-Bundle: org.eclipse.rap.rwt;version="[3.0.0,4.0.0)"
+Import-Package: org.osgi.framework;version="[1.7.0,1.7.0]"
+Export-Package: cu.uci.abos.api.exception;version="2.0.0",
+ cu.uci.abos.api.log;version="2.0.0",
+ cu.uci.abos.api.ui;version="2.0.0",
+ cu.uci.abos.api.util;version="2.0.0"
+

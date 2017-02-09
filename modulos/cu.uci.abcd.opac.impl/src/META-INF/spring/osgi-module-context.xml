@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<reference id="iJisisServices"
+		interface="cu.uci.abcd.dataprovider.jisis.IJisisDataProvider">
+		<listener bind-method="bind" ref="opacdataBaseManager" />
+	</reference>
+	<service ref="opacdataBaseManager" interface="cu.uci.abcd.opac.IOpacDataBaseManager" />
+
+	<reference id="opacSuggestionDAO" interface="cu.uci.abcd.dao.acquisition.SuggestionDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacSuggestionService" />
+	</reference>
+	<service ref="opacSuggestionService" interface="cu.uci.abcd.opac.IOpacSuggestionService" />
+
+
+	<reference id="opacPenaltyDAO" interface="cu.uci.abcd.dao.circulation.PenaltyDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacPenaltyService" />
+	</reference>
+	<service ref="opacPenaltyService" interface="cu.uci.abcd.opac.IOpacPenaltyService" />
+
+
+	<reference id="opacReservationDAO" interface="cu.uci.abcd.dao.circulation.ReservationDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacReservationService" />
+	</reference>
+	<reference id="circulationRuleDAO"
+		interface="cu.uci.abcd.dao.management.library.CirculationRuleDAO">
+		<listener bind-method="bindCirculationRuleDao" ref="opacReservationService" />
+	</reference>
+	<reference id="calendarDAO"
+		interface="cu.uci.abcd.dao.management.library.CalendarDAO">
+		<listener bind-method="bindCalendarDao" ref="opacReservationService" />
+	</reference>
+	<reference id="workScheduleDAO"
+		interface="cu.uci.abcd.dao.management.library.ScheduleDAO">
+		<listener bind-method="bindScheduleDao" ref="opacReservationService" />
+	</reference>	
+	<reference id="nomenclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		<listener bind-method="bindNomenclatorDao" ref="opacReservationService" />
+	</reference>
+	<service ref="opacReservationService" interface="cu.uci.abcd.opac.IOpacReservationService" />
+
+
+	<reference id="opacSelectionListDAO" interface="cu.uci.abcd.dao.opac.SelectionListDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacSelectionListService" />
+	</reference>
+	<service ref="opacSelectionListService" interface="cu.uci.abcd.opac.IOpacSelectionListService" />
+
+	<reference id="opacRegisterUserDAO" interface="cu.uci.abcd.dao.common.UserDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacRegisterUserService" />
+	</reference>
+	<service ref="opacRegisterUserService" interface="cu.uci.abcd.opac.IOpacRegisterUserService" />
+
+	<reference id="opacLoanUserDAO" interface="cu.uci.abcd.dao.circulation.LoanUserDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacLoanUserService" />
+	</reference>
+	<service ref="opacLoanUserService" interface="cu.uci.abcd.opac.IOpacLoanUserService" />
+
+	<reference id="opacLoanObjectDAO" interface="cu.uci.abcd.dao.common.LoanObjectDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacLoanObjectService" />
+	</reference>
+	<service ref="opacLoanObjectService" interface="cu.uci.abcd.opac.IOpacLoanObjectService" />
+
+	<reference id="opacNomclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacNomenclatorService" />
+	</reference>
+	<service ref="opacNomenclatorService" interface="cu.uci.abcd.opac.IOpacNomenclatorService" />
+
+	<reference id="opacCommentDAO" interface="cu.uci.abcd.dao.opac.CommentDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacCommentService" />
+	</reference>
+	<service ref="opacCommentService" interface="cu.uci.abcd.opac.IOpacCommentService" />
+
+	<reference id="opacRecommendationDAO" interface="cu.uci.abcd.dao.opac.RecommendationDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacRecommendationService" />
+	</reference>
+	<service ref="opacRecommendationService" interface="cu.uci.abcd.opac.IOpacRecommendationService" />
+
+	<reference id="opacTagDAO" interface="cu.uci.abcd.dao.opac.TagDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacTagService" />
+	</reference>
+	<service ref="opacTagService" interface="cu.uci.abcd.opac.IOpacTagService" />
+
+	<reference id="opacTtransactionDAO" interface="cu.uci.abcd.dao.circulation.TransactionDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacTransactionService" />
+	</reference>
+	<service ref="opacTransactionService" interface="cu.uci.abcd.opac.IOpacTransactionService" />
+
+	<reference id="opacUserDAO" interface="cu.uci.abcd.dao.common.UserDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacUserService" />
+	</reference>  
+	<service ref="opacUserService" interface="cu.uci.abcd.opac.IOpacUserService" />
+    
+	<reference id="opacLibraryDAO" interface="cu.uci.abcd.dao.management.library.LibraryDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacLibraryService" />
+	</reference>
+	<reference id="opacDataSourceDAO"
+		interface="cu.uci.abcd.dao.opac.OpacDataSourcesDAO">
+		<listener bind-method="bindOpacDataSource" ref="opacLibraryService" />
+	</reference>
+	<service ref="opacLibraryService" interface="cu.uci.abcd.opac.IOpacLibraryService" />
+
+	<reference id="opacRatingDAO" interface="cu.uci.abcd.dao.opac.RatingDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacRatingService" />
+	</reference>
+	<service ref="opacRatingService" interface="cu.uci.abcd.opac.IOpacWeigUpService" />
+
+	<reference id="opacRecordRatingDAO" interface="cu.uci.abcd.dao.opac.RecordRatingDAO"
+		availability="optional">
+		<listener bind-method="bind" ref="opacRecordRatingService" />
+	</reference>
+	<service ref="opacRecordRatingService" interface="cu.uci.abcd.opac.IOpacRecordRatingService" />  		
+	
+</beans:beans> 

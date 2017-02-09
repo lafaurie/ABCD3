@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:osgi-compendium="http://www.springframework.org/schema/osgi-compendium"
+	xsi:schemaLocation="
+            http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+            http://www.springframework.org/schema/osgi-compendium 
+    		http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium-1.2.xsd">
+
+	<context:property-placeholder properties-ref="securityConfig" ignore-unresolvable="true" ignore-resource-not-found="true" />
+
+	<osgi-compendium:cm-properties id="securityConfig" persistent-id="security.configuration" />
+    
+	<bean id="securityParamsBean" class="cu.uci.abos.core.security.SecurityParams">
+		<constructor-arg name="authenticationType" value="${security.authentication.type}" />
+		<property name="securityEnabled" value="${security.enabled}" />
+		<property name="sessionTimeout" value="${security.session.timeout}" />
+	</bean>
+
+	<bean id="loginServiceFactory" class="cu.uci.abcd.management.security.impl.services.CustomLoginServiceFactory">
+		<constructor-arg name="securityParams" ref="securityParamsBean" />
+	</bean>
+	
+	 <bean id="personService" class="cu.uci.abcd.management.security.impl.services.management.PersonServiceImpl" />
+	 <bean id="profileService" class="cu.uci.abcd.management.security.impl.services.management.ProfileServiceImpl" />
+	 <bean id="userService" class="cu.uci.abcd.management.security.impl.services.management.UserServiceImpl" />
+	 <bean id="permissionService" class="cu.uci.abcd.management.security.impl.services.management.PermissionServiceImpl" />
+	 <bean id="accessRecordService" class="cu.uci.abcd.management.security.impl.services.management.AccessRecordServiceImpl" />
+	 <bean id="ldapService" class="cu.uci.abcd.management.security.impl.services.management.LdapServiceImpl" />
+	 
+	 
+</beans>

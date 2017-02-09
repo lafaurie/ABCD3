@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GenericDataAccess
+Bundle-SymbolicName: GenericDataAccess
+Bundle-Version: 1.0.0
+Bundle-Vendor: uci
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: publico.excepciones,
+ publico.interfaces

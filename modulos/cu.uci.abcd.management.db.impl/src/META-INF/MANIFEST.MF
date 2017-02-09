@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: cu.uci.abcd.management.db.impl
+Bundle-Version: 1.0.0
+Bundle-Name: Impl
+Bundle-ManifestVersion: 2
+Import-Package: cu.uci.abcd.management.db;version="[1.0.0,2.0.0]"
+Export-Package: cu.uci.abcd.management.db.impl;version="1.0.0"
+Import-Bundle: cu.uci.abcd.dataprovider.jisis;version="[1.0.0,2.0.0]",
+ cu.uci.abcd.dataprovider.jisis.impl;version="[1.0.0,2.0.0]"
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<!-- Creacion del controlador de la presentacion -->
+	<bean id="allManagementController"
+		class="cu.uci.abcd.statistic.ui.controller.AllManagementController" />
+
+	<!-- Creacion de la factoria de presentacion -->
+	<bean id="adminTableUi" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="adminIndicatorUi" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="adminReportUi" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="generateReportUi" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="adminVariableUi" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+
+	
+
+</beans>

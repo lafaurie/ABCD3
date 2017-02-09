@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Export-Package: controller;version="1.0.0",
+ cu.uci.abcd.management.db.ui.contributors;version="1.0.0",
+ resources;version="1.0.0"
+Import-Bundle: org.eclipse.rap.rwt;version="3.0.0.20141110-1349",
+ jisis-core,
+ cu.uci.abos.api;version="[2.0.0,2.0.0]",
+ cu.uci.abos.core;version="[2.0.0,2.0.0]"
+Bundle-Version: 1.0.0
+Tool: Bundlor 1.1.2.RELEASE
+Bundle-Name: Iu
+Bundle-ManifestVersion: 2
+Import-Package: cu.uci.abos.core.l10n
+Bundle-SymbolicName: cu.uci.abcd.management.db.ui
+

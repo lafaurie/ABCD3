@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Datasource
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abcd.demo.datasource
+Import-Package: com.mchange.v2.c3p0;version="[0.9.1.2,0.9.1.2]",
+ javax.sql
+

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<service ref="MainContent" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.MainContent" />
+		</service-properties>
+	</service>
+	<service ref="Configuration" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.ConfigurationOption" />
+		</service-properties>
+	</service>
+	<service ref="Citas" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.MisCitas" />
+		</service-properties>
+	</service>
+	
+	<service ref="Seleccion" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.Seleccion" />
+		</service-properties>
+	</service>
+	
+	<service ref="Alertas" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.MisAlertas" />
+		</service-properties>
+	</service>
+	
+	<service ref="Etiquetas" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.MisEtiquetas" />
+		</service-properties>
+	</service>
+	
+	<service ref="Listas" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.ListasDeSeleccion" />
+		</service-properties>
+	</service>
+	
+	<service ref="Circulation" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.Circulation" />
+		</service-properties>
+	</service>
+	
+	<service ref="Adquisicion" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.Adquisicion" />
+		</service-properties>
+	</service>
+	
+	<service ref="SugerenciaListView" interface="cu.uci.abos.ui.api.IContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="opac" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.opac.contribution.SugerenciasList" />
+		</service-properties>
+	</service>
+
+	<service ref="opacEntryPoint" interface="cu.uci.abos.ui.api.IEntryPointService">
+
+	</service>
+</beans:beans> 

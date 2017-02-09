@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<reference id="adminVariable" interface="cu.uci.abcd.statistic.IAdminVariable">
+		<listener bind-method="bindAdminVariable" ref="allManagementController" />
+	</reference>
+	
+	<reference id="manageDatabase" interface="cu.uci.abcd.statistic.IManageDatabase">
+	<listener bind-method="bindManageDatabase" ref="allManagementController"/>
+	</reference>
+
+	<reference id="adminTable" interface="cu.uci.abcd.statistic.IAdminTable">
+		<listener bind-method="bindAdminTable" ref="allManagementController" />
+	</reference>
+
+	<reference id="indicator" interface="cu.uci.abcd.statistic.IIndicator">
+		<listener bind-method="bindIndicator" ref="allManagementController" />
+	</reference>
+	
+	<reference id="report" interface="cu.uci.abcd.statistic.IReport">
+	<listener bind-method="bindReport" ref="allManagementController"/>
+	</reference>
+   
+	<service ref="generateReportUi" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.statistic.ui.GenerateReport" />
+			<beans:entry key="viewController" value-ref="allManagementController" />
+		</service-properties>
+	</service>
+
+	<service ref="adminReportUi" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.statistic.ui.AdminReport" />
+			<beans:entry key="viewController" value-ref="allManagementController" />
+		</service-properties>
+	</service>
+
+	<service ref="adminTableUi" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.statistic.ui.AdminTable" />
+			<beans:entry key="viewController" value-ref="allManagementController" />
+		</service-properties>
+	</service>
+	<service ref="adminIndicatorUi" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.statistic.ui.AdminIndicator" />
+			<beans:entry key="viewController" value-ref="allManagementController" />
+		</service-properties>
+	</service>
+
+	<service ref="adminVariableUi" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class" value="cu.uci.abcd.statistic.ui.AdminVariable" />
+			<beans:entry key="viewController" value-ref="allManagementController" />
+		</service-properties>
+
+	</service>
+</beans:beans>

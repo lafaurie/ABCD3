@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Version: 0.0.1
+Bundle-Name: ABOS Component
+Bundle-ManifestVersion: 2
+Bundle-Description: Gesti??n de componentes de presentaci??n
+Bundle-SymbolicName: cu.uci.abos.ui.components
+Bundle-Vendor: ABOS
+

@@ -1,0 +1,307 @@
+package cu.uci.abcd.adquisition.l10n;
+
+import org.eclipse.rap.rwt.RWT;
+
+
+public class AbosMessages {
+
+	// MODULES
+
+	public String ADQUISITION_MODULE;
+	
+	// INTERFACES OF ADQUISITION_MODULE
+	
+
+	public String BUTTON_ANNUL;
+	public String BUTTON_ACCEPT;
+	public String BUTTON_REJECT;
+	public String BUTTON_LOG_IN;
+	public String BUTTON_NEW;
+	public String BUTTON_UPDATE;
+	public String BUTTON_CLOSE;
+	public String BUTTON_CANCEL;
+	public String BUTTON_MODIFY;
+	public String BUTTON_ADD;
+	public String BUTTON_INSERT;
+	public String BUTTON_EXPORT_TO_EXCEL;
+	public String BUTTON_EXPORT_TO_PDF;
+	public String BUTTON_RETURN;
+	public String BUTTON_VALIDATE;
+	public String BUTTON_CONSULT;
+	public String BUTTON_NEW_SEARCH;
+	public String BUTTON_ASSOCIATE;
+	public String BUTTON_DISSOCIATE;
+	public String BUTTON_RENEW;
+	public String BUTTON_CURRENT_STATUS;
+	public String BUTTON_HISTORY;
+	public String BUTTON_LOSS_REGISTER;
+	public String BUTTON_LOAN;
+	public String BUTTON_APPROVE_ALL;
+	public String BUTTON_REJECT_ALL;
+	public String BUTTON_DELETE;
+	public String BUTTON_SEARCH;
+	public String BUTTON_MORE_OPTIONS;
+	public String BUTTON_START_SEARCH;
+	public String BUTTON_ATTACH;
+	public String BUTTON_SAVE;
+	public String BUTTON_EDIT;
+	public String BUTTON_ERASE;
+	public String BUTTON_ACEPT_ALL;
+	public String BUTTON_VIEW;
+	public String BUTTON_APPROVE;
+	public String BUTTON_ASSOCIATE_SELECTION;
+	// LABELS
+
+	public String LABEL_QUANTITY;
+	public String LABEL_INFORMATION;
+	public String LABEL_COST;
+	public String LABEL_RESTRICTION_ON_USE;
+	public String LABEL_MATERIAL_STATE;
+	public String LABEL_LOCATION_ON_SHELF;
+	public String LABEL_PERMANENT_LOCATION;
+	public String LABEL_BARCODE;
+	public String LABEL_SAMPLE_DATA;
+	public String LABEL_PUBLIC_NOTE;
+	public String LABEL_EDITION;
+	public String LABEL_COUNTRY;
+	public String LABEL_CITY;
+	public String LABEL_TOME;
+	public String LABEL_VOLUME;
+	public String LABEL_CORPORATE_AUTHOR;
+	public String LABEL_PROVIDER;
+	public String LABEL_EDITORIAL;
+	public String LABEL_REGISTRY_DATA_ACQUISITION;
+	public String LABEL_MATERIAL_TYPE;
+	public String LABEL_ROOM;
+	public String LABEL_COIN;
+	public String LABEL_DATE_OF_REGISTRATION;
+	public String LABEL_TITLE;
+	public String LABEL_AUTHOR;
+	public String LABEL_IDENTIFIER;
+	public String LABEL_CREATION_DATE_RANGE;
+	public String LABEL_SINCE;
+	public String LABEL_UNTIL;
+	public String LABEL_TOTAL_AMOUNT;
+	public String LABEL_CRITERION;
+	public String LABEL_CURRENCY;
+	public String LABEL_REASON_FOR_REJECTION;
+	public String LABEL_LIST_OF_PURCHASE_ORDERS;
+	public String LABEL_LOG_DATA_ACQUISITION;
+	public String LABEL_LAST_UPDATE;
+	public String LABEL_COPIES_OF_THE_REGISTRATION_LIST_ACQUISITION;
+	public String LABEL_NUMBER_OF_COPIES;
+	public String LABEL_PRICE_OF_A_COPY;
+	public String LABEL_DATA_DESIDERATA;
+	public String LABEL_SUGGESTED_ASSOCIATED;
+	public String LABEL_LIST_OF_APPROVED_SUGGESTION;
+	public String LABEL_LIST_OF_ASSOCIATED_SUGGESTIONS;
+	public String LABEL_LIST_OF_SUGGESTION_FOR_ASSOCIATING;
+	public String LABEL_DETAILS_OF_PURCHASE_ORDER;
+	public String LABEL_ORDERS;
+    public String LABEL_LIST_OF_PURCHASE_ORDERS_PENDING;
+    public String LABEL_LIST_OF_PENDING_SUGGESTIONS;
+    public String LABEL_DATA_SUGGESTION;
+    public String LABEL_SEARCH_CRITERIA;
+    public String LABEL_REASON_FOR_ACCEPTANCE;
+    public String LABEL_CHECK_PURCHASE_ORDERS;
+    public String LABEL_ADQUISITION_TYPE;
+    public String LABEL_ELEMENT_TYPE;
+    public String LABEL_CREATION_DATE_ADQUISITION;
+    public String LABEL_USER_TYPE;
+    public String LABEL_LOG_DATA_ISSUE;
+    public String LABEL_DATA_COPY;
+    public String LABEL_DATA_ACQUISITION;
+    public String LABEL_SUGGESTED_BY;
+    public String LABEL_REGISTRATION_NUMBER;
+    public String LABEL_EXCHANGE_CONDITIONS;
+    public String LABEL_STATE;
+    public String LABEL_DATA_LAST_UPDATE;
+    public String LABEL_DATE;
+    public String LABEL_CITY_OF_PUBLICATION;
+    public String LABEL_NUMBER_OF_EDITION;
+    public String LABEL_PUBLICATION_YEAR;
+    public String LABEL_CREATION_DATE;
+    public String LABEL_DATE_OF_INITIAL_CREATION;
+    public String LABEL_FINAL_DATE_OF_CREATION;
+    public String LABEL_REASON;
+    public String LABEL_STATE_PENDING;
+    public String LABEL_STATE_REJECTED;
+    public String LABEL_STATE_ACCEPTED;
+    public String LABEL_STATE_EXECUTED;
+    public String LABEL_NUMBER;
+    public String LABEL_ISSN;
+    public String LABEL_ISBN;
+    public String LABEL_SUGGESTION_ASSOCIATED;
+    public String LABEL_WITHOUT_SUGGESTION_ASSOCIATED;
+    public String LABEL_SUGGESTION_REASON;
+    public String LABEL_APPROVED_BY;
+    public String LABEL_LIST_OF_PENDING_DESIDERATAS;
+    public String LABEL_LIST_OF_ASSOCIATED_DESIDERATAS;
+    public String LABEL_CREATED_BY;
+    public String LABEL_PURCHASE_ORDER_SELECTED;
+    public String LABEL_LIST_OF_PURCHASE_ORDER_PENDING;
+    public String LABEL_EQUALS_TO;
+    public String LABEL_GREAT_THAN;
+    public String LABEL_LESS_THAN;
+    public String LABEL_TOTAL_AMOUNT_RANGE;
+    public String LABEL_REQUESTED_BY;
+    public String LABEL_AREA;
+    public String LABEL_DATE_OF_APPLICATION;
+    public String LABEL_APPLICATION_NUMBER;
+    public String LABEL_SEARCH_SUGGESTIONS_BY;
+    public String LABEL_SEARCH_DESIDERATAS_BY;
+    public String LABEL_COINCIDENCE_LIST;
+    public String LABEL_ORDER_NUMBER;
+	public String LABEL_ACQUIRING_OBJECT;
+	public String LABEL_OBJECT_TITLE;	
+	public String LABEL_QUOTE_NUMBER;
+	public String LABEL_OBJECT_TYPE;
+	public String LABEL_ACQUISITION_WAY;
+	public String LABEL_WITHOUT_PURCHASE_REQUEST_ASSOCIATED;
+	public String LABEL_PURCHASE_REQUEST__ASSOCIATED;	
+	public String LABEL_LIST_OF_PURCHASE_REQUEST_APROVED;
+	public String LABEL_LIST_OF_PURCHASE_REQUEST_ASSOCIATED;
+	public String LABEL_SEARCH_LOG_ACQUISITION_BY;
+	public String LABEL_ACQUISITION_DATE;
+	public String LABEL_REQUEST;
+	public String LABEL_EXCHANGE;
+	public String LABEL_DONATION;
+	public String LABEL_CONTROL_NUMBER;
+	public String LABEL_SEARCH_PURCHASE_REQUEST_BY;
+	public String LABEL_NEW_OBJECT;
+	public String LABEL_NEW_COPY;  
+	public String LABEL_DATA_PURCHASE_REQUEST;
+	public String LABEL_DATA_PURCHASE_ORDER;
+	// LINKS
+
+	// TABLES
+	public String TABLE_ORDER_NUMBER;
+	public String TABLE_PROVIDER;
+	public String TABLE_DATE;
+	public String TABLE_AMOUNT;
+	public String TABLE_STATE;
+	public String TABLE_ACTIONS;
+	public String TABLE_N_CONTROL;
+	public String TABLE_EDITOR;
+	public String TABLE_PUBLICATION_YEAR;
+	public String TABLE_TYPE_OF_MATERIAL;
+	public String TABLE_ROOM;
+	public String TABLE_NAME_AND_SURNAMES;
+	public String TABLE_TIME;
+	public String TABLE_BARCODE;
+	public String TABLE_SHELVING;
+	public String TABLE_MATERIAL_STATE;
+	public String TABLE_RESTRINCTIONS_ON_USE;
+	public String TABLE_EDITORIAL;
+	public String TABLE_PRICE;
+	public String TABLE_TOTAL_AMOUNT;
+	public String TABLE_IDENTIFIER;
+	public String TABLE_SUGGESTED_BY;
+	public String TABLE_REASON;
+	public String TABLE_PRICE_UM;
+	public String TABLE_STATE_OF_REGISTRATION;
+	public String TABLE__ADQUISITION_TYPE;
+	public String TABLE_SUMMARY;
+	// GROUPS
+
+	// MENU
+
+	// CONTRIBUTOR_NAME
+	
+	public String CONTRIBUTOR_CONSULT_SUGGESTIONS;
+	public String CONTRIBUTOR_REGISTER_DESIDERATA;
+	public String CONTRIBUTOR_CONSULT_DESIDERATA;
+	public String CONTRIBUTOR_PURCHASE_REQUEST_REGISTER;
+	public String CONTRIBUTOR_CONSULT_PURCHASE_REQUEST;
+	public String CONTRIBUTOR_CONSULT_PURCHASE_ORDERS;
+	public String CONTRIBUTOR_REGISTER_ACQUISITION;
+	public String CONTRIBUTOR_CONSULT_ACQUISITION;
+	public String CONTRIBUTOR_VIEW_RECORD_ACQUISITION;
+	public String CONTRIBUTOR_PURCHASE_ORDER_REGISTER;
+	public String CONTRIBUTOR_CONSULT_LOG_ACQUISITION;
+	public String CONTRIBUTOR_ORDER_WITH_ASSOCIATED_SUGGESTED;
+	public String CONTRIBUTOR_VIWE_DETAILS_PURCHASE_ORDER;
+	public String CONTRIBUTOR_PURCHASE_ORDERS_CONSULT;
+	public String CONTRIBUTOR_CONSULT_SERVERS;
+	public String CONTRIBUTOR_VIEW_DESIDERATA;
+	
+	public String CONSULT_SUGGESTIONS;
+	public String CONSULT_APPROVE_REJECT_SUGGESTION;
+	public String CONSULT_PURCHASE_REQUEST;
+	public String CONSULT_DESIDERATA;
+	public String CONSULT_APPROVE_REJECT_PURCHASE_ORDERS;
+	public String CONSULT_PURCHASE_ORDERS;
+	public String CONSULT_LOG_ACQUISITION;
+	
+	public String REGISTER_ADQUISITION;       
+	public String REGISTER_PURCHASE_REQUEST;   
+	public String REGISTER_DESIDERATA;
+	public String REGISTER_PURCHASE_ORDER;
+	
+	public String VIEW_ADQUISITION;
+	public String VIEW_PURCHASE_REQUEST;
+	public String VIEW_DESIDERATA;
+	public String VIEW_PURCHASE_ORDER;
+	public String VIEW_SUGGESTION;
+	
+	public String EDIT_ADQUISITION; 
+	public String EDIT_PURCHASE_REQUEST;
+	public String EDIT_DESIDERATA; 
+	public String EDIT_PURCHASE_ORDER;
+	public String EDIT_SUGGESTION;
+	
+	public String BUTTON_NEW_AUTHORITY;
+	public String BUTTON_SEARCH_MATERIALS;
+	public String BUTTON_EXIT;
+	
+	public String BUTTON_REBOOT_PATTERN;
+	public String BUTTON_SAVE_SUBSCRIPTION;
+	public String BUTTON_SHOW_HIDE_SCHEMES;
+	public String BUTTON_NEW_SUBSCRIPTION;
+	public String BUTTON_SEARCH_TERM;
+	public String BUTTON_ASSOCIATE_TERM;
+
+	public String MESSAGES_SUGGESTED_ACCEPTED;
+	public String MESSAGES_PURCHASE_REQUEST_ACCEPTED;            
+	public String MESSAGES_PURCHASE_ORDER_ACCEPTED;
+
+	public String MESSAGES_SUGGESTED_REJECTED;
+	public String MESSAGES_PURCHASE_REQUEST_REJECTED;
+	public String MESSAGES_PURCHASE_ORDER_REJECTED;
+	
+	public String MESSAGES_PURCHASE_REQUEST_UNIQUE;
+	public String MESSAGES_PURCHASE_ORDER_UNIQUE;
+	public String MESSAGES_SPECIFY_TOTAL_AMOUNT;
+	public String MESSAGES_YOU_MUST_SPECIFY_AT_LEAST_ONE_SEARCH_CRITERIA;
+	public String MESSAGES_THE_END_DATE_MUST_BE_GREATER_THAN_OR_EQUAL_TO_THE_START_DATE;
+	public String MSG_USER_NOT_WORKER;
+	private AbosMessages() {
+		// Prevent instantiation
+	}
+
+	public static AbosMessages get() {
+		return (AbosMessages) RWT.NLS.getISO8859_1Encoded(
+				"cu.uci.abcd.adquisition.l10n.AbosMessages",
+				AbosMessages.class);
+	}
+	
+	// SYSTEM_MESSAGES
+	public String MESSAGES_RECORD_ADDED;
+	public String MESSAGES_FAILED_TO_REGISTER;
+	public String MESSAGES_ERROR_NUMERICAL_FIELDS;
+	public String MESSAGES_ERROR_LETTERS_FIELDS;
+	public String MESSAGES_ERROR_REQUIRED_FIELDS;
+	public String MESSAGES_INFORMATION;
+	public String MESSAGES_ERROR;
+	public String MESSAGES_ERROR_MISSING_REASON_FOR_REJECTION;
+	public String MESSAGES_INF_NO_COINCIDENCES_FOUND; 
+	public String MESSAGES_INF_SUCCESSFULL_REQUEST;
+	public String MESSAGES_ERROR_FINAL_DATE_LESS_THAN_INITIAL;
+	public String MESSAGES_ERROR_NO_SUGGESTION_ASSOCIATED;
+	public String MESSAGES_ERROR_NO_DESIDERATA_ASSOCIATED;
+	public String MESSAGE_ERROR_MUST_BE_A_DESIDERATA_ASSOCIATED;
+	public String MESSAGES_ERROR_MISSING_REASON_FOR_ACCEPTANCE;
+	public String MESSAGES_INF_NO_RECORD_EXIST;
+	public String MESSAGES_WARN_DELET_DATA;
+	
+}

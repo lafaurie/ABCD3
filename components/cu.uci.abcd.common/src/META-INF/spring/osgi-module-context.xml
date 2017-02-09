@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<reference id="personDAO" interface="cu.uci.abcd.dao.common.PersonDAO">
+		<listener bind-method="bind" ref="personService" />
+	</reference>
+	
+	<reference id="userDAO" interface="cu.uci.abcd.dao.common.UserDAO">
+		<listener bind-method="bindUser" ref="personService" />
+	</reference>
+	
+	
+	<service ref="personService" interface="cu.uci.abcd.common.IPersonService" />
+	
+</beans:beans>

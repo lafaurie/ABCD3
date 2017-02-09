@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Prototype
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abos.prototype
+Import-Bundle: org.eclipse.rap.rwt;version="[2.3.0.20140610-0925,2.3.0.20140610-0925]"
+Import-Package: cu.uci.abos.responsive;version="[1.0.0,1.0.0]"
+
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<reference id="manageDesiderataDAO" interface="cu.uci.abcd.dao.acquisition.DesiderataDAO">
+		<listener bind-method="bind" ref="manageDesiderataService" />
+	</reference>
+	<service ref="manageDesiderataService" interface="cu.uci.abcd.acquisition.IManageDesiderataService" />
+	
+	<reference id="managePurchaseRequestDAO" interface="cu.uci.abcd.dao.acquisition.PurchaseRequestDAO">
+		<listener bind-method="bind" ref="managePurchaseRequestService" />
+	</reference>
+	
+	<reference id="manageWorkerDAO" interface="cu.uci.abcd.dao.management.library.WorkerDAO">
+		<listener bind-method="bind1" ref="managePurchaseRequestService" />
+	</reference>
+	<service ref="managePurchaseRequestService" interface="cu.uci.abcd.acquisition.IManagePurchaseRequestService" />
+		
+	<reference id="manageSuggestionDAO" interface="cu.uci.abcd.dao.acquisition.SuggestionDAO">
+		<listener bind-method="bind" ref="manageSuggestionService" />
+	</reference>
+	<reference id="manageNomenclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		<listener bind-method="bind1" ref="manageSuggestionService" />
+	</reference>
+	<reference id="manageUserDAO" interface="cu.uci.abcd.dao.common.UserDAO">
+		<listener bind-method="bindUser" ref="manageSuggestionService" />
+	</reference>
+	<service ref="manageSuggestionService" interface="cu.uci.abcd.acquisition.IManageSuggestionService" />
+	
+	<reference id="managePurchaseOrderDAO" interface="cu.uci.abcd.dao.acquisition.PurchaseOrderDAO">
+		<listener bind-method="bind" ref="managePurchaseOrderService" />
+	</reference>
+	<reference id="manageProviderDAO" interface="cu.uci.abcd.dao.management.library.ProviderDAO">
+		<listener bind-method="bind1" ref="managePurchaseOrderService" />
+	</reference>
+	<service ref="managePurchaseOrderService" interface="cu.uci.abcd.acquisition.IManagePurchaseOrderService" />
+	
+	<reference id="ManageRegisterAcquisition" interface="cu.uci.abcd.dataprovider.jisis.IJisisDataProvider">
+		<listener bind-method="bind" ref="ManageAcquisitionService" />
+	</reference> 
+	<service ref="ManageAcquisitionService" interface="cu.uci.abcd.acquisition.IRegistrationManageAcquisitionService" />
+	
+	<reference id="ManageSampleRegisterAcquisition" interface="cu.uci.abcd.dataprovider.jisis.IJisisDataProvider">
+		<listener bind-method="bind" ref="ManageSampleAcquisitionService" />
+	</reference> 
+	<service ref="ManageSampleAcquisitionService" interface="cu.uci.abcd.acquisition.IRegistrationManageSampleAcquisitionService" />
+	   
+	<reference id="loanObjectDAO" interface="cu.uci.abcd.dao.common.LoanObjectDAO">
+		<listener bind-method="bindLoanObjectDao" ref="loanObjectService" />
+	</reference>
+	<service ref="loanObjectService" interface="cu.uci.abcd.acquisition.IManageLoanObjectService" />
+	   
+	<reference id="roomDAO" interface="cu.uci.abcd.dao.management.library.RoomDAO">
+		<listener bind-method="bind" ref="roomService" />
+	</reference>
+	<service ref="roomService" interface="cu.uci.abcd.acquisition.IManageRoomService" />
+	
+		
+</beans:beans> 

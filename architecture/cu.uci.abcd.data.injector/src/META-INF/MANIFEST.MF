@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Injector
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abcd.data.injector
+Import-Package: cu.uci.abcd.dao.circulation;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.management.library;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.management.security;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.cataloguing;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.circulation;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.management.library;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.management.security;version="[1.0.0,1.0.0]",
+ javax.persistence;resolution:=optional,
+ org.springframework.data.domain;version="[1.4.1.RELEASE,1.4.1.RELEASE]",
+ org.springframework.data.jpa.domain;version="[1.2.1.RELEASE,1.2.1.RELEASE]",
+ org.springframework.data.jpa.repository;version="[1.2.1.RELEASE,1.2.1.RELEASE]"
+Import-Bundle: org.springframework.data.core;version="[1.4.1.RELEASE,1.4.1.RELEASE]"
+

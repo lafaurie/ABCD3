@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<reference id="loanUserDAO" interface="cu.uci.abcd.dao.circulation.LoanUserDAO">
+		<listener bind-method="bindLoanUserDao" ref="loanUserService" />
+	</reference>
+	<reference id="loanUserTypeDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		<listener bind-method="bindNomenclatorDao" ref="loanUserService" />
+	</reference>
+	
+	<reference id="userDAO" interface="cu.uci.abcd.dao.common.UserDAO">
+		<listener bind-method="bindUserDao" ref="loanUserService" />
+	</reference>
+	
+	<reference id="roomDAO" interface="cu.uci.abcd.dao.management.library.RoomDAO">
+		<listener bind-method="bindRoomDao" ref="loanUserService" />
+	</reference>
+	
+	<reference id="executorDAO" interface="cu.uci.abcd.dao.common.StatementExecutorDAO">
+	<listener bind-method="bindStatementExecutorDao" ref="loanUserService" />
+	</reference>
+	<service ref="loanUserService" interface="cu.uci.abcd.circulation.ILoanUserService" />
+
+	<reference id="personDAO" interface="cu.uci.abcd.dao.common.PersonDAO">
+	<listener bind-method="bindPersonDao" ref="personService"/>
+	</reference>
+	<reference id="workerDAO" interface="cu.uci.abcd.dao.management.library.WorkerDAO">
+	<listener bind-method="bindWorkerDao" ref="personService"/>
+	</reference>
+	<service ref="personService" interface="cu.uci.abcd.circulation.IPersonService"/>
+	
+	<reference id="loanObjectDAO" interface="cu.uci.abcd.dao.common.LoanObjectDAO">
+		<listener bind-method="bindLoanObjectDao" ref="loanObjectService" />
+	</reference>
+
+	<service ref="loanObjectService" interface="cu.uci.abcd.circulation.ILoanObjectService" />
+
+
+	<reference id="penaltyDAO" interface="cu.uci.abcd.dao.circulation.PenaltyDAO">
+		<listener bind-method="bindPenaltyDao" ref="penaltyService" />
+	</reference>
+	<reference id="fineEquationDAO" interface="cu.uci.abcd.dao.management.library.FineEquationDAO">
+		<listener bind-method="bindFineEquationDao" ref="penaltyService" />
+	</reference>
+	<reference id="nomenclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		<listener bind-method="bindNomenclatorDao" ref="penaltyService" />
+	</reference>
+	<reference id="executorPenaltyDAO" interface="cu.uci.abcd.dao.common.StatementExecutorDAO">
+	<listener bind-method="bindStatementExecutorDao" ref="penaltyService" />
+	</reference>
+	<service ref="penaltyService" interface="cu.uci.abcd.circulation.IPenaltyService" />
+
+
+	<reference id="reservationDAO" interface="cu.uci.abcd.dao.circulation.ReservationDAO">
+		<listener bind-method="bindReservationDao" ref="reservationService" />
+	</reference>
+	<service ref="reservationService" interface="cu.uci.abcd.circulation.IReservationService" />
+
+
+	<reference id="transactionDAO" interface="cu.uci.abcd.dao.circulation.TransactionDAO">
+		<listener bind-method="bindTransactionDao" ref="transactionService" />
+	</reference>
+
+	<reference id="circulationRuleDAO" interface="cu.uci.abcd.dao.management.library.CirculationRuleDAO">
+		<listener bind-method="bindCirculationRuleDao" ref="transactionService" />
+	</reference>
+
+	<reference id="calendarDAO" interface="cu.uci.abcd.dao.management.library.CalendarDAO">
+		<listener bind-method="bindCalendarDao" ref="transactionService" />
+	</reference>
+
+	<reference id="workScheduleDAO" interface="cu.uci.abcd.dao.management.library.ScheduleDAO">
+		<listener bind-method="bindScheduleDao" ref="transactionService" />
+	</reference>
+	
+	<reference id="transactionNomenclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		<listener bind-method="bindNomenclatorDao" ref="transactionService" />
+	</reference>
+	
+	<reference id="executorTransactionDAO" interface="cu.uci.abcd.dao.common.StatementExecutorDAO">
+	<listener bind-method="bindStatementExecutorDao" ref="transactionService" />
+	</reference>
+	<service ref="transactionService" interface="cu.uci.abcd.circulation.ITransactionService" />
+
+	<reference id="ManageLoanObjectJISIS" interface="cu.uci.abcd.dataprovider.jisis.IJisisDataProvider">
+		<listener bind-method="bind" ref="loanObjectJISISService" />
+	</reference> 
+	<service ref="loanObjectJISISService" interface="cu.uci.abcd.circulation.ILoanObjectJISISService" />
+
+
+</beans:beans>

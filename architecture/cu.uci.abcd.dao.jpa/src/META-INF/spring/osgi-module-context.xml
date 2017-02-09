@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+	<!-- Reference for DataSource service -->
+	<reference id="dataSource" interface="javax.sql.DataSource" />
+
+	<!-- Publishing services for DAO's implementation -->
+	<service ref="personDAO" interface="cu.uci.abcd.dao.common.PersonDAO" />
+	<service ref="userDAO" interface="cu.uci.abcd.dao.common.UserDAO" />
+	<service ref="loanObjectDAO" interface="cu.uci.abcd.dao.common.LoanObjectDAO" />
+	<service ref="nomenclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO" />
+	<service ref="statisticDAO" interface="cu.uci.abcd.dao.common.StatisticDAO" />
+	
+	<!-- Circulation DAO's implementation -->
+	<service ref="loanUserDAO" interface="cu.uci.abcd.dao.circulation.LoanUserDAO" />
+	<service ref="penaltyDAO" interface="cu.uci.abcd.dao.circulation.PenaltyDAO" />
+	<service ref="reservationDAO" interface="cu.uci.abcd.dao.circulation.ReservationDAO" />
+	<service ref="transactionDAO" interface="cu.uci.abcd.dao.circulation.TransactionDAO" />
+	
+	<!-- Management library DAO's implementation -->
+	<service ref="calendarDAO" interface="cu.uci.abcd.dao.management.library.CalendarDAO" />
+	<service ref="circulationRuleDAO" interface="cu.uci.abcd.dao.management.library.CirculationRuleDAO" />
+	<service ref="coinDAO" interface="cu.uci.abcd.dao.management.library.CoinDAO" />
+	<service ref="fineEquationDAO" interface="cu.uci.abcd.dao.management.library.FineEquationDAO" />
+	<service ref="formationCourseDAO" interface="cu.uci.abcd.dao.management.library.FormationCourseDAO" />
+	<service ref="libraryDAO" interface="cu.uci.abcd.dao.management.library.LibraryDAO" />
+	<service ref="providerDAO" interface="cu.uci.abcd.dao.management.library.ProviderDAO" />
+	<service ref="roomDAO" interface="cu.uci.abcd.dao.management.library.RoomDAO" />
+	<service ref="scheduleDAO" interface="cu.uci.abcd.dao.management.library.ScheduleDAO" />
+	<service ref="workerDAO" interface="cu.uci.abcd.dao.management.library.WorkerDAO" />
+	<service ref="enrollmentDAO" interface="cu.uci.abcd.dao.management.library.EnrollmentDAO" />
+	
+	<!-- Management security DAO's implementation -->
+	<service ref="permissionDAO" interface="cu.uci.abcd.dao.management.security.PermissionDAO" />
+	<service ref="profileDAO" interface="cu.uci.abcd.dao.management.security.ProfileDAO" />
+	<service ref="accessRecordDAO" interface="cu.uci.abcd.dao.management.security.AccessRecordDAO" />
+	<service ref="ldapDAO" interface="cu.uci.abcd.dao.management.security.LdapDAO" />
+
+	<!-- Acquisition DAO's implementation -->
+	<service ref="desiderataDAO" interface="cu.uci.abcd.dao.acquisition.DesiderataDAO" />
+	<service ref="suggestionDAO" interface="cu.uci.abcd.dao.acquisition.SuggestionDAO" />
+	<service ref="purchaseOrderDAO" interface="cu.uci.abcd.dao.acquisition.PurchaseOrderDAO" />
+	<service ref="purchaseRequestDAO" interface="cu.uci.abcd.dao.acquisition.PurchaseRequestDAO" />
+
+	<!-- Opac DAO's implementation -->
+	<service ref="commentDAO" interface="cu.uci.abcd.dao.opac.CommentDAO" />
+	<service ref="recommendationDAO" interface="cu.uci.abcd.dao.opac.RecommendationDAO" />
+	<service ref="selectionListDAO" interface="cu.uci.abcd.dao.opac.SelectionListDAO" />
+	<service ref="tagDAO" interface="cu.uci.abcd.dao.opac.TagDAO" />
+	<service ref="ratingDAO" interface="cu.uci.abcd.dao.opac.RatingDAO" />
+	<service ref="recordRatingDAO" interface="cu.uci.abcd.dao.opac.RecordRatingDAO" />
+	<service ref="opacDataSourcesDAO" interface="cu.uci.abcd.dao.opac.OpacDataSourcesDAO" />
+	
+		<!-- Statistic DAO's implementation -->
+	<service ref="indicatorDAO" interface="cu.uci.abcd.dao.statistic.IndicatorDAO" />
+	<service ref="reportDAO" interface="cu.uci.abcd.dao.statistic.ReportDAO" />
+	<service ref="statementExecutorDAO" interface="cu.uci.abcd.dao.common.StatementExecutorDAO" />
+	<service ref="variableDAO" interface="cu.uci.abcd.dao.statistic.VariableDAO"/>
+	<service ref="reportGroupDAO" interface="cu.uci.abcd.dao.statistic.ReportGroupDAO" />
+	
+	
+</beans:beans>

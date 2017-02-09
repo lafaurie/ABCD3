@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Version: 0.0.1
+Bundle-Name: Reports
+Bundle-ManifestVersion: 2
+Bundle-Description: Gesti??n de reportes ABOS
+Bundle-SymbolicName: cu.uci.abos.ui.reports
+Bundle-Vendor: ABOS
+

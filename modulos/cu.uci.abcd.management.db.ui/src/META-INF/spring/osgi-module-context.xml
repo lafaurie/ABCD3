@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+ <!-- 
+	<service ref="isis" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.db.ui.IsisAdminContributor"/>
+		</service-properties>
+	</service>
+ 
+		
+	<service ref="asc" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administracion.bd.iu.ASConfigurationContributor"/>
+		</service-properties>
+	</service>
+	
+	<service ref="asv" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.administracion.bd.iu.ASVisualizationContributor"/>
+		</service-properties>
+	</service>
+	-->
+	
+	<!-- 
+	<reference id="databaseManager" interface="cu.uci.abcd.management.db.IDatabaseManager" availability="mandatory">
+		<listener bind-method="bind" ref="manageDatabasesController" />
+	</reference>
+	-->
+	
+	
+	<service ref="manageDatabases" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+				<beans:entry key="type" value="abcd"/>
+				<beans:entry key="class" value="cu.uci.abcd.management.db.ui.RegisterDatabase"/>
+				<!-- <beans:entry key="viewController" value-ref="manageDatabasesController"/> -->
+		</service-properties>
+	</service>
+	
+</beans:beans>

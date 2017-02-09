@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: cu.uci.abcd.administration.library
+Export-Package: cu.uci.abcd.administration.library;version="1.0.0"
+Bundle-Version: 1.0.0
+Bundle-Name: Library
+Bundle-ManifestVersion: 2
+Import-Package: cu.uci.abcd.dao;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.circulation;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.management.library;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.specification;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dataprovider.jisis;version="2.0.0",
+ cu.uci.abcd.dataprovider.jisis.exception;version="2.0.0",
+ cu.uci.abcd.domain.circulation;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.management.library;version="[1.0.0,1.0.0]",
+ javax.persistence,
+ javax.persistence.criteria,
+ org.springframework.data.domain;version="[1.4.1.RELEASE,1.4.1.RELEASE]",
+ org.springframework.data.jpa.domain;version="[1.2.1.RELEASE,1.2.1.RELEASE]",
+ org.springframework.data.jpa.repository;version="[1.2.1.RELEASE,1.2.1.RELEASE]",
+ org.unesco.jisis.corelib.common
+Import-Bundle: org.springframework.data.core;version="[1.4.1.RELEASE,1.4.1.RELEASE]",
+ cu.uci.abos.core;version="[2.0.0,2.0.0]"
+

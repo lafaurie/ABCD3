@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="manageDatabase" class="cu.uci.abcd.statistic.impl.ManageDatabaseImpl" />
+	<bean id="adminVariable" class="cu.uci.abcd.statistic.impl.VariableImpl" />
+	<bean id="indicatorImpl" class="cu.uci.abcd.statistic.impl.IndicatorImpl" />
+	<bean id="reportImpl" class="cu.uci.abcd.statistic.impl.ReportImpl" >
+		<property name="indicator" ref="indicatorImpl"/>
+	</bean>
+	<bean id="adminTable" class="cu.uci.abcd.statistic.impl.TableImpl" />
+
+
+</beans> 

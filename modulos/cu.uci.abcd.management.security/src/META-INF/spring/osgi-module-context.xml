@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi  
+        http://www.springframework.org/schema/osgi/spring-osgi.xsd
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<service ref="loginServiceFactory" interface="cu.uci.abos.core.security.LoginServiceFactory"></service>
+	
+	<reference id="personDAO" interface="cu.uci.abcd.dao.common.PersonDAO">
+		<listener bind-method="bindPersonDao" ref="personService" />
+	</reference>
+	
+	<reference id="nomenclatorDAO" interface="cu.uci.abcd.dao.common.NomenclatorDAO">
+		<listener bind-method="bindNomenclatorDao" ref="personService" />
+	</reference>
+	
+	<reference id="roomDAO" interface="cu.uci.abcd.dao.management.library.RoomDAO">
+		<listener bind-method="bindRoomDao" ref="accessRecordService" />
+	</reference>
+	
+	<reference id="userDao" interface="cu.uci.abcd.dao.common.UserDAO">
+		<listener bind-method="bindUserDao" ref="personService" />
+	</reference>
+	<service ref="personService" interface="cu.uci.abcd.management.security.IPersonService" />
+
+	<reference id="profileDAO" interface="cu.uci.abcd.dao.management.security.ProfileDAO">
+		<listener bind-method="bindProfileDao" ref="profileService" />
+	</reference>
+	<service ref="profileService" interface="cu.uci.abcd.management.security.IProfileService" />
+	
+	<reference id="userDAO" interface="cu.uci.abcd.dao.common.UserDAO">
+		<listener bind-method="bindUserDao" ref="userService" />
+	</reference>
+	<service ref="userService" interface="cu.uci.abcd.management.security.IUserService" />
+	
+	<reference id="permissionDAO" interface="cu.uci.abcd.dao.management.security.PermissionDAO">
+		<listener bind-method="bindPermissionDao" ref="permissionService" />
+	</reference>
+	<service ref="permissionService" interface="cu.uci.abcd.management.security.IPermissionService" />
+	
+	<reference id="accessRecordDAO" interface="cu.uci.abcd.dao.management.security.AccessRecordDAO">
+		<listener bind-method="bindAccessRecordDao" ref="accessRecordService" />
+	</reference>
+	<service ref="accessRecordService" interface="cu.uci.abcd.management.security.IAccessRecordService" />
+	
+	<reference id="ldapDAO" interface="cu.uci.abcd.dao.management.security.LdapDAO">
+		<listener bind-method="bindLdapDao" ref="ldapService" />
+	</reference>
+	
+	<reference id="libraryDAO" interface="cu.uci.abcd.dao.management.library.LibraryDAO">
+		<listener bind-method="bindLibraryDao" ref="ldapService" />
+	</reference>
+	
+	<service ref="ldapService" interface="cu.uci.abcd.management.security.ILdapService" />
+	
+</beans:beans>

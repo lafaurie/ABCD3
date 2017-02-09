@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-Version: 2.0.0
+Bundle-Name: Field
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abos.widget.repeatable.field
+Import-Bundle: org.eclipse.rap.rwt;version="[3.0.0,4.0.0)",
+ org.eclipse.rap.fileupload;version="[3.0.0,4.0.0)"
+Import-Package: cu.uci.abos.core.util;version="[2.0.0,2.0.0]"
+Export-Package: cu.uci.abos.widget.repeatable.field;version="2.0.0",
+ cu.uci.abos.widget.repeatable.field.domain;version="2.0.0",
+ cu.uci.abos.widget.repeatable.field.listener;version="2.0.0",
+ cu.uci.abos.widget.repeatable.field.util;version="2.0.0"
+

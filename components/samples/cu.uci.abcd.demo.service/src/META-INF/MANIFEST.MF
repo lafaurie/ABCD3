@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Service
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abcd.demo.service
+Import-Package: cu.uci.abcd.demo.domain.common;version="[1.0.0,1.0.0]"
+Export-Package: cu.uci.abcd.demo.service;version="1.0.0"
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi          
+	 http://www.springframework.org/schema/osgi/spring-osgi.xsd         
+	 http://www.springframework.org/schema/beans           
+	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<reference id="iJisisServices"	interface="cu.uci.abcd.dataprovider.jisis.IJisisDataProvider">
+		<listener bind-method="bind" ref="manageDatabase" />
+		<listener bind-method="bind" ref="reportImpl" />
+		<listener bind-method="bind" ref="adminVariable" />
+	</reference>
+	<reference id="libraryDAO" interface="cu.uci.abcd.dao.management.library.LibraryDAO">
+	<listener bind-method="bind" ref="manageDatabase"/>
+	</reference>
+	<service ref="manageDatabase" interface="cu.uci.abcd.statistic.IManageDatabase" />
+	
+	<reference id="variableDAO" interface="cu.uci.abcd.dao.statistic.VariableDAO">
+		<listener bind-method="bind" ref="adminVariable" />
+	</reference>
+	<service ref="adminVariable" interface="cu.uci.abcd.statistic.IAdminVariable" />
+
+	<reference id="statisticDAO" interface="cu.uci.abcd.dao.common.StatisticDAO">
+		<listener bind-method="bind" ref="adminTable" />
+	</reference>
+	<service ref="adminTable" interface="cu.uci.abcd.statistic.IAdminTable" />
+
+
+	<reference id="indicatorDAO" interface="cu.uci.abcd.dao.statistic.IndicatorDAO">
+		<listener bind-method="bind" ref="indicatorImpl" />
+	</reference>
+	
+	<reference id="reportGroupDAO" interface="cu.uci.abcd.dao.statistic.ReportGroupDAO">
+		<listener bind-method="bindReportGroupDAO" ref="indicatorImpl" />
+	</reference>
+	
+	<reference id="statementExecutorDAO" interface="cu.uci.abcd.dao.common.StatementExecutorDAO">
+		<listener bind-method="bindStatementExecutorDAO" ref="indicatorImpl" />
+	</reference>
+	<service ref="indicatorImpl" interface="cu.uci.abcd.statistic.IIndicator" />
+	
+	<reference id="indicator" interface="cu.uci.abcd.dao.statistic.ReportDAO">
+		<listener bind-method="bind" ref="reportImpl" />
+	</reference>
+	
+	<reference id="loanObjectDao" interface="cu.uci.abcd.dao.common.LoanObjectDAO">
+		<listener bind-method="bind" ref="reportImpl" />
+	</reference>
+	
+	<reference id="crossStatistics" interface="cu.uci.abcd.statistic.jisis.CrossStatistics">
+		<listener bind-method="bind" ref="adminTable" />
+	</reference>
+	
+	<service ref="reportImpl" interface="cu.uci.abcd.statistic.IReport" />
+	
+</beans:beans>
+
+
+        

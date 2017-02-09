@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- Creacion del controlador de la presentacion -->
+	<bean id="allManagementSecurityViewController"
+		class="cu.uci.abcd.management.security.ui.controller.AllManagementSecurityViewController" />
+
+	<bean id="managementPersonViewController"
+		class="cu.uci.abcd.management.security.ui.controller.PersonViewController">
+		<property name="allManagementSecurityViewController" ref="allManagementSecurityViewController" />
+	</bean>
+	
+	<bean id="managementProfileViewController"
+		class="cu.uci.abcd.management.security.ui.controller.ProfileViewController">
+		<property name="allManagementSecurityViewController" ref="allManagementSecurityViewController" />
+	</bean>
+	
+	<bean id="managementUserViewController"
+		class="cu.uci.abcd.management.security.ui.controller.UserViewController">
+		<property name="allManagementSecurityViewController" ref="allManagementSecurityViewController" />
+	</bean>
+	
+	<bean id="managementAccessRecordViewController"
+		class="cu.uci.abcd.management.security.ui.controller.AccessRecordViewController">
+		<property name="allManagementSecurityViewController" ref="allManagementSecurityViewController" />
+	</bean>
+	
+	<bean id="managementPermissionViewController"
+		class="cu.uci.abcd.management.security.ui.controller.PermissionViewController">
+		<property name="allManagementSecurityViewController" ref="allManagementSecurityViewController" />
+	</bean>
+	
+	<bean id="managementLdapViewController"
+		class="cu.uci.abcd.management.security.ui.controller.LdapViewController">
+		<property name="allManagementSecurityViewController" ref="allManagementSecurityViewController" />
+	</bean>
+	
+	
+	<!-- Creacion de la factoria de presentacion -->
+	<bean id="consultPerson" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultProfile" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultUser" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultAccessControl" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<bean id="registerProfile" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerPerson" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerUser" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerAccessControl" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<bean id="myPerfil" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="configureLdap" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="aboutUsID" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="manualsID" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<bean id="viewAccessControl" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+    <bean id="viewPerson" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+    <bean id="viewUser" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+    <bean id="viewProfile" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+    
+	
+</beans>

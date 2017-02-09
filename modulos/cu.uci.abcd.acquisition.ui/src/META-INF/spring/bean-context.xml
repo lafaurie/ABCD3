@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="ApproveRejectPurchaseOrders" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="ApproveRejectSuggestions" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+    <bean id="ConsultPurchaseOrders" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+    <bean id="ConsultDesideratas" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+   	<bean id="ConsultSuggestions" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="ConsultPurchaseRequests" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="RegisterPurchaseRequests" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="RegisterDesideratas" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registrarRegistroDeAdquisicion" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+ 
+ 	<bean id="allControllerManagement" class="cu.uci.abcd.acquisition.ui.controller.AllManagementController" />
+	
+	<bean id="registerPurchaseOrder" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+   
+   	<bean id="consultContributor" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="viewDesiderataContributer" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+</beans>

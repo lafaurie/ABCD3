@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:osgi-compendium="http://www.springframework.org/schema/osgi-compendium"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/osgi-compendium 
+    	http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium-1.2.xsd">
+
+	<osgi-compendium:cm-properties id="emailConfig"
+		persistent-id="email.config" />
+	<context:property-placeholder
+		properties-ref="emailConfig" />
+
+	<bean id="opacdataBaseManager" class="cu.uci.abcd.opac.impl.OpacDataBaseManager" />
+
+	<bean id="opacSuggestionService" class="cu.uci.abcd.opac.impl.OpacSuggestionServiceImpl" />
+
+	<bean id="opacPenaltyService" class="cu.uci.abcd.opac.impl.OpacPenaltyServiceImpl" />
+
+	<bean id="opacReservationService" class="cu.uci.abcd.opac.impl.OpacReservationServiceImpl" />
+
+	<bean id="opacSelectionListService" class="cu.uci.abcd.opac.impl.OpacSelectionListServiceImpl" />
+
+	<bean id="opacRegisterUserService" class="cu.uci.abcd.opac.impl.OpacRegisterUserServiceImpl" />
+
+	<bean id="opacLoanUserService" class="cu.uci.abcd.opac.impl.OpacLoanUserServiceImpl" />
+
+	<bean id="opacLoanObjectService" class="cu.uci.abcd.opac.impl.OpacLoanObjectServiceImpl" />
+
+	<bean id="opacNomenclatorService" class="cu.uci.abcd.opac.impl.OpacNomenclatorServiceImpl" />
+
+	<bean id="opacCommentService" class="cu.uci.abcd.opac.impl.OpacCommentServiceImpl" />
+
+	<bean id="opacRecommendationService" class="cu.uci.abcd.opac.impl.OpacRecommendationServiceImpl" />
+
+	<bean id="opacTagService" class="cu.uci.abcd.opac.impl.OpacTagServiceImpl" />
+
+	<bean id="opacTransactionService" class="cu.uci.abcd.opac.impl.OpacTransactionServiceImpl" />
+
+	<bean id="opacUserService" class="cu.uci.abcd.opac.impl.OpacUserServiceImpl" />
+
+	<bean id="opacLibraryService" class="cu.uci.abcd.opac.impl.OpacLibraryServiceImpl">
+		<property name="opacEmailConfigServiceImpl" ref="opacEmailConfigServiceImpl"></property>
+	</bean>
+
+	<bean id="opacRatingService" class="cu.uci.abcd.opac.impl.OpacWeigUpServiceImpl" />
+   
+	<bean id="opacRecordRatingService" class="cu.uci.abcd.opac.impl.OpacRecordRatingImpl" />
+        
+	<bean id="opacEmailConfigServiceImpl" class="cu.uci.abcd.opac.impl.OpacEmailConfigServiceImpl">
+		<property name="smtpHost" value="${mail.smtp.host}"></property>
+		<property name="starttlsRequired" value="${mail.smtp.starttls.required}"></property>
+		<property name="starttlsEnable" value="${mail.smtp.starttls.enable}"></property>
+		<property name="sslEnable" value="${mail.smtp.ssl.enable}"></property>
+		<property name="sslTrust" value="${mail.smtp.ssl.trust}"></property>
+		<property name="socketFactoryPort" value="${mail.smtp.socketFactory.port}"></property>
+		<property name="port" value="${mail.smtp.port}"></property>
+		<property name="mailSender" value="${mail.smtp.mail.sender}"></property>
+		<property name="userEmail" value="${mail.smtp.user}"></property>
+		<property name="passwordEmail" value="${mail.smtp.password}"></property>
+		<property name="auth" value="${mail.smtp.auth}"></property>
+		<property name="transportProtocol" value="${mail.transport.protocol}"></property>
+		<property name="email" value="${mail.email}"></property>
+
+
+	</bean>
+	
+</beans>

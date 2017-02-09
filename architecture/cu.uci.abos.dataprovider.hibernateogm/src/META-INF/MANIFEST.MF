@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Export-Package: cu.uci.abos.dataprovider.hibernateogm.publics;version="1.0.0"
+Bundle-Version: 1.0.0
+Bundle-Name: Hibernateogm
+Bundle-ManifestVersion: 2
+Bundle-Description: UCI
+Bundle-SymbolicName: cu.uci.abos.dataproviders.hibernateogm
+Import-Bundle: cu.uci.hibernate;version="[1.0.0,1.0.0]"
+

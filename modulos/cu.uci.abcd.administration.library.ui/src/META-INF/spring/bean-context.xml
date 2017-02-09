@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<!-- Creacion del controlador de la presentacion -->
+	<bean id="allManagementLibraryViewController"
+		class="cu.uci.abcd.administration.library.ui.controller.AllManagementLibraryViewController" />
+
+   <bean id="managementLibraryViewController" class="cu.uci.abcd.administration.library.ui.controller.LibraryViewController">
+		<property name="allManagementLibraryViewController" ref="allManagementLibraryViewController" />
+	</bean>
+	
+	<bean id="managementProviderViewController" class="cu.uci.abcd.administration.library.ui.controller.ProviderViewController">
+		<property name="allManagementLibraryViewController" ref="allManagementLibraryViewController" />
+	</bean>
+	
+	<bean id="managementCoinViewController" class="cu.uci.abcd.administration.library.ui.controller.CoinViewController">
+		<property name="allManagementLibraryViewController" ref="allManagementLibraryViewController" />
+	</bean>
+	
+	<bean id="managementFineEquationViewController" class="cu.uci.abcd.administration.library.ui.controller.FineEquationViewController">
+		<property name="allManagementLibraryViewController" ref="allManagementLibraryViewController" />
+	</bean>
+	
+	<bean id="managementCalendarViewController" class="cu.uci.abcd.administration.library.ui.controller.CalendarViewController">
+		<property name="allManagementLibraryViewController" ref="allManagementLibraryViewController" />
+	</bean>
+	
+	<bean id="managementScheduleViewController" class="cu.uci.abcd.administration.library.ui.controller.ScheduleViewController">
+		<property name="allManagementLibraryViewController" ref="allManagementLibraryViewController" />
+	</bean>
+	
+	<bean id="managementCirculationRuleViewController" class="cu.uci.abcd.administration.library.ui.controller.CirculationRuleViewController">
+		<property name="allManagementLibraryViewController" ref="allManagementLibraryViewController" />
+	</bean>
+	
+	<bean id="managementEnrollmentViewController" class="cu.uci.abcd.administration.library.ui.controller.EnrollmentViewController">
+		<property name="allManagementLibraryViewController" ref="allManagementLibraryViewController" />
+	</bean>
+	
+	
+	<!-- Creacion de la factoria de presentacion -->
+	<bean id="manageCoin" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="manageLibrary" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="manageProviders" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<bean id="registerWorker" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerFormationCourse" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerRoom" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<bean id="consultWorker" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultRoom" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultFormationCourse" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<bean id="configureCalendar" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="configureFineEquation" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="configureSchedule" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="configureCirculationRules" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+
+    <bean id="viewRoom" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+    <bean id="viewWorker" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+    <bean id="viewFormationCourse" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+
+	<!-- OTHERS 
+	
+	<bean id="associateWorkers" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="editWorkerLibrary" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerCirculationRules" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerCoin" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerProviders" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerProvidersAssociatedPerson" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerPublicHolidayDay" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerWorkerLibraryAssociatedData" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="removeProviders" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="viewDataFormationCourses" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="viewDataLibrary" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="viewDataOfCiuculationRule" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="viewProvider" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="viewWorkerLibrary" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+
+	
+-->
+
+
+
+
+
+
+
+
+
+</beans>

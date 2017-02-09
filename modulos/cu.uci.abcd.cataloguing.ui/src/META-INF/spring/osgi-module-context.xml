@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/osgi"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/osgi
+		http://www.springframework.org/schema/osgi/spring-osgi.xsd
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- Publishing service under contributorFactory implementation -->
+	<service ref="registerBibliographicRecord" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.cataloguing.ui.RegisterBibliographicRecord" />
+		    <beans:entry key="viewController" value-ref="proxy" />		
+		</service-properties>
+	</service>
+	
+	<service ref="catalogQuery" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.cataloguing.ui.CatalogQuery" />
+			<beans:entry key="viewController" value-ref="proxy" />
+		</service-properties>
+	</service>
+	
+	<service ref="advancedQuery" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.cataloguing.ui.AdvancedQuery" />
+			<beans:entry key="viewController" value-ref="proxy" />	
+		</service-properties>
+	</service>
+
+	<service ref="authoritiesQuery" interface="cu.uci.abos.api.ui.ContributorFactory">
+		<service-properties>
+			<beans:entry key="type" value="abcd" />
+			<beans:entry key="class"
+				value="cu.uci.abcd.cataloguing.ui.AuthoritiesQuery" />
+			<beans:entry key="viewController" value-ref="proxy" />	
+		</service-properties>
+	</service>
+	
+	<!-- Service reference -->
+	<reference id="dataBaseManager" interface="cu.uci.abcd.cataloguing.IDataBaseManager"
+		availability="optional">
+		<listener bind-method="bindDataBaseManager" ref="proxy" />
+	</reference>
+	
+	<reference id="loanObjectCreation" interface="cu.uci.abcd.cataloguing.ILoanObjectCreation"
+		availability="optional">
+		<listener bind-method="bindLoanObjectCreation" ref="proxy" />
+	</reference>
+	
+	<reference id="exemplaryRecord" interface="cu.uci.abcd.cataloguing.IExemplaryRecord"
+		availability="optional">
+		<listener bind-method="bindExemplaryRecord" ref="proxy" />
+	</reference>
+	
+	<reference id="authoritiesRecord" interface="cu.uci.abcd.cataloguing.IAuthoritiesRecord"
+		availability="optional">
+		<listener bind-method="bindAuthoritiesRecord" ref="proxy" />
+	</reference>
+	
+</beans:beans> 

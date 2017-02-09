@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: cu.uci.abos.jisis.conection
+Bundle-Version: 1.0.0
+Bundle-Name: Conection
+Bundle-ManifestVersion: 2
+Import-Bundle: jisis-core;version="[2.0.0,2.0.0]"
+Export-Package: cu.uci.abos.jisis.conection;version="1.0.0"
+

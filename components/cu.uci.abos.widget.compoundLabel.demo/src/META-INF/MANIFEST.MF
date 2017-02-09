@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Demo
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abos.widget.compoundLabel.demo
+Import-Bundle: cu.uci.abos.widget.compoundLabel;version="[1.0.0,1.0.0]",
+ org.eclipse.rap.rwt;version="[3.0.0.20140930-0953,3.0.0.20140930-0953]"
+Import-Package: cu.uci.abos.core.ui;version="[1.0.0,1.0.0]",
+ cu.uci.abos.l10n;version="[1.0.0,1.0.0]",
+ cu.uci.abos.platform.util;version="[1.0.0,1.0.0]",
+ cu.uci.abos.ui.api;version="[1.0.0,1.0.0]",
+ cu.uci.abos.util.api;version="[1.0.0,1.0.0]",
+ cu.uci.abos.widget.compoundLabel
+

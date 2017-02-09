@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: cu.uci.abcd.cron.scheduler
+Bundle-Version: 1.0.0
+Bundle-Name: Scheduler
+Bundle-ManifestVersion: 2
+Import-Package: org.osgi.framework;version="[1.7.0,1.7.0]",
+ org.quartz,
+ org.quartz.impl,
+ org.quartz.simpl;version="[2.2.2,2.2.2]",
+ org.slf4j;version="[1.7.2,1.7.2]",
+ org.slf4j.impl;version="[1.7.2,1.7.2]",
+ org.springframework.beans.factory;version="[3.1.0.RELEASE,3.1.0.RELEASE]"
+Export-Package: cu.uci.abcd.cron.scheduler;version="1.0.0"
+

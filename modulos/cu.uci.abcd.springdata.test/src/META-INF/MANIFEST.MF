@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Test
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: XXcu.uci.abcd.springdata.test
+Import-Package: javax.persistence;version="[2.0.4,2.0.4]",
+ org.osgi.framework;version="[1.7.0,1.7.0]",
+ org.osgi.util.tracker;version="[1.5.1,1.5.1]",
+ org.springframework.data.domain;version="[1.4.1.RELEASE,1.4.1.RELEASE]",
+ org.springframework.data.jpa.domain;version="[1.2.1.RELEASE,1.2.1.RELEASE]",
+ org.springframework.data.jpa.repository;version="[1.2.1.RELEASE,1.2.1.RELEASE]"
+Import-Bundle: cu.uci.abcd.dao;version="[1.0.0,1.0.0]",
+ org.eclipse.rap.rwt;version="[3.0.0.20150203-0901,3.0.0.20150203-0901]",
+ cu.uci.abcd.domain;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.jpa;version="[1.0.0,1.0.0]",
+ org.springframework.data.core;version="[1.4.1.RELEASE,1.4.1.RELEASE]",
+ org.springframework.data.jpa;version="[1.2.1.RELEASE,1.2.1.RELEASE]"
+Export-Package: cu.uci.abcd.springdata.test
+

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Export-Package: cu.uci.abcd.administration.nomenclators.controller,cu.
+ uci.abcd.administration.nomenclators.ui
+Import-Bundle: org.eclipse.rap.rwt;version="[3.0.0,4.0.0)",cu.uci.abos
+ .api;version="[2.0.0,2.0.0]",cu.uci.abos.core;version="[2.0.0,2.0.0]"
+Bundle-Version: 1.0.0
+Bundle-Name: Ui
+Bundle-ManifestVersion: 2
+Import-Package: cu.uci.abcd.administration.nomenclators;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.common;version="[1.0.0,2.0.0)",
+ cu.uci.abcd.domain.management.library;version="[1.0.0,2.0.0)",
+ javax.persistence;version="[2.0.4,2.2.4]",
+ org.springframework.data.domain;version="[1.4.1.RELEASE,1.4.1.RELEASE]",
+ org.springframework.data.jpa.domain;version="[1.2.1.RELEASE,1.2.1.RELEASE]"
+Bundle-SymbolicName: cu.uci.abcd.administration.nomenclators.ui
+

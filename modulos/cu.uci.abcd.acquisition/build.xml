@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<project name="platform" default="buildAll" basedir=".">
+	<description>
+      Build file for the Adquisition
+   </description>
+	
+	<property environment="osenv" /> 
+	<property name="bin" location="bin" />
+	<property name="src" location="src" />
+	<property name="docs" location="docs" />
+	<property name="dist" location="${osenv.VIRGO_HOME}/repository/usr" />
+	
+	<!-- the target jar-file -->
+	<property name="jarfile" location="${dist}/cu.uci.abcd.acquisition-1.0.0.jar" />
+
+	<!-- dependencies (jar-files needed at compilation time)
+    -->
+	<filelist id="depend_jars" dir="${osenv.VIRGO_HOME}/repository/usr" files="
+		cu.uci.abcd.dao-1.0.0.jar,
+		cu.uci.abcd.dataprovider.jisis-2.0.0.jar,
+		cu.uci.abcd.domain-1.0.0.jar,
+		cu.uci.abos.core-2.0.0.jar,
+		jisis-core.jar,
+		spring-data-commons-core-1.4.1.RELEASE.jar,
+		spring-data-jpa-1.2.1.RELEASE.jar" />
+	
+	<filelist id="depend_jars_ext" dir="${osenv.VIRGO_HOME}/repository/ext" files="
+		javax.persistence_2.1.0.v201304241213.jar,
+		org.springframework.beans_3.1.0.RELEASE.jar" />
+
+	<filelist id="depend_jars_framework" dir="${osenv.VIRGO_HOME}/plugins" files="
+			org.eclipse.osgi_3.8.2.v20130124-134944.jar" />
+
+
+
+	<!--
+   -
+   - Rules definitions
+   -
+   -->
+
+	<target name="all" depends="buildAll" description="alias for BuildAll">
+	</target>
+
+	<target name="buildAll" depends="${jarfile}" description="complete build">
+		<echo message="Build complete. :-)" />
+	</target>
+
+	<target name="${jarfile}" depends="compile,-mkDist" description="Create the jar file.">
+		<jar destfile="${jarfile}" basedir="${bin}">
+			<exclude name="**/.svn/*" />
+			<exclude name="**/doc-files/*" />
+			<exclude name="**/package.html" />
+			<manifest>
+				<attribute name="Manifest-Version" value="1.0" />
+				<attribute name="Bundle-Version" value="1.0.0" />
+				<attribute name="Bundle-Name" value="Acquisition " />
+				<attribute name="Bundle-ManifestVersion" value="2" />
+				<attribute name="Bundle-SymbolicName" value="cu.uci.abcd.acquisition" />
+				<attribute name="Import-Bundle" value='org.springframework.beans;version="[3.1.0.RELEASE,3.1.0.RELEASE]", org.springframework.data.core;version="[1.4.1.RELEASE,1.4.1.RELEASE]"' />
+				<attribute name="Import-Package" value='cu.uci.abcd.dao.acquisition;version="[1.0.0,1.0.0]", cu.uci.abcd.dao.common;version="[1.0.0,1.0.0]",cu.uci.abcd.dao.management.library;version="[1.0.0,1.0.0]",cu.uci.abcd.dao.specification;version="[1.0.0,1.0.0]",cu.uci.abcd.dataprovider.jisis;version="[2.0.0,2.0.0]",cu.uci.abcd.dataprovider.jisis.exception;version="[2.0.0,2.0.0]",cu.uci.abcd.dataprovider.jisis.impl.search.option;version="[2.0.0,2.0.0]", cu.uci.abcd.domain.acquisition;version="[1.0.0,1.0.0]",cu.uci.abcd.domain.common;version="[1.0.0,1.0.0]",cu.uci.abcd.domain.management.library;version="[1.0.0,1.0.0]",cu.uci.abos.core.domain;version="[2.0.0,2.0.0]",javax.persistence;version="[2.1.0,2.1.0]",org.springframework.data.domain;version="[1.4.1.RELEASE,1.4.1.RELEASE]",org.springframework.data.jpa.domain;version="[1.2.1.RELEASE,1.2.1.RELEASE]", org.springframework.data.jpa.repository;version="[1.2.1.RELEASE,1.2.1.RELEASE]",org.unesco.jisis.corelib.common,org.unesco.jisis.corelib.exceptions, org.unesco.jisis.corelib.record' />
+				<attribute name="Export-Package" value='cu.uci.abcd.acquisition;version="1.0.0"' />
+			</manifest>
+		</jar>
+		<echo message="jar file '${jarfile}' created." />
+	</target>
+
+	<target name="compile" depends="-mkBin" description="Compiles all java classes">
+		<javac srcdir="${src}" destdir="${bin}" verbose="false" debug="true" encoding="UTF-8" includeantruntime="false">
+			<exclude name="**/.svn/*" />
+			<classpath>
+				<filelist refid="depend_jars_framework" />
+				<filelist refid="depend_jars" />
+				<filelist refid="depend_jars_ext" />
+			</classpath>
+		</javac>
+		<echo message="Compiled." />
+	</target>
+
+	<target name="clean" description="Cleanes up the classes directory." depends="cleanDist">
+		<delete dir="${bin}" />
+		<mkdir dir="${bin}" />
+	</target>
+
+	<target name="cleanDist" description="Clean up the dist dir" depends="-chkDist" if="dist.present">
+		<delete>
+			<fileset dir="${dist}" includes="*" />
+		</delete>
+		<echo message="Cleaned up." />
+	</target>
+
+	<target name="-chkDist" description="Check if the dist/ subdir exists">
+		<available file="${dist}" type="dir" property="dist.present" />
+	</target>
+
+	<target name="-mkDist" description="Create the dist/ subdir if if not yet exists" unless="dist.present" depends="-chkDist">
+		<mkdir dir="${dist}" />
+	</target>
+
+	<target name="-chkBin" description="Check if the bin/ subdir exists">
+		<available file="${bin}" type="dir" property="bin.present" />
+	</target>
+
+	<target name="-mkBin" description="Create the bin/ subdir if if not yet exists" unless="bin.present" depends="-chkBin">
+		<mkdir dir="${bin}" />
+	</target>
+
+	<target name="dist" description="Create the jarfile" depends="-mkDist, ${jarfile}">
+	</target>
+
+	<target name="docs" depends="compile">
+		<javadoc packagenames="src" sourcepath="${src}" destdir="${docs}">
+			<fileset dir="${src}">
+				<include name="**" />
+				<exclude name="/META-INF/*"/>
+			</fileset>
+		</javadoc>
+	</target>
+
+</project>
+

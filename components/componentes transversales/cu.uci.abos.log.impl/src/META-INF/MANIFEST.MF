@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Impl
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abos.log.impl
+Import-Package: cu.uci.abos.log;version="[1.0.0,2.0.0)",
+ org.osgi.framework;version="[1.7.0,1.7.0]"

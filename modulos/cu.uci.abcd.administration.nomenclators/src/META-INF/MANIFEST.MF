@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Export-Package: cu.uci.abcd.administration.nomenclators;version="1.0.0
+ "
+Import-Bundle: org.springframework.data.core;version="[1.4.1.RELEASE,1
+ .4.1.RELEASE]",cu.uci.abcd.domain;version="[1.0.0,1.0.0]",cu.uci.abos
+ .core;version="[2.0.0,2.0.0]"
+Bundle-Version: 1.0.0
+Bundle-Name: Nomenclators
+Bundle-ManifestVersion: 2
+Import-Package: cu.uci.abcd.dao.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.dao.specification;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.domain.management.library;version="[1.0.0,1.0.0]",
+ javax.persistence;version="[2.1.0,2.1.0]",
+ javax.persistence.criteria;version="[2.0.4,2.2.4]",
+ org.springframework.data.domain;version="[1.4.1.RELEASE,1.4.1.RELEASE]",
+ org.springframework.data.jpa.domain;version="[1.2.1.RELEASE,1.2.1.RELEASE]",
+ org.springframework.data.jpa.domain.support;version="[1.2.1.RELEASE,1.2.1.RELEASE]",
+ org.springframework.data.jpa.repository;version="[1.2.1.RELEASE,1.2.1.RELEASE]"
+Bundle-SymbolicName: cu.uci.abcd.administration.nomenclators
+

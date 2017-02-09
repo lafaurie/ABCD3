@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Version: 0.0.1
+Bundle-Name: ABOS Core Crosscutting
+Bundle-ManifestVersion: 2
+Bundle-Description: Procesos verticas en ABOS
+Bundle-SymbolicName: cu.uci.abos.core.crosscutting
+Bundle-Vendor: ABOS
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/task
+	    http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+
+	
+		
+	<!-- Creacion del controlador de la presentacion -->
+	
+	<!-- Loan User -->
+	<bean id="proxy"
+		class="cu.uci.abcd.circulation.ui.controller.AllManagementLoanUserViewController" />
+		
+	<!-- Creacion de la factoria de presentacion -->
+	<bean id="consultLoanUser" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultSanction" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultLoanObject" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultTransaction" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="consultReservation" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<bean id="registerLoanUser" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerSantion" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerLoan" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerRenew" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="registerReturn" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+</beans> 

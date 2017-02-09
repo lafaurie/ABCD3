@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	<!-- Contributions initialization -->
+	<bean id="registerBibliographicRecord" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="catalogQuery" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="advancedQuery" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="authoritiesQuery" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<!-- Controller initialization -->
+	<bean id="proxy"
+		class="cu.uci.abcd.cataloguing.controller.ProxyController" />
+</beans>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Export-Package: cu.uci.abcd.demo.dao.circulation;version="1.0.0",
+ cu.uci.abcd.demo.dao.common;version="1.0.0",
+ cu.uci.abcd.demo.dao.management.library;version="1.0.0"
+Bundle-Version: 1.0.0
+Tool: Bundlor 1.1.2.RELEASE
+Bundle-Name: Dao
+Bundle-ManifestVersion: 2
+Import-Package: cu.uci.abcd.demo.domain.circulation;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.demo.domain.common;version="[1.0.0,1.0.0]",
+ cu.uci.abcd.demo.domain.management.library;version="[1.0.0,1.0.0]",
+ org.springframework.data.repository;version="[1.1.0.RELEASE,1.1.0.RELEASE]"
+Bundle-SymbolicName: cu.uci.abcd.demo.dao
+

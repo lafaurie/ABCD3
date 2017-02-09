@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: cu.uci.abcd.domain
+Export-Package: cu.uci.abcd.domain;version="1.0.0",
+ cu.uci.abcd.domain.acquisition;version="1.0.0";uses:="cu.uci.abcd.domain.common,cu.uci.abcd.domain.management.library,javax.persistence",
+ cu.uci.abcd.domain.cataloguing,
+ cu.uci.abcd.domain.circulation;version="1.0.0";uses:="cu.uci.abcd.domain.common,cu.uci.abcd.domain.management.library,javax.persistence",
+ cu.uci.abcd.domain.common;version="1.0.0";uses:="cu.uci.abcd.domain.circulation,cu.uci.abcd.domain.management.library,javax.persistence",
+ cu.uci.abcd.domain.management.library;version="1.0.0";uses:="cu.uci.abcd.domain.common,javax.persistence",
+ cu.uci.abcd.domain.management.security;version="1.0.0";uses:="cu.uci.abcd.domain.management.library,javax.persistence",
+ cu.uci.abcd.domain.opac;version="1.0.0",
+ cu.uci.abcd.domain.statistic;version="1.0.0";uses:="javax.persistence",
+ cu.uci.abcd.domain.util;version="1.0.0"
+Bundle-Version: 1.0.0
+Bundle-Name: Domain
+Bundle-ManifestVersion: 2
+Import-Package: cu.uci.abos.core.domain;version="[2.0.0,2.0.0]",javax.
+ imageio,javax.imageio.stream,javax.persistence,org.eclipse.persistenc
+ e.annotations,org.joda.time;version="[1.6.2,1.6.2]"
+Import-Bundle: org.eclipse.persistence.core,org.eclipse.rap.rwt;versio
+ n="[3.0.0,4.0.0)",org.springframework.data.core;version="[1.4.1.RELEA
+ SE,1.4.1.RELEASE]",org.springframework.data.jpa;version="[1.2.1.RELEA
+ SE,1.2.1.RELEASE]",cu.uci.abos.core;version="[2.0.0,2.0.0]"
+Tool: Bundlor 1.1.2.RELEASE
+

@@ -1,0 +1,8 @@
+(org.osgi.framework.PackagePermission "package name" "import")
+(org.osgi.framework.PackagePermission "package name" "export")
+(org.osgi.framework.BundlePermission "groupID.artifactID of Host" "host");
+(org.osgi.framework.ServicePermission "class name" "get")
+(org.osgi.framework.ServicePermission "class name" "register")
+(org.osgi.framework.ConfigurationPermission * "configure")
+(org.osgi.framework.AdminPermission * "metadata")
+(java.security.AllPermission "*" "*")

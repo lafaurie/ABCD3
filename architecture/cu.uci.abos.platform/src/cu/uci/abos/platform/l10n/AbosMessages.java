@@ -1,0 +1,141 @@
+package cu.uci.abos.platform.l10n;
+
+import org.eclipse.rap.rwt.RWT;
+
+public class AbosMessages {
+
+	// HEADER
+	public String HEADER_PROFILE;
+	public String HEADER_LOG_OFF;
+	public String HEADER_HELP;
+	public String HEADER_MANUAL;
+	public String HEADER_ABOUT_US;
+	public String HEADER_SYSTEM_NAME;
+	public String FOOTER_SYSTEM_NAME;
+	public String HEADER_LOG_IN;
+
+	// LOGIN
+	public String USER;
+	public String PASSWORD;
+	public String REMEMBER_PASSWORD;
+	public String FORGET_PASSWORD;
+	public String BUTTON_LOG_IN;
+	public String DOMAIN;
+	public String LIBRARY;
+
+	// MESSAGES OF FIELDS VALIDATIONS
+	public String MESSAGE_VALIDATE_FIELD_REQUIRED;
+	public String MESSAGE_VALIDATE_SELECT_ELEMENT;
+	public String MESSAGE_VALIDATE_FIELD_EMAIL;
+	public String MESSAGE_VALIDATE_FIELD_ONLY_LETTERS;
+	public String MESSAGE_VALIDATE_FIELD_ONLY_NUMBERS;
+	public String MESSAGE_VALIDATE_FIELD_ONLY_LETTERS_OR_NUMBERS;
+
+	public String MESSAGE_INFORMATION;
+	public String MESSAGE_WARNING;
+	public String MESSAGE_ERROR;
+
+	// MESSAGES OF INFORMATION
+	public String MSG_INF_NO_RECORD_EXIST;
+	public String MSG_INF_VALIDATE_FIELDS_EMPTY;
+	public String MSG_INF_CREATE_NEW_ELEMENT;
+	public String MSG_INF_UPDATE_DATA;
+	public String MSG_INF_NO_COINCIDENCES_FOUND;
+	public String MSG_INF_DELETE_MANY_ITEMS;
+	public String MSG_INF_DELETE_ONE_ITEM;
+	public String MSG_INF_CANCEL_ACTION;
+	public String MSG_INF_INACTIVE_USER;
+	public String MSG_INF_SANCTIONED_USER;
+	public String MSG_INF_NO_LOAN_OBJECT;
+	public String MSG_INF_ACCEPT_SUGGESTIONS_SELECTED;
+	public String MSG_INF_DENY_SUGGESTIONS_SELECTED;
+	public String MSG_INF_SELECT_ATLEAST_ONE_SUGGESTIONS;
+	public String MSG_INF_IMPORTED_FILE_SUCCESSFULLY;
+	public String MSG_INF_FILE_SUCCESSFULLY_UPLOAD_THE_SERVER;
+	public String MSG_INF_SUCCESSFULLY_EXPORT_RECORDS;
+	public String MSG_INF_WRONG_FILE_PATH;
+	public String MSG_INF_FAILURE_TO_LOAD_IMAGE_WAIT_MOMENT;
+	public String MSG_INF_NOT_AUTHORIZED;
+	public String MSG_INF_REVISED_DOCUMENT;
+	public String MSG_INF_APPROVED_DOCUMENT;
+	public String MSG_INF_ADVANCED_SET_UP_SHEET;
+	public String MSG_INF_VALIDATED_WORKSHEET;
+	public String MSG_INF_NOT_AUTHORIZED_OBJECT_SELECT;
+	public String MSG_INF_REGISTERED_PERSON_UPDATE_DATA;
+	public String MSG_INF_SAVES_SEARCH_EXPRESSION;
+	public String MSG_INF_REGISTER_FORMAT_CONVERSION;
+	public String MSG_INF_UPDATE_FORMAT_CONVERSION;
+	public String MSG_INF_REGISTER_DATA_LIBRARY;
+	public String MSG_INF_UPDATE_DATA_LIBRARY;
+	public String MSG_INF_SET_UP_WORKING_HOURS;
+	public String MSG_INF_ADD_SHIFTS_EACH_WORKING_DAY;
+	public String MSG_INF_REGISTER;
+	public String MSG_INF_REGISTER_LOAN;
+	// MESSAGE WARNING
+	public String MSG_WARN_LOG_OUT;
+	public String MSG_WARN_DELET_DATA;
+	public String MSG_WARN_PERSON_HAS_A_USER;
+	public String MSG_WARN_PERSON_ACCESSED_LIBRARY;
+	public String MSG_WARN_DELETE_RECORD_TYPE;
+	public String MSG_WARN_DELETE_DATABASE_WITH_RECORDS;
+	public String MSG_WARN_DELETE_FIELD_DATABASE;
+	public String MSG_WARN_DELETE_SUBFIELD_DATABASE;
+	public String MSG_WARN_SELECT_FIELD_DICTIONARY_OF_TERMS;
+	public String MSG_WARN_DELETE_LIST_TERMS_NOT_SIGNIFICANT;
+
+	// MESSAGE ERROR
+	public String MSG_ERROR_INCORRECT_DATA;
+	public String MSG_ERROR_FIELD_REQUIRED;
+	public String MSG_ERROR_INCORRECT_FILE_FORMAT;
+	public String MSG_ERROR_INCORRECT_PASSWORD;
+	public String MSG_ERROR_INCORRECT_USER;
+	public String MSG_ERROR_NEW_PASS_NOT_MATCH_WITH_CONFIRMATION;
+	public String MSG_ERROR_NEW_PASS_MATCH_PREVIOUS;
+	public String MSG_ERROR_ELAPSED_PERIOD_OF_INACTIVITY;
+	public String MSG_ERROR_MAXIMUM_NUMBER_ATTEMPTS_LOGIN;
+	public String MSG_ERROR_CONNECTION_FAILURE;
+	public String MSG_ERROR_INTERNAL_SYSTEM_ERROR;
+	public String MSG_ERROR_FINAL_DATE_LESS_THAN_INITIAL;
+	public String MSG_ERROR_SELECT_DATE_WITHIN_RANGE;
+	public String MSG_ERROR_FORMAT_EXTRACTION_WRONG;
+	public String MSG_ERROR_FORMAT_CONVERSION_WRONG;
+	public String MSG_ERROR_FORMAT_DEPLOYMENT_WRONG;
+	public String MSG_ERROR_USED_DATA;
+
+	public String NAME;
+	public String SURNAME;
+	public String IDENTIFICATION;
+	
+	public String BUTTON_SEARCH;
+	public String BUTTON_DISSOCIATE;
+	
+	public String LABEL_NAME_AND_LASTNAME;
+	public String LABEL_IDENTIFICATION;
+	public String LABEL_SEX;
+	public String LABEL_PERSON_DATA;
+	public String LABEL_USER;
+	public String LABEL_BIRTHDATE;
+	
+	public String NOT_EQUAL_PASSWORD;
+	public String INCORRECT_PASSWORD;
+	public String PROFILE;
+	public String NAME_AND_SURNAME;
+	public String SEX;
+	public String AGE;
+	public String BIRTHDAY;
+	public String EMAIL;
+	public String ADDRESS;
+	public String CHANGE_PASSWORD;
+	public String LAST_PASSWORD;
+	
+	public String SPANISH;
+	public String ENGLISH;
+	
+	private AbosMessages() {
+		// Prevent instantiation
+	}
+
+	public static AbosMessages get() {
+		return RWT.NLS.getISO8859_1Encoded("cu.uci.abos.platform.l10n.AbosMessages", AbosMessages.class);
+	}
+}

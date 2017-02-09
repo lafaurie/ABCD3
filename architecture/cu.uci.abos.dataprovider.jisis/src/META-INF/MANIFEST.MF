@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Jisis
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abos.dataprovider.jisis
+Import-Bundle: jisis-core
+Export-Package: cu.uci.abos.dataprovider.jisis.publics,
+ cu.uci.abos.dataprovider.jisis.publics.exceptions
+Bundle-ClassPath: src/,
+ .
+

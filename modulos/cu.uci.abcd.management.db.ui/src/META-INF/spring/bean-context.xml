@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="isis" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	
+	<!-- <bean id="asc" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />
+	<bean id="asv" class="cu.uci.abos.core.ui.ContributorFactoryImpl" />-->
+	<bean id="manageDatabases" class="cu.uci.abos.core.ui.ContributorFactoryImpl"/>
+	
+	<!-- <bean id="manageDatabasesController" class="controller.ManageDatabasesController"/> -->
+	
+</beans>

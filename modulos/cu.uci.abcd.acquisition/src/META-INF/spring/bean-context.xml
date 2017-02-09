@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="manageDesiderataService" class="cu.uci.abcd.acquisition.impl.ManageDesiderataService" />
+	<bean id="managePurchaseRequestService" class="cu.uci.abcd.acquisition.impl.ManagePurchaseRequestService" />
+	<bean id="manageSuggestionService" class="cu.uci.abcd.acquisition.impl.ManageSuggestionService" />
+	<bean id="managePurchaseOrderService" class="cu.uci.abcd.acquisition.impl.ManagePurchaseOrderService" />
+ 	<bean id="ManageAcquisitionService" class="cu.uci.abcd.acquisition.impl.RegistrationManageAcquisition" />  
+	<bean id="ManageSampleAcquisitionService" class="cu.uci.abcd.acquisition.impl.RegistrationManageSampleAcquisition" />
+	<bean id="loanObjectService" class="cu.uci.abcd.acquisition.impl.ManageLoanObjectService" />	
+	<bean id="roomService" class="cu.uci.abcd.acquisition.impl.ManageRoomService" />
+	
+	
+
+</beans> 

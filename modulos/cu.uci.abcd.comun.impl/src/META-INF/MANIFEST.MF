@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: Impl
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: cu.uci.abcd.comun.impl
+Import-Bundle: org.eclipse.rap.rwt;version="[3.0.0.20140930-0953,3.0.0.20140930-0953]"
+

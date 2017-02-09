@@ -1,0 +1,183 @@
+ Body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+
+ 
+ Button[PUSH]
+ {
+  color: #fff;
+  background-color:#0069aa ;
+   
+  
+  background-repeat: repeat-x;
+  
+  background-image: gradient(linear, left top, left bottom, from(#4094d0), to(#073a93)) no-repeat;
+  
+  border: 1px solid #0069aa;
+  background-position: 0;
+  margin-right: 0;
+   
+  
+   border-radius: 4px !important;
+  }
+  
+  Text
+  {
+   
+   border: 1px solid #9F9F9F;
+   border-radius: 4px !important;
+  
+  }
+  
+  Text:focused
+  {
+   border: 1px solid #4094d0;
+  
+  }
+ 
+
+  Button[PUSH]:hover
+  {
+     box-shadow: 0 1px 0 #eefaeb inset ;
+     color: #073a93;
+     
+     background-color: #4094d0;
+     background-repeat: repeat-x;
+     background-image: gradient(linear, left top, left bottom, from(#4094d0), to(#8AC7FD)) no-repeat;
+     background-position: 0;
+     
+  }
+  
+  Button[CHECK]
+  {
+  padding: 3px 3px 3px 0;
+  spacing: 7px;
+  color: #004682;
+    
+  }
+  
+  
+  Combo
+  {
+     border: 1px solid #aaaaaa;
+     border-radius: 0 2px 2px 0;
+  }
+  
+   Button:focus
+  {
+     color: #fff;
+     background-color: #ce464b;
+     background-image: linear-gradient(to bottom, #e66e73, #aa0a0f);
+     background-repeat: repeat-x;
+      box-shadow: 0 1px 0 #f08282 inset ;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) ;
+  border: 1px solid #872319;
+  background-position: 0;
+  }
+  Button.btn-success
+  {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  }
+  Button.btn-success:hover
+  {
+ color: #fff;
+  background-color: #47a447;
+  border-color: #398439;
+  }
+ 
+ 
+  
+  Button.btn-warning
+  {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+  }
+  Button.btn-warning:hover
+  {
+ color: #fff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+  }
+  
+  Label.customLabel
+  {
+
+
+ color: #FFFFFF;
+ background-color: transparent;
+ opacity: .6;
+ 
+
+  }
+  
+  Lebel.footerLabel
+  {
+   color: #FFFFFF;
+  
+  
+  }
+  
+  
+  Label
+  {
+   color: #004682;
+  }
+  
+  Composite.customComposite
+  {
+  margin-top:0px;
+  background-color:#EBEBEB;
+  background-image: none;
+  background-repeat: repeat;
+  box-shadow: 0 0px 3px #0162B1;
+  
+  }
+  
+ 
+  
+  
+   Composite.princpalComposite
+  {
+   background-color:#EBEBEB;
+   border-right-color: 1px solid #ADADAD;
+  
+ 
+  }
+   Composite.footerComposite
+  {
+   margin-top:0px;
+  background-color:#0162B1;
+  background-image: none;
+  background-repeat: repeat;
+    
+  }
+  
+  Composite.Login
+  {
+  
+  margin: 100px 0 0 0;
+  
+  
+     
+  }
+  
+  Shell.test
+  {
+  
+  padding: 0px 0px 100px 360px;
+    background-color:#EBEBEB;
+  }
+  
+  
+  
+  
+  
+ 
+  
+  
